@@ -8,19 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using EPDM.Interop.epdm;
 using System.Windows.Forms;
+using ExportSLDPRTToDXF.Models;
 
 namespace ExportSLDPRTToDXF
 {
     public partial class DataForm : Form
     {
-        IEdmVault5 vault1 = new EdmVault5();
+        /// <summary>
+        /// The SolidWorksPdmAdapter exemplare which the providing 
+        /// interface to work with SolidWorks pdm
+        /// </summary>
         SolidWorksPdmAdapter PDMAdapter = new SolidWorksPdmAdapter();
+
+        /// <summary>
+        /// The FileModelPdm exemplar which contains 
+        /// the main data about file in the PDM
+        /// </summary>
+        FileModelPdm  FileModelPdm;
+
+
         public DataForm()
         {
             InitializeComponent();
-            Search_textBox.Text = "04-AV04-4.1-XX";
-
-
+            Search_textBox.Text = "04-AV04-4.1-XX"; 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,21 +52,29 @@ namespace ExportSLDPRTToDXF
         private void Search_btn_Click(object sender, EventArgs e)
         {
             var Resaltlist = PDMAdapter.SearchDoc("%" + Search_textBox.Text + "%");
-            dataGridView2.DataSource = Resaltlist;
-            //dataGridView2.Columns.Add("1", "2");
-
-
-            //dt.Columns.Add(new DataColumn("colStatus", typeof(string)));
-
+            SearchResultList.Items.Clear( );
             foreach (var item in Resaltlist)
             {
-                ListViewItem listViewItem = new ListViewItem();
-                 
-
-                //ResaltlistView.Items.Add(item.FileName);
+                
+                SearchResultList.Items.Add(item);
             }
-            
-            //Search_textBox.Text;
+        }
+         
+        
+        private void SearchResultList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FileModelPdm = SearchResultList.SelectedItem as FileModelPdm;
+            ConfigurationsComboBox.Items.AddRange( PDMAdapter.GetConfigigurations(FileModelPdm.Path));
+        }
+
+        private void ConfigurationsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BomShow(ConfigurationsComboBox.SelectedItem.ToString());
+        }
+
+        private void BomShow(string configuration)
+        {
+            dataGridView1.DataSource = PDMAdapter.GetBomShell(FileModelPdm.Path, configuration);
         }
 
         //public void GetBOM_Click(System.Object sender, System.EventArgs e)

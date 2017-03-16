@@ -31,6 +31,7 @@ namespace ExportSLDPRTToDXF
                 {
                     VaultsComboBox.Text = (string)VaultsComboBox.Items[0];
                 }
+              ConnectionStrToDBTextBox.Text =  Properties.Settings.Default.DataBaseConnectionString;
             }
             catch (System.Runtime.InteropServices.COMException ex)
             {
@@ -75,11 +76,16 @@ namespace ExportSLDPRTToDXF
         EdmBomLayout[] edmBomLayouts;
         private void VaultsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            PDMAdapter.AuthoLogin( VaultsComboBox.SelectedItem.ToString());
             edmBomLayouts = PDMAdapter.GetBoom(VaultsComboBox.SelectedItem.ToString());
 
             foreach (var item in edmBomLayouts)
             { 
                 BOMcomboBox.Items.Add(new ComboboxItem(item.mbsLayoutName,item.mlLayoutID));
+            }
+            if (BOMcomboBox.Items.Count > 0)
+            {
+                BOMcomboBox.Text = BOMcomboBox.Items[0].ToString();
             }
 
         }

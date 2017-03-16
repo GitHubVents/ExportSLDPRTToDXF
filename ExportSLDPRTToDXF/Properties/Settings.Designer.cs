@@ -46,5 +46,16 @@ namespace ExportSLDPRTToDXF.Properties {
                 this["dxfPath"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=Ai" +
+            "rVentsCad;Password=1")]
+        public string DataBaseConnectionString {
+            get {
+                return ((string)(this["DataBaseConnectionString"]));
+            }
+        }
     }
 }

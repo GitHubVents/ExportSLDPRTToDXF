@@ -38,7 +38,7 @@
             this.VaultsComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ConnectionStrToDBTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DXFPath_txt = new System.Windows.Forms.TextBox();
             this.FolderDXF = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             this.groupBox1.Controls.Add(this.VaultsComboBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.ConnectionStrToDBTextBox);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(676, 167);
@@ -144,12 +144,12 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Строка подключение к MS SQL Server:";
             // 
-            // textBox2
+            // ConnectionStringToDataBase
             // 
-            this.textBox2.Location = new System.Drawing.Point(214, 24);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(451, 20);
-            this.textBox2.TabIndex = 5;
+            this.ConnectionStrToDBTextBox.Location = new System.Drawing.Point(214, 24);
+            this.ConnectionStrToDBTextBox.Name = "ConnectionStringToDataBase";
+            this.ConnectionStrToDBTextBox.Size = new System.Drawing.Size(451, 20);
+            this.ConnectionStrToDBTextBox.TabIndex = 5;
             // 
             // groupBox2
             // 
@@ -235,7 +235,7 @@
         private System.Windows.Forms.ComboBox VaultsComboBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ConnectionStrToDBTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox DXFPath_txt;
         private System.Windows.Forms.Button FolderDXF;

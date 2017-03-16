@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SWPlusDB" Class="PDMSolidWorksDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=AirVentsCad" SettingsObjectName="ExportSLDPRTToDXF.Properties.Settings" SettingsPropertyName="DataBaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.View_Parts" Member="View_Parts">
+    <Type Name="View_Part">
+      <Column Name="Bend" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaintX" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="PaintY" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="PaintZ" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="SurfaceArea" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Thickness" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WorkpieceX" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="WorkpieceY" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="IDPDM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConfigurationName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DXF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

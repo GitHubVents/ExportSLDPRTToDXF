@@ -30,6 +30,13 @@ namespace ExportSLDPRTToDXF
         private static IEdmVault8 edmVeult8;
         private static EdmViewInfo[] Views = null;
 
+        public void AuthoLogin (string vaultName)
+        {
+            if (!PdmExemplar.IsLoggedIn)
+            {
+                edmVeult5.LoginAuto(vaultName, 0); 
+            } 
+        }
         /// <summary>
         /// Returns exemplar pdm SolidWorks 
         /// </summary>
@@ -130,29 +137,28 @@ namespace ExportSLDPRTToDXF
         /// <returns></returns>
         public string[] GetConfigigurations(string filePath)
         {
-            IEdmFile9 fileModelInf;
             IEdmFolder5 ppoRetParentFolder;
-            fileModelInf = (IEdmFile9)PdmExemplar.GetFileFromPath(filePath, out ppoRetParentFolder);
+            IEdmFile9 fileModelInfo = PdmExemplar.GetFileFromPath(filePath, out ppoRetParentFolder) as IEdmFile9;
+            EdmStrLst5 cfgList = null;
+            cfgList = fileModelInfo.GetConfigurations( );
+            IEdmPos5 edmPos;
+            edmPos = cfgList.GetHeadPosition( );
 
-            EdmStrLst5 cfgList;
-            cfgList = fileModelInf.GetConfigurations();
-
-            IEdmPos5 pos;
-            pos = cfgList.GetHeadPosition();
-
-            List<string> cfgStringList = new List<string>();
+            #region fill resault array
+            List<string> configurationResaultArray = new List<string>( );
             int id = 0;
-            while (!pos.IsNull)
+            while (!edmPos.IsNull)
             {
-                string buff = cfgList.GetNext(pos);
+                string buff = cfgList.GetNext(edmPos);
                 if (buff.CompareTo("@") != 0)
                 {
-                    cfgStringList.Add(buff);
+                    configurationResaultArray.Add(buff);
                 }
                 id++;
             }
+            #endregion
 
-            return cfgStringList.ToArray();
+            return configurationResaultArray.ToArray( );
         }
         public void GetLastVersionAsmPdm(string path)
         {
