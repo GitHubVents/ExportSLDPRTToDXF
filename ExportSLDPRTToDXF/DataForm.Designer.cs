@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SpecificationDataGrid = new System.Windows.Forms.DataGridView();
             this.Search_textBox = new System.Windows.Forms.TextBox();
             this.Settings_btn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -37,7 +37,7 @@
             this.ConfigurationsComboBox = new System.Windows.Forms.ComboBox();
             this.SearchResultList = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.06396F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.93604F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SpecificationDataGrid, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.Search_textBox, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.Settings_btn, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
@@ -63,14 +63,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 775);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // SpecificationDataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(212, 38);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(942, 668);
-            this.dataGridView1.TabIndex = 4;
+            this.SpecificationDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.SpecificationDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SpecificationDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SpecificationDataGrid.Location = new System.Drawing.Point(212, 38);
+            this.SpecificationDataGrid.Name = "SpecificationDataGrid";
+            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 668);
+            this.SpecificationDataGrid.TabIndex = 4;
             // 
             // Search_textBox
             // 
@@ -129,7 +130,6 @@
             this.SearchResultList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchResultList.Location = new System.Drawing.Point(3, 38);
             this.SearchResultList.Name = "SearchResultList";
-            this.SearchResultList.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.SearchResultList.Size = new System.Drawing.Size(203, 668);
             this.SearchResultList.TabIndex = 0;
             this.SearchResultList.SelectedIndexChanged += new System.EventHandler(this.SearchResultList_SelectedIndexChanged);
@@ -142,10 +142,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,7 +155,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button Search_btn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView SpecificationDataGrid;
         private System.Windows.Forms.TextBox Search_textBox;
         private System.Windows.Forms.Button Settings_btn;
         private System.Windows.Forms.ComboBox ConfigurationsComboBox;

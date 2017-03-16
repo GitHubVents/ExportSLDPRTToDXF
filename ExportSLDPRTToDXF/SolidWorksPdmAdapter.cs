@@ -14,14 +14,13 @@ using EPDM.Interop.EPDMResultCode;
 namespace ExportSLDPRTToDXF
 {
     public class SolidWorksPdmAdapter 
-    {
-         
+    {         
         public SolidWorksPdmAdapter() : base()
         {
             edmVeult8 = (IEdmVault8)PdmExemplar;
         }
 
-        private string VAULT_NAME = "Vents-PDM";
+        private string vaultName = "Vents-PDM";
         private int BOM_ID = 8;
         /// <summary>
         /// PDM exemplar.
@@ -32,9 +31,12 @@ namespace ExportSLDPRTToDXF
 
         public void AuthoLogin (string vaultName)
         {
+            this.vaultName = vaultName;
+
+
             if (!PdmExemplar.IsLoggedIn)
             {
-                edmVeult5.LoginAuto(vaultName, 0); 
+                edmVeult5.LoginAuto(this.vaultName, 0); 
             } 
         }
         /// <summary>
@@ -57,7 +59,7 @@ namespace ExportSLDPRTToDXF
                 }
                 catch (Exception exception)
                 {
-                    MessageBox.Show("Невозможно создать экземпляр Vents-PDM - " + VAULT_NAME + "\n" + exception);
+                    MessageBox.Show("Невозможно создать экземпляр Vents-PDM - " + vaultName + "\n" + exception);
                     return null;
                 }
 
@@ -529,24 +531,15 @@ namespace ExportSLDPRTToDXF
         {
             try
             {
-
-
                 var filePath = fileModel.FolderPath + "\\" + pathToTempPdf;
-
                 IEdmFolder5 folder;
                 var aFile = PdmExemplar.GetFileFromPath(filePath, out folder);
                 var pEnumVar = (IEdmEnumeratorVariable8)aFile.GetEnumeratorVariable(); ;
-                pEnumVar.SetVar("Revision", "", fileModel.CurrentVersion);
-           //     Logger.ToLog("Файлу: " + fileModel.FileName + @"\" + pathToTempPdf + " добавлены переменные");
+                pEnumVar.SetVar("Revision", "", fileModel.CurrentVersion); 
                 pEnumVar.CloseFile(true);
-
-
-
-
             }
             catch (Exception ex)
-            {
-                // Logger.ToLog("ERROR BatchSetVariable файл: " + fileNameErr + ", " + ex.Message);
+            { 
                 throw ex;
             }
         }
@@ -604,21 +597,9 @@ namespace ExportSLDPRTToDXF
             {
                 edmVeult5.LoginAuto(vaultName, 0);
             }
-
             IEdmBomMgr bomMgr = (IEdmBomMgr)vault2.CreateUtility(EdmUtility.EdmUtil_BomMgr);
-            EdmBomLayout[] ppoRetLayouts = null;
-           // EdmBomLayout ppoRetLayout = default(EdmBomLayout);
+            EdmBomLayout[] ppoRetLayouts = null; 
             bomMgr.GetBomLayouts(out ppoRetLayouts);
-            //int i = 0;
-            //var arrSize = ppoRetLayouts.Length;
-            //var str = "";
-            //while (i < arrSize)
-            //{
-            //    ppoRetLayout = ppoRetLayouts[i];
-            //    //str = ppoRetLayout.mbsLayoutName + "ID: " + ppoRetLayout.mlLayoutID;
-            //    i = i + 1;
-            //}
-
             return ppoRetLayouts;
         }
         public EdmViewInfo[] GetVaultViews()

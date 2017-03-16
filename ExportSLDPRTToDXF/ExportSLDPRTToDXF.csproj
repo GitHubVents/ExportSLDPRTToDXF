@@ -63,11 +63,13 @@
     </Compile>
     <Compile Include="Models\BomShell.cs" />
     <Compile Include="Models\FileModelPdm.cs" />
+    <Compile Include="Models\ORM\AdapterPdmDB.cs" />
     <Compile Include="Models\ORM\PDMSolidWorksDB.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PDMSolidWorksDB.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Specification.cs" />
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
