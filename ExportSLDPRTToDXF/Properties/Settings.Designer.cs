@@ -38,12 +38,12 @@ namespace ExportSLDPRTToDXF.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string dxfPath {
+        public string DxfPath {
             get {
-                return ((string)(this["dxfPath"]));
+                return ((string)(this["DxfPath"]));
             }
             set {
-                this["dxfPath"] = value;
+                this["DxfPath"] = value;
             }
         }
         
@@ -55,6 +55,18 @@ namespace ExportSLDPRTToDXF.Properties {
         public string DataBaseConnectionString {
             get {
                 return ((string)(this["DataBaseConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int BoomId {
+            get {
+                return ((int)(this["BoomId"]));
+            }
+            set {
+                this["BoomId"] = value;
             }
         }
     }

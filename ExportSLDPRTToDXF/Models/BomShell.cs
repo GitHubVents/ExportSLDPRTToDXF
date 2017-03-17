@@ -15,114 +15,34 @@ namespace ExportSLDPRTToDXF.Models
     public class BomShell
     {
         /// <summary>
-        /// Количество
-        /// </summary>
-        
-        public decimal? Count { get; set; } // +
-        /// <summary>
-        /// Тип файла
-        /// </summary>
-       
-        public string FileType { get; set; } // -
-        /// <summary>
         /// Конфигурация
         /// </summary>
         
-        public string Configuration { get; set; } // -
+        public string Configuration { get; set; } 
         /// <summary>
         /// Последняя версия
         /// </summary>
       
-        public int? LastVesion { get; set; } // -
-        /// <summary>
-        /// Уровень
-        /// </summary>
-      
-        public int? Level { get; set; } // -
-        /// <summary>
-        /// Состояние
-        /// </summary>
-        
-        public string State { get; set; } // -
-        /// <summary>
-        /// Раздел
-        /// </summary>
-      
-        public string Partition { get; set; } // +
+        public int Version { get; set; }       
+     
         /// <summary>
         /// Обозначение
         /// </summary>
        
-        public string PartNumber { get; set; } // +
+        public string PartNumber { get; set; }
         /// <summary>
         /// Наименование
         /// </summary>
      
-        public string Description { get; set; } // +
-        /// <summary>
-        /// Материал
-        /// </summary>
-        
-        public string Material { get; set; } // -
-        /// <summary>
-        /// Материал Цми
-        /// </summary>
-       
-        public string MaterialCmi { get; set; } // -
-        /// <summary>
-        /// Толщина листа
-        /// </summary>
-       
-        public string SheetThickness { get; set; } //-
+        public string Description { get; set; } 
+      
+        public int IdPdm { get; set; }
 
- 
-        public int? IdPdm { get; set; } // -
-        /// <summary>
-        /// Имя файла
-        /// </summary>
-       
+
         public string FileName { get; set; }
-        /// <summary>
-        /// Путь к файлу
-        /// </summary>
-       
-        public string FilePath { get; set; }
-        /// <summary>
-        /// Erp код
-        /// </summary>
-   
-        public string ErpCode { get; set; } // +
-        /// <summary>
-        /// 
-        /// </summary>
-        
-        public string SummMaterial { get; set; } //+
-        
-        public string Weight { get; set; }
-  
-        public string CodeMaterial { get; set; } //+
-   
-        public string Format { get; set; }
-   
-        public string Note { get; set; }
-   
-        public int? Position { get; set; }
-        /// <summary>
-        /// Количество по конфигурации
-        /// </summary>
-         
-        public List<decimal> CountByConfiguration { get; set; }
-        /// <summary>
-        /// Конфигурация главной сборки
-        /// </summary>
- 
-        public string ConfigurationMainAssembly { get; set; }
-        /// <summary>
-        /// Тип объекта
-        /// </summary>
+        public string FolderPath { get; set; }
     
-        public string TypeObject { get; set; }
-       
-        public string GetPathName { get; set; }
+      
+      
     }
 }

@@ -15,8 +15,14 @@ C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\o
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.pdb
-C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csprojResolveAssemblyReference.cache
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.DataForm.resources
-C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.Settings.resources
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.Properties.Resources.resources
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.GenerateResource.Cache
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\MessageLibrary.dll
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ServiceConstants.dll
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.dll
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\Bullzip.PdfWriter.dll
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\MessageLibrary.pdb
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ServiceConstants.pdb
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.pdb
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.SettingsForm.resources

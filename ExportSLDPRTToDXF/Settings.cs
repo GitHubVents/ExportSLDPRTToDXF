@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Linq;
 using EPDM.Interop.epdm;
-using System.Windows.Forms; 
+using System.Windows.Forms;
+using System.Configuration;
+using System.Collections.Generic;
+using System.Collections;
 namespace ExportSLDPRTToDXF
 {
 
-    public partial class Settings : Form
+    public partial class SettingsForm : Form
     {
         string dxfPath;
         SolidWorksPdmAdapter PDMAdapter = new SolidWorksPdmAdapter();
 
 
-        public Settings( )
+        public SettingsForm( )
         {
             InitializeComponent( );
 
@@ -41,12 +44,13 @@ namespace ExportSLDPRTToDXF
             {
                 MessageBox.Show(ex.ToString( ));
             }
+
+
+            //  DataForm.settings.DxfPath  
+            DXFPath_txt.Text = DataForm.settings.DxfPath;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close( );
-        }
+
 
         private void FolderDXF_Click(object sender, EventArgs e)
         {
@@ -61,18 +65,9 @@ namespace ExportSLDPRTToDXF
                 }
             }
         }
+ 
 
-        private void SaveSettings_Click(object sender, EventArgs e)
-        {
-            //Properties.Settings.Default.VaultName = VaultsComboBox.SelectedItem.ToString();
-            //Properties.Settings.Default.dxfPath = dxfPath;
-            //Properties.Settings.Default.Save();
-        }
 
-        private void Settings_Load(object sender, EventArgs e)
-        {
-            //VaultsComboBox.ValueMember
-        }
         EdmBomLayout[] edmBomLayouts;
         private void VaultsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -96,7 +91,7 @@ namespace ExportSLDPRTToDXF
             public int Id { get; set; }
 
             public ComboboxItem(string text, int id)
-            {
+            { 
                 Text = text;
                 Id = id;
             }
@@ -104,6 +99,27 @@ namespace ExportSLDPRTToDXF
             {
                 return Text;
             }
+        }
+
+        private void SaveSettings_Click(object sender, EventArgs e)
+        { 
+            DataForm.settings.VaultName= VaultsComboBox.SelectedItem.ToString( );           
+            DataForm.settings.DxfPath = dxfPath;
+            DataForm.settings.BoomId = (BOMcomboBox.SelectedItem as ComboboxItem).Id;
+            DataForm.settings.Save( );
+
+            this.Close( );
+        }
+
+        private void ClouseSettings_Click(object sender, EventArgs e)
+        {
+            this.Close( );
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

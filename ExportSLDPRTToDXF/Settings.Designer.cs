@@ -1,6 +1,6 @@
 ﻿namespace ExportSLDPRTToDXF
 {
-    partial class Settings
+    partial class SettingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,8 +42,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DXFPath_txt = new System.Windows.Forms.TextBox();
             this.FolderDXF = new System.Windows.Forms.Button();
-            this.SaveSettings = new System.Windows.Forms.Button();
             this.ClouseSettings = new System.Windows.Forms.Button();
+            this.SaveSettings = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -144,10 +144,10 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Строка подключение к MS SQL Server:";
             // 
-            // ConnectionStringToDataBase
+            // ConnectionStrToDBTextBox
             // 
             this.ConnectionStrToDBTextBox.Location = new System.Drawing.Point(214, 24);
-            this.ConnectionStrToDBTextBox.Name = "ConnectionStringToDataBase";
+            this.ConnectionStrToDBTextBox.Name = "ConnectionStrToDBTextBox";
             this.ConnectionStrToDBTextBox.Size = new System.Drawing.Size(451, 20);
             this.ConnectionStrToDBTextBox.TabIndex = 5;
             // 
@@ -179,6 +179,16 @@
             this.FolderDXF.UseVisualStyleBackColor = true;
             this.FolderDXF.Click += new System.EventHandler(this.FolderDXF_Click);
             // 
+            // ClouseSettings
+            // 
+            this.ClouseSettings.Location = new System.Drawing.Point(539, 251);
+            this.ClouseSettings.Name = "ClouseSettings";
+            this.ClouseSettings.Size = new System.Drawing.Size(141, 23);
+            this.ClouseSettings.TabIndex = 8;
+            this.ClouseSettings.Text = "Отмена";
+            this.ClouseSettings.UseVisualStyleBackColor = true;
+            this.ClouseSettings.Click += new System.EventHandler(this.ClouseSettings_Click);
+            // 
             // SaveSettings
             // 
             this.SaveSettings.Location = new System.Drawing.Point(392, 251);
@@ -188,16 +198,6 @@
             this.SaveSettings.Text = "Сохранить";
             this.SaveSettings.UseVisualStyleBackColor = true;
             this.SaveSettings.Click += new System.EventHandler(this.SaveSettings_Click);
-            // 
-            // ClouseSettings
-            // 
-            this.ClouseSettings.Location = new System.Drawing.Point(539, 251);
-            this.ClouseSettings.Name = "ClouseSettings";
-            this.ClouseSettings.Size = new System.Drawing.Size(141, 23);
-            this.ClouseSettings.TabIndex = 8;
-            this.ClouseSettings.Text = "Отмена";
-            this.ClouseSettings.UseVisualStyleBackColor = true;
-            this.ClouseSettings.Click += new System.EventHandler(this.button3_Click);
             // 
             // Settings
             // 
@@ -239,8 +239,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox DXFPath_txt;
         private System.Windows.Forms.Button FolderDXF;
-        private System.Windows.Forms.Button SaveSettings;
         private System.Windows.Forms.Button ClouseSettings;
         private System.Windows.Forms.ComboBox BOMcomboBox;
+        private System.Windows.Forms.Button SaveSettings;
     }
 }

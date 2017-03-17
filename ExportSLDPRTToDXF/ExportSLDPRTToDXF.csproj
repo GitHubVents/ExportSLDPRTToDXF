@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExportSLDPRTToDXF</RootNamespace>
     <AssemblyName>ExportSLDPRTToDXF</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,7 +42,17 @@
       <HintPath>C:\Program Files\SOLIDWORKS PDM\EPDM.Interop.EPDMResultCode.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="MessageLibrary">
+      <HintPath>D:\Vlad\PDM-WebService\SolidWorksLibrary\bin\Release\MessageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceConstants">
+      <HintPath>D:\Vlad\PDM-WebService\SolidWorksLibrary\bin\Release\ServiceConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="SolidWorksLibrary">
+      <HintPath>D:\Vlad\PDM-WebService\SolidWorksLibrary\bin\Release\SolidWorksLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +72,7 @@
     <Compile Include="DataForm.Designer.cs">
       <DependentUpon>DataForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logger.cs" />
     <Compile Include="Models\BomShell.cs" />
     <Compile Include="Models\FileModelPdm.cs" />
     <Compile Include="Models\ORM\AdapterPdmDB.cs" />
@@ -96,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Models\ORM\PDMSolidWorksDB.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

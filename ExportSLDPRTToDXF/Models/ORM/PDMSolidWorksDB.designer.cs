@@ -69,29 +69,43 @@ namespace ExportSLDPRTToDXF.Models.ORM
 				return this.GetTable<View_Part>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFCheck")]
+		public int DXFCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDPDM, configuration, version);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFUpDateCutList")]
+		public int DXFUpDateCutList([global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceX", DbType="Real")] System.Nullable<float> workpieceX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceY", DbType="Real")] System.Nullable<float> workpieceY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Bend", DbType="Int")] System.Nullable<int> bend, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thickness", DbType="Real")] System.Nullable<float> thickness, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintX", DbType="Int")] System.Nullable<int> paintX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintY", DbType="Int")] System.Nullable<int> paintY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintZ", DbType="Int")] System.Nullable<int> paintZ, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaterialID", DbType="Int")] System.Nullable<int> materialID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SurfaceArea", DbType="Real")] System.Nullable<float> surfaceArea, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DXF", DbType="VarBinary(MAX)")] System.Data.Linq.Binary dXF)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), workpieceX, workpieceY, bend, thickness, configuration, version, paintX, paintY, paintZ, iDPDM, materialID, surfaceArea, dXF);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.View_Parts")]
 	public partial class View_Part
 	{
 		
-		private System.Nullable<int> _Bend;
+		private int _Bend;
 		
-		private System.Nullable<decimal> _PaintX;
+		private int _PaintX;
 		
-		private System.Nullable<decimal> _PaintY;
+		private int _PaintY;
 		
-		private System.Nullable<decimal> _PaintZ;
+		private int _PaintZ;
 		
-		private System.Nullable<decimal> _SurfaceArea;
+		private double _SurfaceArea;
 		
-		private System.Nullable<decimal> _Thickness;
+		private double _Thickness;
 		
 		private int _Version;
 		
-		private System.Nullable<decimal> _WorkpieceX;
+		private double _WorkpieceX;
 		
-		private System.Nullable<decimal> _WorkpieceY;
+		private double _WorkpieceY;
 		
 		private System.Nullable<int> _IDPDM;
 		
@@ -103,8 +117,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bend", DbType="Int")]
-		public System.Nullable<int> Bend
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bend", DbType="Int NOT NULL")]
+		public int Bend
 		{
 			get
 			{
@@ -119,8 +133,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintX", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> PaintX
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintX", DbType="Int NOT NULL")]
+		public int PaintX
 		{
 			get
 			{
@@ -135,8 +149,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintY", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> PaintY
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintY", DbType="Int NOT NULL")]
+		public int PaintY
 		{
 			get
 			{
@@ -151,8 +165,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintZ", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> PaintZ
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PaintZ", DbType="Int NOT NULL")]
+		public int PaintZ
 		{
 			get
 			{
@@ -167,8 +181,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SurfaceArea", DbType="Decimal(10,3)")]
-		public System.Nullable<decimal> SurfaceArea
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SurfaceArea", DbType="Float NOT NULL")]
+		public double SurfaceArea
 		{
 			get
 			{
@@ -183,8 +197,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thickness", DbType="Decimal(3,1)")]
-		public System.Nullable<decimal> Thickness
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thickness", DbType="Float NOT NULL")]
+		public double Thickness
 		{
 			get
 			{
@@ -215,8 +229,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceX", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> WorkpieceX
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceX", DbType="Float NOT NULL")]
+		public double WorkpieceX
 		{
 			get
 			{
@@ -231,8 +245,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceY", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> WorkpieceY
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceY", DbType="Float NOT NULL")]
+		public double WorkpieceY
 		{
 			get
 			{
