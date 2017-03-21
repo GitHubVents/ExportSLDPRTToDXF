@@ -17,8 +17,7 @@ namespace ExportSLDPRTToDXF
     public class SolidWorksPdmAdapter : Singeton <SolidWorksPdmAdapter>
     { 
         
-       
-        private string vaultName;
+        
         public string VaultName { get; set; }
         public int BoomId { get; set; }
 
@@ -224,6 +223,7 @@ namespace ExportSLDPRTToDXF
                 IEdmFolder5 oFolder;
 
                 IEdmFile7 EdmFile7 = (IEdmFile7)PdmExemplar.GetFileFromPath(filePath, out oFolder);
+                //MessageBox.Show(BoomId.ToString());
                 var bomView = EdmFile7.GetComputedBOM(BoomId, -1, bomConfiguration, 3);
 
                 if (bomView == null)
@@ -287,7 +287,7 @@ namespace ExportSLDPRTToDXF
             }
             catch (COMException ex)
             {
-                MessageBox.Show("Failed get bom shell " + (EdmResultErrorCodes_e)ex.ErrorCode);
+                MessageBox.Show("Failed get bom shell " + (EdmResultErrorCodes_e)ex.ErrorCode + ". Укажите вид PDM или тип спецификации");
 
                 throw  ex;
                 //return null;

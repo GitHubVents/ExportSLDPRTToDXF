@@ -1104,3 +1104,115 @@ Time:21.03.2017 12:07:12 Message: Поиск по запросу %3535% заве
    в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 82 в связи с чем возвращена пустая колекция FileModelPdm
 Time:21.03.2017 12:07:21 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
 Time:21.03.2017 12:07:39 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 14:21:37 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 14:21:41 Message: Create DxfBulder
+Time:21.03.2017 14:22:57 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 15:10:44 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 15:12:59 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 15:13:35 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 15:18:51 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 17:06:14 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 17:06:18 Message: Create DxfBulder
+Time:21.03.2017 17:18:37 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 17:18:39 Message: Create DxfBulder
+Time:21.03.2017 17:19:38 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 17:19:43 Message: Create DxfBulder
+Time:21.03.2017 17:19:49 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:49 Message: Start build Dxf file
+Time:21.03.2017 17:19:49 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 17:19:49 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 17:19:54 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 17:19:56 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:56 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 17:19:57 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26528.SLDPRT input id: 486638  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:57 Message: Start build Dxf file
+Time:21.03.2017 17:19:57 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:57 Message: 	Opened document 02-26528.SLDPRT
+Time:21.03.2017 17:19:57 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:57 Message: Start build Dxf file
+Time:21.03.2017 17:19:58 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:58 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 17:19:58 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26527.SLDPRT input id: 486636  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:58 Message: Start build Dxf file
+Time:21.03.2017 17:19:58 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:58 Message: 	Opened document 02-26527.SLDPRT
+Time:21.03.2017 17:19:58 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26534.SLDPRT input id: 486657  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:58 Message: Start build Dxf file
+Time:21.03.2017 17:19:59 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:59 Message: 	Opened document 02-26534.SLDPRT
+Time:21.03.2017 17:19:59 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Заглушка пластикова для т.о. 16х13.SLDPRT input id: 106816  input ver: 8
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:59 Message: Start build Dxf file
+Time:21.03.2017 17:19:59 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:59 Message: 	Opened document Заглушка пластикова для т.о. 16х13.SLDPRT
+Time:21.03.2017 17:19:59 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26512.SLDPRT input id: 486459  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:19:59 Message: Start build Dxf file
+Time:21.03.2017 17:19:59 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:19:59 Message: 	Opened document 02-26512.SLDPRT
+Time:21.03.2017 17:20:00 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 29
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:00 Message: Start build Dxf file
+Time:21.03.2017 17:20:00 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:00 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:21.03.2017 17:20:00 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 10
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:00 Message: Start build Dxf file
+Time:21.03.2017 17:20:01 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:01 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:21.03.2017 17:20:01 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26513.SLDPRT input id: 486458  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:01 Message: Start build Dxf file
+Time:21.03.2017 17:20:01 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:01 Message: 	Opened document 02-26513.SLDPRT
+Time:21.03.2017 17:20:01 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26511.SLDPRT input id: 486456  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:01 Message: Start build Dxf file
+Time:21.03.2017 17:20:02 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:02 Message: 	Opened document 02-26511.SLDPRT
+Time:21.03.2017 17:20:02 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 10
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:02 Message: Start build Dxf file
+Time:21.03.2017 17:20:02 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:02 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 17:20:02 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26526.SLDPRT input id: 486637  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:02 Message: Start build Dxf file
+Time:21.03.2017 17:20:03 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:03 Message: 	Opened document 02-26526.SLDPRT
+Time:21.03.2017 17:20:03 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 10
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:03 Message: Start build Dxf file
+Time:21.03.2017 17:20:03 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:03 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 17:20:03 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.273.SLDPRT input id: 447835  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:03 Message: Start build Dxf file
+Time:21.03.2017 17:20:04 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:04 Message: 	Opened document ВНС-901.46.273.SLDPRT
+Time:21.03.2017 17:20:04 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.274.SLDPRT input id: 447836  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:04 Message: Start build Dxf file
+Time:21.03.2017 17:20:04 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:04 Message: 	Opened document ВНС-901.46.274.SLDPRT
+Time:21.03.2017 17:20:04 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26542.SLDPRT input id: 486668  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:04 Message: Start build Dxf file
+Time:21.03.2017 17:20:04 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:04 Message: 	Opened document 02-26542.SLDPRT
+Time:21.03.2017 17:20:05 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26540.SLDPRT input id: 486667  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:05 Message: Start build Dxf file
+Time:21.03.2017 17:20:05 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:05 Message: 	Opened document 02-26540.SLDPRT
+Time:21.03.2017 17:20:05 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26541.SLDPRT input id: 486669  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:05 Message: Start build Dxf file

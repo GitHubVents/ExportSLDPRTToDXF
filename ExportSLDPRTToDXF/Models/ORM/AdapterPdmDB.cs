@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections;
+﻿using Patterns;
 using System.Collections.Generic;
 
 namespace ExportSLDPRTToDXF.Models.ORM
 {
-    public class AdapterPdmDB
+    public class AdapterPdmDB : Singeton <AdapterPdmDB>
     {
-        SWPlusDataContext DataContext;
+        SWPlusDataContext DataContext { get { return new SWPlusDataContext( ); } }
 
+        protected AdapterPdmDB( ): base()
+        {
 
-        public AdapterPdmDB(string connectionString )
-        {
-            DataContext = new SWPlusDataContext( );
-        }
-        public AdapterPdmDB( )
-        {
-            DataContext = new SWPlusDataContext( );
         }
         public IEnumerable<View_Part> Parts
         {

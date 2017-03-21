@@ -101,22 +101,24 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.26025F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.73975F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.75584F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.24416F));
             this.tableLayoutPanel3.Controls.Add(this.Search_btn, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.ConfigurationsComboBox, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(212, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(561, 29);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(942, 29);
             this.tableLayoutPanel3.TabIndex = 3;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // Search_btn
             // 
             this.Search_btn.Location = new System.Drawing.Point(3, 3);
             this.Search_btn.Name = "Search_btn";
-            this.Search_btn.Size = new System.Drawing.Size(73, 23);
+            this.Search_btn.Size = new System.Drawing.Size(132, 23);
             this.Search_btn.TabIndex = 4;
             this.Search_btn.Text = "Поиск";
             this.Search_btn.UseVisualStyleBackColor = true;
@@ -126,7 +128,7 @@
             // 
             this.ConfigurationsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ConfigurationsComboBox.FormattingEnabled = true;
-            this.ConfigurationsComboBox.Location = new System.Drawing.Point(83, 3);
+            this.ConfigurationsComboBox.Location = new System.Drawing.Point(142, 3);
             this.ConfigurationsComboBox.Name = "ConfigurationsComboBox";
             this.ConfigurationsComboBox.Size = new System.Drawing.Size(121, 21);
             this.ConfigurationsComboBox.TabIndex = 7;

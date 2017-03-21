@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Linq;
 using EPDM.Interop.epdm;
 using System.Windows.Forms;
-using System.Configuration;
-using System.Collections.Generic;
-using System.Collections;
 using System.Data.SqlClient;
-using System.Reflection;
 using ExportSLDPRTToDXF.Models.GUI;
 
 namespace ExportSLDPRTToDXF
@@ -83,8 +78,8 @@ namespace ExportSLDPRTToDXF
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    DxfPath = fbd.SelectedPath;
-                    DXFPath_txt.Text = DxfPath;
+                     //DxfPath = fbd.SelectedPath;
+                    DXFPath_txt.Text = fbd.SelectedPath;
                 }
             }
         }
@@ -124,15 +119,15 @@ namespace ExportSLDPRTToDXF
             DataForm.settings.SqlServerName = SQLName_textBox.Text;
             DataForm.settings.SQLPassword = Pass_textBox.Text;
             DataForm.settings.SQLUser = Login_textBox.Text;
-            DataForm.settings.DxfPath = DxfPath;
+            DataForm.settings.DxfPath = DXFPath_txt.Text;
             DataForm.settings.BoomId = (BOMcomboBox.SelectedItem as ComboboxItem).Id;
-
+           
 
             #endregion
 
             #region sql connection string build and save to settings <Commented out>
 
-             SqlConnectionStringBuilder.ApplicationName = "ExportSLDPRTToDXF.Properties.Settings.DBConnectionString";
+            SqlConnectionStringBuilder.ApplicationName = "ExportSLDPRTToDXF.Properties.Settings.DBConnectionString";
             SqlConnectionStringBuilder.DataSource = DataForm.settings.SqlServerName;
             SqlConnectionStringBuilder.InitialCatalog = DataForm.settings.DataBaseName;
             SqlConnectionStringBuilder.Password = DataForm.settings.SQLPassword;
@@ -142,10 +137,9 @@ namespace ExportSLDPRTToDXF
 
             DataForm.settings.DBConnectionString = SqlConnectionStringBuilder.ConnectionString;
             #endregion
-
             DataForm.settings.Save( );
-            DataForm.settings.Reload( );
-            SolidWorksPdmAdapter.Instance.AuthoLogin(DataForm.settings.VaultName, true);
+
+            SolidWorksPdmAdapter.Instance.AuthoLogin(DataForm.settings.VaultName, true); 
             SolidWorksPdmAdapter.Instance.BoomId = DataForm.settings.BoomId;
             this.Close( );
         }

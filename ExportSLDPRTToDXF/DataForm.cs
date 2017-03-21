@@ -13,31 +13,25 @@ namespace ExportSLDPRTToDXF
     public partial class DataForm : Form
     {
         #region fields
-      
-
-        /// <summary>
-        /// The AdapterPdmDB exemplare which the providing 
-        /// interface to work with PDM SolidWorks data base
-        /// </summary>
-        AdapterPdmDB AdapterPdmDB;
+         
         /// <summary>
         /// The FileModelPdm exemplar which contains 
         /// the main data about file in the PDM
         /// </summary>
         FileModelPdm  FileModelPdm;
 
-       internal static Properties.Settings settings { get; private set; } = Properties.Settings.Default; 
+       internal static Properties.Settings settings { get { /*Properties.Settings.Default.Reload( ); */return Properties.Settings.Default; } }   
         #endregion fields
 
         public DataForm()
         {
-           
-               AdapterPdmDB = new AdapterPdmDB( settings.DBConnectionString );
+             
+
 
             InitializeComponent();
-            Search_textBox.Text = "3535";
+            //Search_textBox.Text = "3535";
             Patterns.Observer.MessageObserver.Instance.ReceivedMessage += Instance_ReceivedMessage;
-            SolidWorksPdmAdapter.Instance.BoomId = DataForm.settings.BoomId;
+            SolidWorksPdmAdapter.Instance.BoomId = settings.BoomId ; 
             PdmLogin( );
         }         
 
@@ -85,7 +79,6 @@ namespace ExportSLDPRTToDXF
             {
                 MessageBox.Show("Error: " + (EdmResultErrorCodes_e)ex.ErrorCode);
             }
-
         }
 
         /// <summary>
@@ -145,17 +138,17 @@ namespace ExportSLDPRTToDXF
         /// <returns></returns>
         public Specification[] GetSpecification(string filePath, string configuration)
         {
-            var parts = AdapterPdmDB.Parts;         
-
-                var bomShell =  SolidWorksPdmAdapter.Instance.GetBomShell(filePath, configuration);
-            if (bomShell != null)
+            try
             {
-                IEnumerable<Specification> specifications = null;
-                try
-                { 
+                var parts = AdapterPdmDB.Instance.Parts;
+                var bomShell = SolidWorksPdmAdapter.Instance.GetBomShell(filePath, configuration);
+                if (bomShell != null)
+                {
+                    IEnumerable<Specification> specifications = null;
+
                     specifications = from eachBom in bomShell
-                                     join eachPart in parts on new { id =  eachBom.IdPdm, ver =  eachBom.Version, conf = eachBom.Configuration }
-                                        equals new { id =  (int)eachPart.IDPDM, ver =  eachPart.Version, conf = eachPart.ConfigurationName }
+                                     join eachPart in parts on new { id = eachBom.IdPdm, ver = eachBom.Version, conf = eachBom.Configuration }
+                                        equals new { id = (int)eachPart.IDPDM, ver = eachPart.Version, conf = eachPart.ConfigurationName }
                                         into Spec_s
                                      from spec in Spec_s.DefaultIfEmpty( )
                                      select new Specification
@@ -166,10 +159,10 @@ namespace ExportSLDPRTToDXF
                                          Configuration = eachBom.Configuration,
                                          IDPDM = eachBom.IdPdm,
 
-                                         Bend =  (spec == null ? 0 : spec.Bend),
-                                         PaintX =  (spec == null ? 0 : spec.PaintX),
-                                         PaintY =  (spec == null ? 0 : spec.PaintY),
-                                         PaintZ =  (spec == null ? 0 : spec.PaintZ),
+                                         Bend = (spec == null ? 0 : spec.Bend),
+                                         PaintX = (spec == null ? 0 : spec.PaintX),
+                                         PaintY = (spec == null ? 0 : spec.PaintY),
+                                         PaintZ = (spec == null ? 0 : spec.PaintZ),
                                          WorkpieceX = (spec == null ? 0 : spec.WorkpieceX),
                                          WorkpieceY = (spec == null ? 0 : spec.WorkpieceY),
                                          SurfaceArea = (spec == null ? 0 : spec.SurfaceArea),
@@ -180,14 +173,16 @@ namespace ExportSLDPRTToDXF
                                      };
 
                     return specifications.ToArray( );
+
+
                 }
-                catch (Exception ex)
-                {
-                     MessageBox.Show( ex.ToString());
-                }
-               
+                
             }
-            return null;           
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString( ));
+            }
+            return null;
         }
 
 
@@ -225,7 +220,8 @@ namespace ExportSLDPRTToDXF
         private void UpLoadDxfButton_Click(object sender, EventArgs e)
         {
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
-
+            StatusForm statusForm = new StatusForm( );
+            statusForm.Show( );
             string pathToDxf = settings.DxfPath;
             if (String.IsNullOrEmpty(pathToDxf))
             {
@@ -238,31 +234,51 @@ namespace ExportSLDPRTToDXF
                 DxfBulder.DxfFolder = pathToDxf;
                 DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
                  SolidWorksPdmAdapter.Instance.GetEdmFile5(FileModelPdm.Path);
+
                 if (specification != null)
                 {
-                    foreach (var item in specification)
+                    var groupSpec = specification.GroupBy(each=>each.FilePath).Select(each=> new Specification
                     {
+                        Description = each.First().Description,
+                        PartNumber = each.First( ).PartNumber,
+                        Version = each.First( ).Version,
+                        Configuration = each.First( ).Configuration,
+                        IDPDM = each.First( ).IDPDM,
+                        Bend =  each.First( ).Bend,
+                        PaintX = each.First( ).PaintX,
+                        PaintY = each.First( ).PaintY,
+                        PaintZ = each.First( ).PaintZ,
+                        WorkpieceX = each.First( ).WorkpieceX,
+                        WorkpieceY = each.First( ).WorkpieceY,
+                        SurfaceArea = each.First( ).SurfaceArea,
+                        isDxf = each.First( ).isDxf  ,
+                        FileName = each.First( ).FileName,
+                        FilePath = each.First( ).FilePath,
+                        Thickness = each.First( ).Thickness
+                    });
+                    
+                    foreach (var item in groupSpec)
+                    {
+                        
                         if (!item.isDxf && Path.GetExtension(item.FileName).ToUpper() == ".SLDPRT")
-                        {
-                           
+                        { 
                             DxfBulder.Build(item.FilePath, item.IDPDM, item.Version);
-                        }
-                    }
+                        }                        
+                    }                     
                 }
                 SpecificationDataGrid.Update( );
                 SpecificationDataGrid.Refresh( );
             }
-
+            statusForm.Close( );
         }
         /// <summary>
         /// Выгрузка CutList для каждого построеного dxf
         /// </summary>
         /// <param name="dataToExport"></param>
         private void DxfBulder_FinishedBuilding(SolidWorksLibrary.Builders.Dxf.DataToExport dataToExport)
-        {
-            //MessageBox.Show($"DxfBulder_FinishedBuilding: x {dataToExport.PaintX}, Y  {dataToExport.PaintY}, Z {dataToExport.PaintZ}");
+        { 
 
-            AdapterPdmDB.UpDateCutList(  dataToExport.Configuration, 
+            AdapterPdmDB.Instance.UpDateCutList(  dataToExport.Configuration, 
                 dataToExport.DXFByte,
                 dataToExport.WorkpieceX,
                 dataToExport.WorkpieceY,  
@@ -296,6 +312,11 @@ namespace ExportSLDPRTToDXF
         private void ConfigurationsComboBox_MouseEnter(object sender, EventArgs e)
         {
             ToolTip.SetToolTip(ConfigurationsComboBox, "Список конфигураций");
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
