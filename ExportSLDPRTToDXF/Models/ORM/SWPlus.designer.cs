@@ -23,7 +23,7 @@ namespace ExportSLDPRTToDXF.Models.ORM
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SWPlusDB")]
-	public partial class PDMSolidWorksDBDataContext : System.Data.Linq.DataContext
+	public partial class SWPlusDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -32,31 +32,31 @@ namespace ExportSLDPRTToDXF.Models.ORM
     partial void OnCreated();
     #endregion
 		
-		public PDMSolidWorksDBDataContext() : 
-				base(global::ExportSLDPRTToDXF.Properties.Settings.Default.DataBaseConnectionString, mappingSource)
+		public SWPlusDataContext() : 
+				base(DataForm.settings.DBConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public PDMSolidWorksDBDataContext(string connection) : 
+		public SWPlusDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public PDMSolidWorksDBDataContext(System.Data.IDbConnection connection) : 
+		public SWPlusDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public PDMSolidWorksDBDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public SWPlusDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public PDMSolidWorksDBDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public SWPlusDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -70,6 +70,13 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFUpDateCutList")]
+		public int DXFUpDateCutList([global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceX", DbType="Decimal(10,2)")] System.Nullable<decimal> workpieceX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceY", DbType="Decimal(10,2)")] System.Nullable<decimal> workpieceY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Bend", DbType="Int")] System.Nullable<int> bend, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thickness", DbType="Decimal(10,2)")] System.Nullable<decimal> thickness, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintX", DbType="Int")] System.Nullable<int> paintX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintY", DbType="Int")] System.Nullable<int> paintY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintZ", DbType="Int")] System.Nullable<int> paintZ, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaterialID", DbType="Int")] System.Nullable<int> materialID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SurfaceArea", DbType="Decimal(10,3)")] System.Nullable<decimal> surfaceArea, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DXF", DbType="VarBinary(MAX)")] System.Data.Linq.Binary dXF)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), workpieceX, workpieceY, bend, thickness, configuration, version, paintX, paintY, paintZ, iDPDM, materialID, surfaceArea, dXF);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFCheck")]
 		public int DXFCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version)
 		{
@@ -77,10 +84,10 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFUpDateCutList")]
-		public int DXFUpDateCutList([global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceX", DbType="Real")] System.Nullable<float> workpieceX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="WorkpieceY", DbType="Real")] System.Nullable<float> workpieceY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Bend", DbType="Int")] System.Nullable<int> bend, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thickness", DbType="Real")] System.Nullable<float> thickness, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintX", DbType="Int")] System.Nullable<int> paintX, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintY", DbType="Int")] System.Nullable<int> paintY, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PaintZ", DbType="Int")] System.Nullable<int> paintZ, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MaterialID", DbType="Int")] System.Nullable<int> materialID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SurfaceArea", DbType="Real")] System.Nullable<float> surfaceArea, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DXF", DbType="VarBinary(MAX)")] System.Data.Linq.Binary dXF)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXFDelete")]
+		public int DXFDelete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), workpieceX, workpieceY, bend, thickness, configuration, version, paintX, paintY, paintZ, iDPDM, materialID, surfaceArea, dXF);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDPDM, configuration, version);
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -97,15 +104,15 @@ namespace ExportSLDPRTToDXF.Models.ORM
 		
 		private int _PaintZ;
 		
-		private double _SurfaceArea;
+		private decimal _SurfaceArea;
 		
-		private double _Thickness;
+		private decimal _Thickness;
 		
 		private int _Version;
 		
-		private double _WorkpieceX;
+		private decimal _WorkpieceX;
 		
-		private double _WorkpieceY;
+		private decimal _WorkpieceY;
 		
 		private System.Nullable<int> _IDPDM;
 		
@@ -181,8 +188,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SurfaceArea", DbType="Float NOT NULL")]
-		public double SurfaceArea
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SurfaceArea", DbType="Decimal(10,3) NOT NULL")]
+		public decimal SurfaceArea
 		{
 			get
 			{
@@ -197,8 +204,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thickness", DbType="Float NOT NULL")]
-		public double Thickness
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Thickness", DbType="Decimal(10,2) NOT NULL")]
+		public decimal Thickness
 		{
 			get
 			{
@@ -229,8 +236,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceX", DbType="Float NOT NULL")]
-		public double WorkpieceX
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceX", DbType="Decimal(10,2) NOT NULL")]
+		public decimal WorkpieceX
 		{
 			get
 			{
@@ -245,8 +252,8 @@ namespace ExportSLDPRTToDXF.Models.ORM
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceY", DbType="Float NOT NULL")]
-		public double WorkpieceY
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkpieceY", DbType="Decimal(10,2) NOT NULL")]
+		public decimal WorkpieceY
 		{
 			get
 			{

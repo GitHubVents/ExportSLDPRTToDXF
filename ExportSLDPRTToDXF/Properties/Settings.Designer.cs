@@ -25,7 +25,7 @@ namespace ExportSLDPRTToDXF.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Vents-Pdm")]
         public string VaultName {
             get {
                 return ((string)(this["VaultName"]));
@@ -47,17 +47,6 @@ namespace ExportSLDPRTToDXF.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=Ai" +
-            "rVentsCad;Password=1")]
-        public string DataBaseConnectionString {
-            get {
-                return ((string)(this["DataBaseConnectionString"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
@@ -67,6 +56,78 @@ namespace ExportSLDPRTToDXF.Properties {
             }
             set {
                 this["BoomId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string SQLPassword {
+            get {
+                return ((string)(this["SQLPassword"]));
+            }
+            set {
+                this["SQLPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SwPlusDB")]
+        public string DataBaseName {
+            get {
+                return ((string)(this["DataBaseName"]));
+            }
+            set {
+                this["DataBaseName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("PDMSRV")]
+        public string SqlServerName {
+            get {
+                return ((string)(this["SqlServerName"]));
+            }
+            set {
+                this["SqlServerName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AirVentsCad")]
+        public string SQLUser {
+            get {
+                return ((string)(this["SQLUser"]));
+            }
+            set {
+                this["SQLUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=Ai" +
+            "rVentsCad;Password=1")]
+        public string DBConnectionString {
+            get {
+                return ((string)(this["DBConnectionString"]));
+            }
+            set {
+                this["DBConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=Ai" +
+            "rVentsCad")]
+        public string SWPlusDBConnectionString {
+            get {
+                return ((string)(this["SWPlusDBConnectionString"]));
             }
         }
     }

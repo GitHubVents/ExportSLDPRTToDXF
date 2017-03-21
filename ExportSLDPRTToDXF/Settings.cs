@@ -5,26 +5,47 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Collections.Generic;
 using System.Collections;
+using System.Data.SqlClient;
+using System.Reflection;
+using ExportSLDPRTToDXF.Models.GUI;
+
 namespace ExportSLDPRTToDXF
 {
 
     public partial class SettingsForm : Form
     {
-        string dxfPath;
-        SolidWorksPdmAdapter PDMAdapter = new SolidWorksPdmAdapter();
 
+        #region Properties
+        /// <summary>
+        /// Path where to save dxf files
+        /// </summary>
+        private string DxfPath { get; set; }
+ 
+
+        /// <summary>
+        /// Component for build connection string to data base
+        /// </summary>
+        private  SqlConnectionStringBuilder SqlConnectionStringBuilder { get; set; }
+
+        /// <summary>
+        /// Bom Layouts array
+        /// </summary>
+        EdmBomLayout[] edmBomLayouts { get; set; }
+        #endregion
 
         public SettingsForm( )
         {
             InitializeComponent( );
 
+            SqlConnectionStringBuilder = new SqlConnectionStringBuilder(); 
+
             try
             {
+               
                 VaultsComboBox.Items.Clear( );
                 BOMcomboBox.Items.Clear( );
 
-
-                var vaultViews = PDMAdapter.GetVaultViews( );
+                var vaultViews =  SolidWorksPdmAdapter.Instance.GetVaultViews( );
 
                 foreach (EdmViewInfo View in vaultViews)
                 {
@@ -34,7 +55,8 @@ namespace ExportSLDPRTToDXF
                 {
                     VaultsComboBox.Text = (string)VaultsComboBox.Items[0];
                 }
-              ConnectionStrToDBTextBox.Text =  Properties.Settings.Default.DataBaseConnectionString;
+
+                LoadSettings( );
             }
             catch (System.Runtime.InteropServices.COMException ex)
             {
@@ -45,13 +67,14 @@ namespace ExportSLDPRTToDXF
                 MessageBox.Show(ex.ToString( ));
             }
 
-
-            //  DataForm.settings.DxfPath  
-            DXFPath_txt.Text = DataForm.settings.DxfPath;
         }
 
 
-
+        /// <summary>
+        /// The show dialog for choose folder where save dxf files 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FolderDXF_Click(object sender, EventArgs e)
         {
             using (var fbd = new FolderBrowserDialog( ))
@@ -60,66 +83,99 @@ namespace ExportSLDPRTToDXF
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    dxfPath = fbd.SelectedPath;
-                    DXFPath_txt.Text = dxfPath;
+                    DxfPath = fbd.SelectedPath;
+                    DXFPath_txt.Text = DxfPath;
                 }
             }
         }
- 
 
+      
 
-        EdmBomLayout[] edmBomLayouts;
+        /// <summary>
+        /// Handle selected vault
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void VaultsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            PDMAdapter.AuthoLogin( VaultsComboBox.SelectedItem.ToString());
-            edmBomLayouts = PDMAdapter.GetBoom(VaultsComboBox.SelectedItem.ToString());
+
+            edmBomLayouts =  SolidWorksPdmAdapter.Instance.GetBoom(VaultsComboBox.SelectedItem.ToString( ));
 
             foreach (var item in edmBomLayouts)
-            { 
-                BOMcomboBox.Items.Add(new ComboboxItem(item.mbsLayoutName,item.mlLayoutID));
+            {
+                BOMcomboBox.Items.Add(new ComboboxItem(item.mbsLayoutName, item.mlLayoutID));
             }
             if (BOMcomboBox.Items.Count > 0)
             {
-                BOMcomboBox.Text = BOMcomboBox.Items[0].ToString();
-            }
-
-        }
-
-        public class ComboboxItem
-        {
-            public string Text { get; set; }
-            public int Id { get; set; }
-
-            public ComboboxItem(string text, int id)
-            { 
-                Text = text;
-                Id = id;
-            }
-            public override string ToString( )
-            {
-                return Text;
+                BOMcomboBox.Text = BOMcomboBox.Items[0].ToString( );
             }
         }
 
+        /// <summary>
+        /// Save all changes to settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveSettings_Click(object sender, EventArgs e)
-        { 
-            DataForm.settings.VaultName= VaultsComboBox.SelectedItem.ToString( );           
-            DataForm.settings.DxfPath = dxfPath;
+        {
+            #region get settings from GUI controlls
+            DataForm.settings.VaultName = VaultsComboBox.SelectedItem.ToString( );
+            DataForm.settings.DataBaseName = SQLDB_textBox.Text;
+            DataForm.settings.SqlServerName = SQLName_textBox.Text;
+            DataForm.settings.SQLPassword = Pass_textBox.Text;
+            DataForm.settings.SQLUser = Login_textBox.Text;
+            DataForm.settings.DxfPath = DxfPath;
             DataForm.settings.BoomId = (BOMcomboBox.SelectedItem as ComboboxItem).Id;
+
+
+            #endregion
+
+            #region sql connection string build and save to settings <Commented out>
+
+             SqlConnectionStringBuilder.ApplicationName = "ExportSLDPRTToDXF.Properties.Settings.DBConnectionString";
+            SqlConnectionStringBuilder.DataSource = DataForm.settings.SqlServerName;
+            SqlConnectionStringBuilder.InitialCatalog = DataForm.settings.DataBaseName;
+            SqlConnectionStringBuilder.Password = DataForm.settings.SQLPassword;
+            SqlConnectionStringBuilder.UserID = DataForm.settings.SQLUser;
+            SqlConnectionStringBuilder.IntegratedSecurity = false;
+            SqlConnectionStringBuilder.PersistSecurityInfo = true;
+
+            DataForm.settings.DBConnectionString = SqlConnectionStringBuilder.ConnectionString;
+            #endregion
+
             DataForm.settings.Save( );
-
+            DataForm.settings.Reload( );
+            SolidWorksPdmAdapter.Instance.AuthoLogin(DataForm.settings.VaultName, true);
+            SolidWorksPdmAdapter.Instance.BoomId = DataForm.settings.BoomId;
             this.Close( );
         }
 
-        private void ClouseSettings_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Close settings form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CloseSettings_Click(object sender, EventArgs e)
         {
             this.Close( );
         }
 
-        private void Settings_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Load settings and fill controlls 
+        /// </summary>
+        private void LoadSettings( )
         {
+            DXFPath_txt.Text = DataForm.settings.DxfPath;
+            SQLDB_textBox.Text = DataForm.settings.DataBaseName;
+            SQLName_textBox.Text = DataForm.settings.SqlServerName;
+            Login_textBox.Text = DataForm.settings.SQLUser;
+            Pass_textBox.Text = DataForm.settings.SQLPassword;
+            if (DataForm.settings.VaultName != null)
+                VaultsComboBox.SelectedItem = VaultsComboBox.GetItemText(DataForm.settings.VaultName);
+            if (DataForm.settings.BoomId != 0)
+                BOMcomboBox.SelectedItem = BOMcomboBox.GetItemByValue(DataForm.settings.BoomId);
             
-
         }
+
     }
 }

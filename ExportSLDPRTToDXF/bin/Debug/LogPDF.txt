@@ -1,933 +1,1106 @@
-﻿Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Поиск успешно завершон, найдено объектов 149 по запросу %535%
-Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   в System.Convert.ToInt32(String value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:47:03 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:47:06 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:47:53 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:47:55 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:50:54 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:50:55 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:50:55 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:05 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:08 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:08 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:08 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:09 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:11 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:51:11 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:52:36 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:52:38 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:53:26 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:53:27 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 285
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 283
-Time:17.03.2017 13:55:01 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 13:55:02 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:04:51 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 14:04:53 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:05:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 14:05:11 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:04 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 14:06:05 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:05 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:10 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:10 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:12 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:13 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:16 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:16 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:22 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:25 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:27 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:30 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:39 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:06:39 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:07:44 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 14:07:45 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 14:08:35 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 14:08:37 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
-   в System.String.System.IConvertible.ToDouble(IFormatProvider provider)
-   в System.Convert.ToDouble(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 15:04:11 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:05:08 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:05:09 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
-   в System.Convert.ToInt32(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 15:05:10 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
-   в System.Convert.ToInt32(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 15:05:10 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
-   в System.Convert.ToInt32(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 15:05:10 Message: Failed get bom shell list: System.FormatException: Входная строка имела неверный формат.
-   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
-   в System.Convert.ToInt32(Object value)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__16_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 288
-   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
-   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
-   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
-   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
-   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 286
-Time:17.03.2017 15:05:30 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:07:36 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:10:14 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:13:23 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:14:47 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:15:52 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:16:25 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:17:08 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:18:41 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:19:08 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:20:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:21:46 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:22:35 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:24:31 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:25:14 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:44:02 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:45:34 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:47:49 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:48:33 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:49:03 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:52:19 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:53:39 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:55:39 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:56:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:57:43 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 15:59:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:00:12 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:00:46 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:04:39 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:05:36 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:05:59 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:06:41 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:07:01 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:09:41 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:09:55 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:12:55 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:13:28 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:14:00 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:16:25 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:17:36 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:18:14 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:21:26 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:23:15 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:24:54 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:28:56 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:33:33 Message: Поиск по запросу %3535% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
+Time:21.03.2017 11:17:15 Message: Поиск успешно завершон, найдено объектов 35 по запросу %3540%
+Time:21.03.2017 11:17:26 Message: Поиск успешно завершон, найдено объектов 28 по запросу %003540%
+Time:21.03.2017 11:17:30 Message: Поиск успешно завершон, найдено объектов 8 по запросу %003540.%
+Time:21.03.2017 11:18:33 Message: Create DxfBulder
+Time:21.03.2017 11:22:35 Message: Поиск по запросу %003540.% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
    в EPDM.Interop.epdm.IEdmVault7.CreateUtility(EdmUtility eType)
    в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 78 в связи с чем возвращена пустая колекция FileModelPdm
-Time:17.03.2017 16:33:41 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:33:55 Message: Create DxfBulder
-Time:17.03.2017 16:33:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-3535.SLDASM input id: 379428  input ver: 1
- Thread sleep 4 sec.
-Time:17.03.2017 16:33:55 Message: Start build Dxf file
-Time:17.03.2017 16:33:55 Message: Initialize SolidWorks exemplare
-Time:17.03.2017 16:33:55 Message: 		Take an existing exemplar SolidWorks Application
-Time:17.03.2017 16:34:04 Message: Error at open solid works document: code {65536}, description error {swFileWithSameTitleAlreadyOpen}
-Time:17.03.2017 16:34:04 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 171
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:34:11 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:34:11 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:11 Message: Start build Dxf file
-Time:17.03.2017 16:34:12 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:12 Message: 	Opened document 02-17824.SLDPRT
-Time:17.03.2017 16:34:12 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:12 Message: Start build Dxf file
-Time:17.03.2017 16:34:12 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:12 Message: 	Opened document 02-29-1-17823.SLDPRT
-Time:17.03.2017 16:34:12 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:34:12 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:34:12 Message: 	 Show configuration 00
-Time:17.03.2017 16:34:22 Message: end FixOneBand
-Time:17.03.2017 16:34:22 Message: 	 Fix bends 00
-Time:17.03.2017 16:34:24 Message: 	Completed building 02-29-1-17823.SLDPRT with configuration "00"
-Time:17.03.2017 16:34:24 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:34:24 Message: 
- line 75 cut list: 900.02
-
-Time:17.03.2017 16:34:27 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:27 Message: Start build Dxf file
-Time:17.03.2017 16:34:27 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:27 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
-Time:17.03.2017 16:34:27 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:27 Message: Start build Dxf file
-Time:17.03.2017 16:34:27 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:27 Message: 	Opened document 02-6733.SLDPRT
-Time:17.03.2017 16:34:27 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:27 Message: Start build Dxf file
-Time:17.03.2017 16:34:27 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:27 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:34:27 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:27 Message: Start build Dxf file
-Time:17.03.2017 16:34:27 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:27 Message: 	Opened document 02-17825.SLDPRT
-Time:17.03.2017 16:34:27 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:34:27 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:34:27 Message: 	 Show configuration 00
-Time:17.03.2017 16:34:31 Message: end FixOneBand
-Time:17.03.2017 16:34:31 Message: 	 Fix bends 00
-Time:17.03.2017 16:34:34 Message: 	Completed building 02-17825.SLDPRT with configuration "00"
-Time:17.03.2017 16:34:34 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:34:34 Message: 
- line 75 cut list: 785
-
-Time:17.03.2017 16:34:35 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:34:35 Message: Start build Dxf file
-Time:17.03.2017 16:34:36 Message: Warning at open solid works document: code {128}, description warning {0}
-Time:17.03.2017 16:34:36 Message: 	Opened document 02-6734.SLDPRT
-Time:17.03.2017 16:36:27 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:36:44 Message: Create DxfBulder
-Time:17.03.2017 16:36:44 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:36:44 Message: Start build Dxf file
-Time:17.03.2017 16:36:44 Message: Initialize SolidWorks exemplare
-Time:17.03.2017 16:36:44 Message: 		Take an existing exemplar SolidWorks Application
-Time:17.03.2017 16:36:44 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:36:44 Message: 	Opened document 02-17824.SLDPRT
-Time:17.03.2017 16:36:44 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:36:44 Message: Start build Dxf file
-Time:17.03.2017 16:36:45 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:36:45 Message: 	Opened document 02-29-1-17823.SLDPRT
-Time:17.03.2017 16:36:45 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:36:45 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:36:45 Message: 	 Show configuration 00
-Time:17.03.2017 16:36:57 Message: end FixOneBand
-Time:17.03.2017 16:36:57 Message: 	 Fix bends 00
-Time:17.03.2017 16:37:04 Message: 	Completed building 02-29-1-17823.SLDPRT with configuration "00"
-Time:17.03.2017 16:37:05 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:37:05 Message: 
- line 75 cut list: 900.02
-
-Time:17.03.2017 16:37:08 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:37:08 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
- Thread sleep 4 sec.
-Time:17.03.2017 16:37:08 Message: Start build Dxf file
-Time:17.03.2017 16:37:09 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
-Time:17.03.2017 16:37:09 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:37:09 Message: Start build Dxf file
-Time:17.03.2017 16:37:09 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:37:09 Message: 	Opened document 02-6733.SLDPRT
-Time:17.03.2017 16:37:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
- Thread sleep 4 sec.
-Time:17.03.2017 16:37:09 Message: Start build Dxf file
-Time:17.03.2017 16:37:10 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:37:10 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:37:10 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
- Thread sleep 4 sec.
-Time:17.03.2017 16:37:10 Message: Start build Dxf file
-Time:17.03.2017 16:37:10 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:37:10 Message: 	Opened document 02-17825.SLDPRT
-Time:17.03.2017 16:37:10 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:37:10 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:37:10 Message: 	 Show configuration 00
-Time:17.03.2017 16:37:15 Message: end FixOneBand
-Time:17.03.2017 16:37:15 Message: 	 Fix bends 00
-Time:17.03.2017 16:37:17 Message: 	Completed building 02-17825.SLDPRT with configuration "00"
-Time:17.03.2017 16:37:17 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:37:17 Message: 
- line 75 cut list: 785
-
-Time:17.03.2017 16:37:18 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:37:19 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:37:19 Message: Start build Dxf file
-Time:17.03.2017 16:37:19 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:37:19 Message: 	Opened document 02-6734.SLDPRT
-Time:17.03.2017 16:38:24 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:38:24 Message: Start build Dxf file
-Time:17.03.2017 16:38:24 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:38:27 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:38:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
- Thread sleep 4 sec.
-Time:17.03.2017 16:38:28 Message: Start build Dxf file
-Time:17.03.2017 16:38:28 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:38:29 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:38:30 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:38:30 Message: Start build Dxf file
-Time:17.03.2017 16:38:30 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:38:31 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:38:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
- Thread sleep 4 sec.
-Time:17.03.2017 16:38:32 Message: Start build Dxf file
-Time:17.03.2017 16:38:32 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:38:32 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:38:33 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:38:33 Message: Start build Dxf file
-Time:17.03.2017 16:38:33 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:38:34 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:38:55 Message: Поиск успешно завершон, найдено объектов 0 по запросу %902.45.%
-Time:17.03.2017 16:39:00 Message: Поиск успешно завершон, найдено объектов 0 по запросу %902.45.%
-Time:17.03.2017 16:39:09 Message: Поиск успешно завершон, найдено объектов 1543 по запросу %901.45.%
-Time:17.03.2017 16:39:18 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 09 Б\Фильтр карманний G4 АВ 09 Б\ВНС-901.45.379.SLDPRT input id: 92701  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:39:18 Message: Start build Dxf file
-Time:17.03.2017 16:39:18 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:39:22 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:39:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Материалы\Нить.SLDPRT input id: 6692  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:39:31 Message: Start build Dxf file
-Time:17.03.2017 16:39:31 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:39:33 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:40:20 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 09 Б\Фильтр карманний G4 АВ 09 Б\ВНС-901.45.379.SLDPRT input id: 92701  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:40:20 Message: Start build Dxf file
-Time:17.03.2017 16:40:20 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:40:23 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:40:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Материалы\Нить.SLDPRT input id: 6692  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:40:24 Message: Start build Dxf file
-Time:17.03.2017 16:40:24 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
-   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
-Time:17.03.2017 16:40:25 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
-   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
-Time:17.03.2017 16:52:56 Message: Поиск по запросу %3535% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
+Time:21.03.2017 11:22:41 Message: Поиск успешно завершон, найдено объектов 8 по запросу %003540.%
+Time:21.03.2017 11:22:48 Message: Create DxfBulder
+Time:21.03.2017 11:28:25 Message: Поиск по запросу %003540.% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
    в EPDM.Interop.epdm.IEdmVault7.CreateUtility(EdmUtility eType)
    в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 78 в связи с чем возвращена пустая колекция FileModelPdm
-Time:17.03.2017 16:53:04 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:53:40 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:54:18 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
-Time:17.03.2017 16:54:33 Message: Поиск успешно завершон, найдено объектов 125 по запросу %902.35%
-Time:17.03.2017 16:54:38 Message: Create DxfBulder
-Time:17.03.2017 16:54:42 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.32.000 - ДВУТ CIVIC D 300 П ЕС\ВНС-902.32.156.SLDPRT input id: 429974  input ver: 10
+Time:21.03.2017 11:28:33 Message: Поиск успешно завершон, найдено объектов 8 по запросу %003540.%
+Time:21.03.2017 11:28:40 Message: Create DxfBulder
+Time:21.03.2017 11:29:28 Message: Поиск успешно завершон, найдено объектов 8 по запросу %003540.%
+Time:21.03.2017 11:29:32 Message: Create DxfBulder
+Time:21.03.2017 11:29:52 Message: Поиск успешно завершон, найдено объектов 8 по запросу %003540.%
+Time:21.03.2017 11:29:58 Message: Create DxfBulder
+Time:21.03.2017 11:31:03 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт самосверл 6-гр.гол с шайбой.SLDPRT input id: 39370  input ver: 6
  Thread sleep 4 sec.
-Time:17.03.2017 16:54:42 Message: Start build Dxf file
-Time:17.03.2017 16:54:42 Message: Initialize SolidWorks exemplare
-Time:17.03.2017 16:54:51 Message: 		Take an existing exemplar SolidWorks Application
-Time:17.03.2017 16:54:54 Message: 	Opened document ВНС-902.32.156.SLDPRT
-Time:17.03.2017 16:54:56 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+Time:21.03.2017 11:31:03 Message: Start build Dxf file
+Time:21.03.2017 11:31:03 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:31:03 Message: 		Take an existing exemplar SolidWorks Application
+Time:21.03.2017 11:31:17 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 11:31:17 Message: 	Opened document Винт самосверл 6-гр.гол с шайбой.SLDPRT
+Time:21.03.2017 11:31:19 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:54:56 Message: Start build Dxf file
-Time:17.03.2017 16:54:56 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:54:56 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:54:56 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Втулка универсальная М20.SLDPRT input id: 6591  input ver: 7
+Time:21.03.2017 11:31:19 Message: Start build Dxf file
+Time:21.03.2017 11:31:20 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:20 Message: 		 debug: input path D:\Vents-PDM\Проекты\Промышленная вентиляция\ВНС-460.01.000 - Клапан дымоудаления КПДУ\ВНС-460.01.103.SLDPRT input id: 6371  input ver: 8
  Thread sleep 4 sec.
-Time:17.03.2017 16:54:56 Message: Start build Dxf file
-Time:17.03.2017 16:54:57 Message: 	Opened document Втулка универсальная М20.SLDPRT
-Time:17.03.2017 16:54:57 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+Time:21.03.2017 11:31:20 Message: Start build Dxf file
+Time:21.03.2017 11:31:21 Message: 	Opened document ВНС-460.01.103.SLDPRT
+Time:21.03.2017 11:31:21 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\13 - Патрубок противодождевой\13-30-1440-500-009.SLDPRT input id: 560642  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:54:57 Message: Start build Dxf file
-Time:17.03.2017 16:54:57 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:54:57 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:54:57 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+Time:21.03.2017 11:31:21 Message: Start build Dxf file
+Time:21.03.2017 11:31:22 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 11:31:22 Message: 	Opened document 13-30-1440-500-009.SLDPRT
+Time:21.03.2017 11:31:26 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:54:57 Message: Start build Dxf file
-Time:17.03.2017 16:54:58 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:54:58 Message: 	Opened document Threaded Rivets.sldprt
-Time:17.03.2017 16:55:22 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.32.000 - ДВУТ CIVIC D 300 П ЕС\ВНС-902.32.008.SLDPRT input id: 459976  input ver: 4
+Time:21.03.2017 11:31:26 Message: Start build Dxf file
+Time:21.03.2017 11:31:27 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:27 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:22 Message: Start build Dxf file
-Time:17.03.2017 16:55:23 Message: 	Opened document ВНС-902.32.008.SLDPRT
-Time:17.03.2017 16:55:23 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.159.SLDPRT input id: 543706  input ver: 3
+Time:21.03.2017 11:31:27 Message: Start build Dxf file
+Time:21.03.2017 11:31:28 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:31:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:23 Message: Start build Dxf file
-Time:17.03.2017 16:55:24 Message: 	Opened document ВНС-902.35.159.SLDPRT
-Time:17.03.2017 16:55:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+Time:21.03.2017 11:31:28 Message: Start build Dxf file
+Time:21.03.2017 11:31:29 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:31:29 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Nut 5915_gost.sldprt input id: 30751  input ver: 18
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:24 Message: Start build Dxf file
-Time:17.03.2017 16:55:25 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:55:25 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:55:48 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.302.SLDPRT input id: 547547  input ver: 5
+Time:21.03.2017 11:31:29 Message: Start build Dxf file
+Time:21.03.2017 11:31:29 Message: 	Opened document Hex Nut 5915_gost.sldprt
+Time:21.03.2017 11:31:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:48 Message: Start build Dxf file
-Time:17.03.2017 16:55:49 Message: 	Opened document ВНС-902.35.302.SLDPRT
-Time:17.03.2017 16:55:49 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:55:49 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:55:49 Message: 	 Show configuration 00
-Time:17.03.2017 16:55:55 Message: end FixOneBand
-Time:17.03.2017 16:55:55 Message: 	 Fix bends 00
-Time:17.03.2017 16:55:57 Message: 	Completed building ВНС-902.35.302.SLDPRT with configuration "00"
-Time:17.03.2017 16:55:58 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:55:58 Message: 
- line 75 cut list: 90.5
+Time:21.03.2017 11:31:30 Message: Start build Dxf file
+Time:21.03.2017 11:31:30 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:31:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:30 Message: Start build Dxf file
+Time:21.03.2017 11:31:31 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:31:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Nut 5915_gost.sldprt input id: 30751  input ver: 18
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:31 Message: Start build Dxf file
+Time:21.03.2017 11:31:32 Message: 	Opened document Hex Nut 5915_gost.sldprt
+Time:21.03.2017 11:31:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Bolt 7805_gost.sldprt input id: 30753  input ver: 70
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:32 Message: Start build Dxf file
+Time:21.03.2017 11:31:33 Message: 	Opened document Hex Bolt 7805_gost.sldprt
+Time:21.03.2017 11:31:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:33 Message: Start build Dxf file
+Time:21.03.2017 11:31:34 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:31:34 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:34 Message: Start build Dxf file
+Time:21.03.2017 11:31:35 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:31:35 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Bolt 7805_gost.sldprt input id: 30753  input ver: 70
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:35 Message: Start build Dxf file
+Time:21.03.2017 11:31:36 Message: 	Opened document Hex Bolt 7805_gost.sldprt
+Time:21.03.2017 11:31:36 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-1490.SLDPRT input id: 92797  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:36 Message: Start build Dxf file
+Time:21.03.2017 11:31:38 Message: 	Opened document 01-P150-45-1490.SLDPRT
+Time:21.03.2017 11:31:38 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-275-1080.SLDPRT input id: 560147  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:38 Message: Start build Dxf file
+Time:21.03.2017 11:31:39 Message: 	Opened document 02-03-275-1080.SLDPRT
+Time:21.03.2017 11:31:39 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-275-1080.SLDPRT input id: 560146  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:39 Message: Start build Dxf file
+Time:21.03.2017 11:31:40 Message: 	Opened document 02-04-275-1080.SLDPRT
+Time:21.03.2017 11:31:40 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:40 Message: Start build Dxf file
+Time:21.03.2017 11:31:40 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:41 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-275-1530.SLDPRT input id: 560111  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:41 Message: Start build Dxf file
+Time:21.03.2017 11:31:42 Message: 	Opened document 02-03-275-1530.SLDPRT
+Time:21.03.2017 11:31:43 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-275-1530.SLDPRT input id: 560110  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:43 Message: Start build Dxf file
+Time:21.03.2017 11:31:44 Message: 	Opened document 02-04-275-1530.SLDPRT
+Time:21.03.2017 11:31:45 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:45 Message: Start build Dxf file
+Time:21.03.2017 11:31:46 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:46 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Теплообменники\WATER HEATER.SLDPRT input id: 6675  input ver: 82
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:46 Message: Start build Dxf file
+Time:21.03.2017 11:31:47 Message: 	Opened document WATER HEATER.SLDPRT
+Time:21.03.2017 11:31:47 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:47 Message: Start build Dxf file
+Time:21.03.2017 11:31:48 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:31:48 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P252-45-1530.SLDPRT input id: 93369  input ver: 4
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:48 Message: Start build Dxf file
+Time:21.03.2017 11:31:49 Message: 	Opened document 01-P252-45-1530.SLDPRT
+Time:21.03.2017 11:31:49 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-1040.SLDPRT input id: 92795  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:49 Message: Start build Dxf file
+Time:21.03.2017 11:31:50 Message: 	Opened document 01-P150-45-1040.SLDPRT
+Time:21.03.2017 11:31:50 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-455-1080.SLDPRT input id: 560136  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:50 Message: Start build Dxf file
+Time:21.03.2017 11:31:51 Message: 	Opened document 02-03-455-1080.SLDPRT
+Time:21.03.2017 11:31:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:51 Message: Start build Dxf file
+Time:21.03.2017 11:31:52 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-455-1080.SLDPRT input id: 560140  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:52 Message: Start build Dxf file
+Time:21.03.2017 11:31:53 Message: 	Opened document 02-04-455-1080.SLDPRT
+Time:21.03.2017 11:31:53 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:53 Message: Start build Dxf file
+Time:21.03.2017 11:31:54 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:31:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:54 Message: Start build Dxf file
+Time:21.03.2017 11:31:55 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:31:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV09\ВНС-901.49.100 Блок вентилятора\ВНС-901.49.111.SLDPRT input id: 14175  input ver: 29
+ Thread sleep 4 sec.
+Time:21.03.2017 11:31:55 Message: Start build Dxf file
+Time:21.03.2017 11:32:03 Message: 	Opened document ВНС-901.49.111.SLDPRT
+Time:21.03.2017 11:32:03 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:03 Message: Start build Dxf file
+Time:21.03.2017 11:32:03 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:32:04 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:04 Message: Start build Dxf file
+Time:21.03.2017 11:32:05 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:21.03.2017 11:32:05 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:05 Message: Start build Dxf file
+Time:21.03.2017 11:32:06 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:06 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-455-1080.SLDPRT input id: 560136  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:06 Message: Start build Dxf file
+Time:21.03.2017 11:32:07 Message: 	Opened document 02-03-455-1080.SLDPRT
+Time:21.03.2017 11:32:07 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 30
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:07 Message: Start build Dxf file
+Time:21.03.2017 11:32:08 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:21.03.2017 11:32:08 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-455-1080.SLDPRT input id: 560140  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:08 Message: Start build Dxf file
+Time:21.03.2017 11:32:09 Message: 	Opened document 02-04-455-1080.SLDPRT
+Time:21.03.2017 11:32:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 O.SLDPRT input id: 8  input ver: 8
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:09 Message: Start build Dxf file
+Time:21.03.2017 11:32:10 Message: 	Opened document Винт саморез DIN 7504 O.SLDPRT
+Time:21.03.2017 11:32:10 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P252-45-1080.SLDPRT input id: 92799  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:10 Message: Start build Dxf file
+Time:21.03.2017 11:32:11 Message: 	Opened document 01-P252-45-1080.SLDPRT
+Time:21.03.2017 11:32:11 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-455-1530.SLDPRT input id: 560118  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:11 Message: Start build Dxf file
+Time:21.03.2017 11:32:12 Message: 	Opened document 02-03-455-1530.SLDPRT
+Time:21.03.2017 11:32:12 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:12 Message: Start build Dxf file
+Time:21.03.2017 11:32:13 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:13 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-455-1530.SLDPRT input id: 560117  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:13 Message: Start build Dxf file
+Time:21.03.2017 11:32:14 Message: 	Opened document 02-04-455-1530.SLDPRT
+Time:21.03.2017 11:32:14 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:14 Message: Start build Dxf file
+Time:21.03.2017 11:32:15 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:32:15 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-275-1080.SLDPRT input id: 560146  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:15 Message: Start build Dxf file
+Time:21.03.2017 11:32:16 Message: 	Opened document 02-04-275-1080.SLDPRT
+Time:21.03.2017 11:32:17 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:17 Message: Start build Dxf file
+Time:21.03.2017 11:32:17 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:18 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:18 Message: Start build Dxf file
+Time:21.03.2017 11:32:18 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:21.03.2017 11:32:18 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 30
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:18 Message: Start build Dxf file
+Time:21.03.2017 11:32:19 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:21.03.2017 11:32:19 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-275-1080.SLDPRT input id: 560147  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:19 Message: Start build Dxf file
+Time:21.03.2017 11:32:21 Message: 	Opened document 02-03-275-1080.SLDPRT
+Time:21.03.2017 11:32:21 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:21 Message: Start build Dxf file
+Time:21.03.2017 11:32:22 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:32:22 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-740.SLDPRT input id: 414079  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:22 Message: Start build Dxf file
+Time:21.03.2017 11:32:23 Message: 	Opened document 01-P150-45-740.SLDPRT
+Time:21.03.2017 11:32:23 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:23 Message: Start build Dxf file
+Time:21.03.2017 11:32:24 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 11:32:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:24 Message: Start build Dxf file
+Time:21.03.2017 11:32:25 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:32:25 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:25 Message: Start build Dxf file
+Time:21.03.2017 11:32:25 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:32:26 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Bolt 7805_gost.sldprt input id: 30753  input ver: 70
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:26 Message: Start build Dxf file
+Time:21.03.2017 11:32:28 Message: 	Opened document Hex Bolt 7805_gost.sldprt
+Time:21.03.2017 11:32:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:28 Message: Start build Dxf file
+Time:21.03.2017 11:32:29 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:32:29 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:29 Message: Start build Dxf file
+Time:21.03.2017 11:32:30 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:32:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Nut 5915_gost.sldprt input id: 30751  input ver: 18
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:30 Message: Start build Dxf file
+Time:21.03.2017 11:32:31 Message: 	Opened document Hex Nut 5915_gost.sldprt
+Time:21.03.2017 11:32:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:31 Message: Start build Dxf file
+Time:21.03.2017 11:32:32 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:32:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:32 Message: Start build Dxf file
+Time:21.03.2017 11:32:33 Message: 	Opened document Washer 6402_gost.sldprt
+Time:21.03.2017 11:32:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Nut 5915_gost.sldprt input id: 30751  input ver: 18
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:33 Message: Start build Dxf file
+Time:21.03.2017 11:32:34 Message: 	Opened document Hex Nut 5915_gost.sldprt
+Time:21.03.2017 11:32:35 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Bolt 7805_gost.sldprt input id: 30753  input ver: 70
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:35 Message: Start build Dxf file
+Time:21.03.2017 11:32:36 Message: 	Opened document Hex Bolt 7805_gost.sldprt
+Time:21.03.2017 11:32:36 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-240-1530.SLDPRT input id: 558500  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:36 Message: Start build Dxf file
+Time:21.03.2017 11:32:37 Message: 	Opened document 02-03-240-1530.SLDPRT
+Time:21.03.2017 11:32:38 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:38 Message: Start build Dxf file
+Time:21.03.2017 11:32:39 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:39 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-240-1530.SLDPRT input id: 558499  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:39 Message: Start build Dxf file
+Time:21.03.2017 11:32:40 Message: 	Opened document 02-04-240-1530.SLDPRT
+Time:21.03.2017 11:32:40 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:40 Message: Start build Dxf file
+Time:21.03.2017 11:32:41 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:41 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-350-1080.SLDPRT input id: 113140  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:41 Message: Start build Dxf file
+Time:21.03.2017 11:32:42 Message: 	Opened document 02-03-350-1080.SLDPRT
+Time:21.03.2017 11:32:42 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-350-1080.SLDPRT input id: 113139  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:42 Message: Start build Dxf file
+Time:21.03.2017 11:32:43 Message: 	Opened document 02-04-350-1080.SLDPRT
+Time:21.03.2017 11:32:43 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:43 Message: Start build Dxf file
+Time:21.03.2017 11:32:44 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:32:44 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 O.SLDPRT input id: 8  input ver: 8
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:44 Message: Start build Dxf file
+Time:21.03.2017 11:32:45 Message: 	Opened document Винт саморез DIN 7504 O.SLDPRT
+Time:21.03.2017 11:32:45 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-1490.SLDPRT input id: 92797  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:45 Message: Start build Dxf file
+Time:21.03.2017 11:32:46 Message: 	Opened document 01-P150-45-1490.SLDPRT
+Time:21.03.2017 11:32:46 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-350-1530.SLDPRT input id: 113150  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:46 Message: Start build Dxf file
+Time:21.03.2017 11:32:48 Message: 	Opened document 02-04-350-1530.SLDPRT
+Time:21.03.2017 11:32:48 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:48 Message: Start build Dxf file
+Time:21.03.2017 11:32:49 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:32:49 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-350-1530.SLDPRT input id: 113149  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:49 Message: Start build Dxf file
+Time:21.03.2017 11:32:50 Message: 	Opened document 02-03-350-1530.SLDPRT
+Time:21.03.2017 11:32:50 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV09\ВНС-901.49.100 Блок вентилятора\ВНС-901.49.111.SLDPRT input id: 14175  input ver: 29
+ Thread sleep 4 sec.
+Time:21.03.2017 11:32:50 Message: Start build Dxf file
+Time:21.03.2017 11:32:59 Message: 	Opened document ВНС-901.49.111.SLDPRT
+Time:21.03.2017 11:33:00 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:00 Message: Start build Dxf file
+Time:21.03.2017 11:33:01 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:33:01 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:01 Message: Start build Dxf file
+Time:21.03.2017 11:33:02 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 11:33:02 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-1040.SLDPRT input id: 92795  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:02 Message: Start build Dxf file
+Time:21.03.2017 11:33:02 Message: 	Opened document 01-P150-45-1040.SLDPRT
+Time:21.03.2017 11:33:03 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:03 Message: Start build Dxf file
+Time:21.03.2017 11:33:04 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:33:04 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-500-50.SLDPRT input id: 558504  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:04 Message: Start build Dxf file
+Time:21.03.2017 11:33:05 Message: 	Opened document 02-03-500-50.SLDPRT
+Time:21.03.2017 11:33:05 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-500-50.SLDPRT input id: 558509  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:05 Message: Start build Dxf file
+Time:21.03.2017 11:33:06 Message: 	Opened document 02-04-500-50.SLDPRT
+Time:21.03.2017 11:33:06 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 30
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:06 Message: Start build Dxf file
+Time:21.03.2017 11:33:07 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:21.03.2017 11:33:07 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-350-1080.SLDPRT input id: 113139  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:07 Message: Start build Dxf file
+Time:21.03.2017 11:33:08 Message: 	Opened document 02-04-350-1080.SLDPRT
+Time:21.03.2017 11:33:08 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:08 Message: Start build Dxf file
+Time:21.03.2017 11:33:09 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:21.03.2017 11:33:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:09 Message: Start build Dxf file
+Time:21.03.2017 11:33:10 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:33:10 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:10 Message: Start build Dxf file
+Time:21.03.2017 11:33:11 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:33:11 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-350-1080.SLDPRT input id: 113140  input ver: 3
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:11 Message: Start build Dxf file
+Time:21.03.2017 11:33:12 Message: 	Opened document 02-03-350-1080.SLDPRT
+Time:21.03.2017 11:33:12 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:12 Message: Start build Dxf file
+Time:21.03.2017 11:33:13 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:33:13 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P252-45-1530.SLDPRT input id: 93369  input ver: 4
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:13 Message: Start build Dxf file
+Time:21.03.2017 11:33:14 Message: 	Opened document 01-P252-45-1530.SLDPRT
+Time:21.03.2017 11:33:14 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\01-Frame\01-P150-45-310.SLDPRT input id: 85131  input ver: 4
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:14 Message: Start build Dxf file
+Time:21.03.2017 11:33:15 Message: 	Opened document 01-P150-45-310.SLDPRT
+Time:21.03.2017 11:33:15 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:33:15 Message: Start build Dxf file
+Time:21.03.2017 11:33:30 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:33:56 Message: Create DxfBulder
+Time:21.03.2017 11:34:10 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:34:10 Message: Start build Dxf file
+Time:21.03.2017 11:34:10 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:34:10 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:34:15 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:34:15 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:34:15 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:34:30 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:34:31 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:34:31 Message: Start build Dxf file
+Time:21.03.2017 11:34:31 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:34:31 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:34:31 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:34:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:34:32 Message: Start build Dxf file
+Time:21.03.2017 11:34:33 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:34:33 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:34:33 Message: Start build Dxf file
+Time:21.03.2017 11:34:33 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:34:33 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:01 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:05 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:05 Message: Start build Dxf file
+Time:21.03.2017 11:35:06 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:35:06 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:06 Message: Start build Dxf file
+Time:21.03.2017 11:35:06 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:06 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:07 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:08 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:08 Message: Start build Dxf file
+Time:21.03.2017 11:35:08 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:08 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:09 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:09 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:10 Message: Start build Dxf file
+Time:21.03.2017 11:35:10 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:10 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:10 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:10 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:10 Message: Start build Dxf file
+Time:21.03.2017 11:35:10 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:10 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:10 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:10 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:10 Message: Start build Dxf file
+Time:21.03.2017 11:35:11 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:35:11 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:11 Message: Start build Dxf file
+Time:21.03.2017 11:35:11 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:11 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:11 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:12 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:12 Message: Start build Dxf file
+Time:21.03.2017 11:35:12 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:35:12 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:12 Message: Start build Dxf file
+Time:21.03.2017 11:35:12 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:12 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:12 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:13 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:13 Message: Start build Dxf file
+Time:21.03.2017 11:35:13 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:13 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:35:13 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:35:31 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:35:31 Message: Start build Dxf file
+Time:21.03.2017 11:35:31 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:35:31 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:39:42 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:39:46 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:46 Message: Start build Dxf file
+Time:21.03.2017 11:39:46 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:39:46 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:39:47 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:39:47 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:47 Message: Start build Dxf file
+Time:21.03.2017 11:39:48 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:39:48 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:48 Message: Start build Dxf file
+Time:21.03.2017 11:39:48 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:39:48 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:39:51 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:39:52 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:52 Message: Start build Dxf file
+Time:21.03.2017 11:39:52 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:39:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:52 Message: Start build Dxf file
+Time:21.03.2017 11:39:52 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:39:52 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:39:54 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:39:58 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:39:58 Message: Start build Dxf file
+Time:21.03.2017 11:39:58 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:39:58 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:39:58 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:40:06 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:40:12 Message: Create DxfBulder
+Time:21.03.2017 11:40:12 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:12 Message: Start build Dxf file
+Time:21.03.2017 11:40:12 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:40:12 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:40:16 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:40:16 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:40:16 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:40:27 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:40:27 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:27 Message: Start build Dxf file
+Time:21.03.2017 11:40:27 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:40:27 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:40:28 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:40:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:28 Message: Start build Dxf file
+Time:21.03.2017 11:40:29 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:40:29 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:29 Message: Start build Dxf file
+Time:21.03.2017 11:40:29 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:40:29 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:40:30 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:40:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:31 Message: Start build Dxf file
+Time:21.03.2017 11:40:31 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:40:31 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:31 Message: Start build Dxf file
+Time:21.03.2017 11:40:31 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:40:31 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:40:32 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:40:32 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:40:32 Message: Start build Dxf file
+Time:21.03.2017 11:40:32 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:40:32 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:40:32 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:42:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:42:15 Message: Create DxfBulder
+Time:21.03.2017 11:42:17 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:17 Message: Start build Dxf file
+Time:21.03.2017 11:42:17 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:42:17 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:42:21 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:42:22 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:42:22 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:42:23 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:42:25 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:25 Message: Start build Dxf file
+Time:21.03.2017 11:42:25 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:42:25 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:42:27 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:42:27 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:27 Message: Start build Dxf file
+Time:21.03.2017 11:42:28 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:42:29 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:29 Message: Start build Dxf file
+Time:21.03.2017 11:42:29 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:42:29 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:42:29 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:42:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:30 Message: Start build Dxf file
+Time:21.03.2017 11:42:30 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:42:31 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:31 Message: Start build Dxf file
+Time:21.03.2017 11:42:31 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:42:31 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:42:31 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:42:32 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:42:32 Message: Start build Dxf file
+Time:21.03.2017 11:42:32 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:42:32 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:42:32 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:44:17 Message: Поиск по запросу %3535% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
+   в EPDM.Interop.epdm.IEdmVault7.CreateUtility(EdmUtility eType)
+   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 78 в связи с чем возвращена пустая колекция FileModelPdm
+Time:21.03.2017 11:44:21 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:44:25 Message: Create DxfBulder
+Time:21.03.2017 11:44:36 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:36 Message: Start build Dxf file
+Time:21.03.2017 11:44:36 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:44:36 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:44:40 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:44:41 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:44:41 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:44:48 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:44:49 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:49 Message: Start build Dxf file
+Time:21.03.2017 11:44:49 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:44:49 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:44:50 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:44:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:51 Message: Start build Dxf file
+Time:21.03.2017 11:44:52 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:44:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:52 Message: Start build Dxf file
+Time:21.03.2017 11:44:52 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:44:52 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:44:54 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:44:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:54 Message: Start build Dxf file
+Time:21.03.2017 11:44:55 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:44:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:55 Message: Start build Dxf file
+Time:21.03.2017 11:44:55 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:44:55 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:44:55 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:44:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:44:55 Message: Start build Dxf file
+Time:21.03.2017 11:44:55 Message: Error at open solid works document: code {2}, description error {swFileNotFoundError}
+Time:21.03.2017 11:44:55 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 167
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:21.03.2017 11:44:56 Message: 	Failed build dxf; message exception {System.Exception: Failed open document
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:21.03.2017 11:45:46 Message: Поиск по запросу %3535% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
+   в EPDM.Interop.epdm.IEdmVault7.CreateUtility(EdmUtility eType)
+   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 78 в связи с чем возвращена пустая колекция FileModelPdm
+Time:21.03.2017 11:45:54 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:46:02 Message: Create DxfBulder
+Time:21.03.2017 11:46:06 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-17824.SLDPRT input id: 365837  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:46:06 Message: Start build Dxf file
+Time:21.03.2017 11:46:06 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:46:06 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:46:10 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:46:12 Message: 	Opened document 02-17824.SLDPRT
+Time:21.03.2017 11:46:13 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-17823.SLDPRT input id: 365834  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:46:13 Message: Start build Dxf file
+Time:21.03.2017 11:46:14 Message: 	Opened document 02-29-1-17823.SLDPRT
+Time:21.03.2017 11:46:14 Message: Check is sheet metal part; returned True
+Time:21.03.2017 11:46:14 Message: 	 got configuration 1 for opened document. Statrt bust configurations
+Time:21.03.2017 11:46:15 Message: 	 Show configuration 00
+Time:21.03.2017 11:46:28 Message: end FixOneBand
+Time:21.03.2017 11:46:28 Message: 	 Fix bends 00
+Time:21.03.2017 11:46:38 Message: 	Completed building 02-29-1-17823.SLDPRT with configuration "00"
+Time:21.03.2017 11:46:38 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:46:38 Message: 
+ line 75 cut list: 900.02
 
-Time:17.03.2017 16:55:58 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:55:58 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Саморез по металлу DIN 7981.SLDPRT input id: 4  input ver: 31
+Time:21.03.2017 11:46:40 Message: 	00 succsess building. Add to result list
+Time:21.03.2017 11:46:41 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:58 Message: Start build Dxf file
-Time:17.03.2017 16:55:59 Message: 	Opened document Саморез по металлу DIN 7981.SLDPRT
-Time:17.03.2017 16:55:59 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.405.SLDPRT input id: 546551  input ver: 4
+Time:21.03.2017 11:46:41 Message: Start build Dxf file
+Time:21.03.2017 11:46:41 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:46:41 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-6733.SLDPRT input id: 307585  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:55:59 Message: Start build Dxf file
-Time:17.03.2017 16:56:00 Message: 	Opened document ВНС-902.35.405.SLDPRT
-Time:17.03.2017 16:56:00 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:56:00 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:56:00 Message: 	 Show configuration 00
-Time:17.03.2017 16:56:04 Message: end FixOneBand
-Time:17.03.2017 16:56:04 Message: 	 Fix bends 00
-Time:17.03.2017 16:56:06 Message: 	Completed building ВНС-902.35.405.SLDPRT with configuration "00"
-Time:17.03.2017 16:56:06 Message: GetTypeName2: CutListFolder; swSubFeat.Name Sheet<1>
-Time:17.03.2017 16:56:06 Message: 
- line 75 cut list: 281.19
+Time:21.03.2017 11:46:41 Message: Start build Dxf file
+Time:21.03.2017 11:46:42 Message: 	Opened document 02-6733.SLDPRT
+Time:21.03.2017 11:46:42 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:46:42 Message: Start build Dxf file
+Time:21.03.2017 11:46:42 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:46:42 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-17825.SLDPRT input id: 365839  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:46:42 Message: Start build Dxf file
+Time:21.03.2017 11:46:43 Message: 	Opened document 02-17825.SLDPRT
+Time:21.03.2017 11:46:43 Message: Check is sheet metal part; returned True
+Time:21.03.2017 11:46:43 Message: 	 got configuration 1 for opened document. Statrt bust configurations
+Time:21.03.2017 11:46:43 Message: 	 Show configuration 00
+Time:21.03.2017 11:46:48 Message: end FixOneBand
+Time:21.03.2017 11:46:48 Message: 	 Fix bends 00
+Time:21.03.2017 11:46:49 Message: 	Completed building 02-17825.SLDPRT with configuration "00"
+Time:21.03.2017 11:46:49 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:46:49 Message: 
+ line 75 cut list: 785
 
-Time:17.03.2017 16:56:07 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:56:07 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Клемма и клеммная колодка\Клемма модульная 260-301.SLDPRT input id: 46389  input ver: 3
+Time:21.03.2017 11:46:50 Message: 	00 succsess building. Add to result list
+Time:21.03.2017 11:46:50 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-6734.SLDPRT input id: 267917  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:07 Message: Start build Dxf file
-Time:17.03.2017 16:56:08 Message: 	Opened document Клемма модульная 260-301.SLDPRT
-Time:17.03.2017 16:56:08 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Пистон проходной.SLDPRT input id: 6565  input ver: 7
+Time:21.03.2017 11:46:50 Message: Start build Dxf file
+Time:21.03.2017 11:46:50 Message: 	Opened document 02-6734.SLDPRT
+Time:21.03.2017 11:50:33 Message: Поиск успешно завершон, найдено объектов 1 по запросу %29-3535%
+Time:21.03.2017 11:51:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:52:05 Message: Поиск успешно завершон, найдено объектов 1 по запросу %02-29-3576.SLDASM%
+Time:21.03.2017 11:52:23 Message: Create DxfBulder
+Time:21.03.2017 11:52:27 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-29-1-18895.SLDPRT input id: 386231  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:08 Message: Start build Dxf file
-Time:17.03.2017 16:56:08 Message: 	Opened document Пистон проходной.SLDPRT
-Time:17.03.2017 16:56:08 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:08 Message: Start build Dxf file
-Time:17.03.2017 16:56:09 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:09 Message: 	Opened document Washer 6402_gost.sldprt
-Time:17.03.2017 16:56:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Заклепка-клемма заземляющая Bralo.SLDPRT input id: 5  input ver: 6
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:09 Message: Start build Dxf file
-Time:17.03.2017 16:56:09 Message: 	Opened document Заклепка-клемма заземляющая Bralo.SLDPRT
-Time:17.03.2017 16:56:09 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.301.SLDPRT input id: 546727  input ver: 5
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:09 Message: Start build Dxf file
-Time:17.03.2017 16:56:10 Message: 	Opened document ВНС-902.35.301.SLDPRT
-Time:17.03.2017 16:56:10 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:56:10 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:56:10 Message: 	 Show configuration 00
-Time:17.03.2017 16:56:14 Message: end FixOneBand
-Time:17.03.2017 16:56:14 Message: 	 Fix bends 00
-Time:17.03.2017 16:56:15 Message: 	Completed building ВНС-902.35.301.SLDPRT with configuration "00"
-Time:17.03.2017 16:56:15 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:56:15 Message: 
- line 75 cut list: 85
+Time:21.03.2017 11:52:27 Message: Start build Dxf file
+Time:21.03.2017 11:52:27 Message: Initialize SolidWorks exemplare
+Time:21.03.2017 11:52:27 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 38
+Time:21.03.2017 11:52:30 Message: 		Created exemplar SolidWorks Application
+Time:21.03.2017 11:52:32 Message: 	Opened document 02-29-1-18895.SLDPRT
+Time:21.03.2017 11:52:33 Message: Check is sheet metal part; returned True
+Time:21.03.2017 11:52:33 Message: 	 got configuration 1 for opened document. Statrt bust configurations
+Time:21.03.2017 11:52:33 Message: 	 Show configuration 00
+Time:21.03.2017 11:52:45 Message: end FixOneBand
+Time:21.03.2017 11:52:45 Message: 	 Fix bends 00
+Time:21.03.2017 11:52:51 Message: 	Completed building 02-29-1-18895.SLDPRT with configuration "00"
+Time:21.03.2017 11:52:51 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:52:52 Message: 
+ line 75 cut list: 663.02
 
-Time:17.03.2017 16:56:15 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:56:16 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 N.SLDPRT input id: 9  input ver: 8
+Time:21.03.2017 11:52:53 Message: 	00 succsess building. Add to result list
+Time:21.03.2017 11:52:53 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:16 Message: Start build Dxf file
-Time:17.03.2017 16:56:16 Message: 	Opened document Винт саморез DIN 7504 N.SLDPRT
-Time:17.03.2017 16:56:16 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\ВНС-904.54.000 - ВУТ Р 350 В ЕС А14\ВНС-904.54.861.SLDPRT input id: 302569  input ver: 6
+Time:21.03.2017 11:52:53 Message: Start build Dxf file
+Time:21.03.2017 11:52:54 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:52:54 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-18229.SLDPRT input id: 369360  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:16 Message: Start build Dxf file
-Time:17.03.2017 16:56:17 Message: 	Opened document ВНС-904.54.861.SLDPRT
-Time:17.03.2017 16:56:17 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 15
+Time:21.03.2017 11:52:54 Message: Start build Dxf file
+Time:21.03.2017 11:52:55 Message: 	Opened document 02-18229.SLDPRT
+Time:21.03.2017 11:52:55 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:17 Message: Start build Dxf file
-Time:17.03.2017 16:56:17 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:17 Message: 	Opened document Washer 6402_gost.sldprt
-Time:17.03.2017 16:56:17 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\СИМИСТОР RAM.SLDPRT input id: 6541  input ver: 5
+Time:21.03.2017 11:52:55 Message: Start build Dxf file
+Time:21.03.2017 11:52:55 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:52:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-10500.SLDPRT input id: 311466  input ver: 2
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:17 Message: Start build Dxf file
-Time:17.03.2017 16:56:18 Message: 	Opened document СИМИСТОР RAM.SLDPRT
-Time:17.03.2017 16:56:18 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
+Time:21.03.2017 11:52:55 Message: Start build Dxf file
+Time:21.03.2017 11:52:56 Message: 	Opened document 02-10500.SLDPRT
+Time:21.03.2017 11:53:14 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 11:53:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:18 Message: Start build Dxf file
-Time:17.03.2017 16:56:18 Message: 	Opened document SC GOST 17473_gost.sldprt
-Time:17.03.2017 16:56:19 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+Time:21.03.2017 11:53:31 Message: Start build Dxf file
+Time:21.03.2017 11:53:31 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:53:31 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.212.SLDPRT input id: 111050  input ver: 7
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:19 Message: Start build Dxf file
-Time:17.03.2017 16:56:19 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:19 Message: 	Opened document Washer 11371_gost.sldprt
-Time:17.03.2017 16:56:19 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Клемма и клеммная колодка\Клемма модульная 260-331.SLDPRT input id: 46388  input ver: 3
+Time:21.03.2017 11:53:31 Message: Start build Dxf file
+Time:21.03.2017 11:53:32 Message: 	Opened document ВНС-901.46.212.SLDPRT
+Time:21.03.2017 11:53:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 11
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:19 Message: Start build Dxf file
-Time:17.03.2017 16:56:19 Message: 	Opened document Клемма модульная 260-331.SLDPRT
-Time:17.03.2017 16:56:20 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Эл. магнитное реле 30А.SLDPRT input id: 6542  input ver: 6
+Time:21.03.2017 11:53:32 Message: Start build Dxf file
+Time:21.03.2017 11:53:33 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 11:53:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:20 Message: Start build Dxf file
-Time:17.03.2017 16:56:20 Message: 	Opened document Эл. магнитное реле 30А.SLDPRT
-Time:17.03.2017 16:56:20 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
+Time:21.03.2017 11:53:33 Message: Start build Dxf file
+Time:21.03.2017 11:53:33 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:53:33 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.223.SLDPRT input id: 111123  input ver: 6
  Thread sleep 4 sec.
-Time:17.03.2017 16:56:20 Message: Start build Dxf file
-Time:17.03.2017 16:56:21 Message: 	Opened document SC GOST 17473_gost.sldprt
-Time:17.03.2017 16:56:21 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:21 Message: Start build Dxf file
-Time:17.03.2017 16:56:21 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:21 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:56:21 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.404.SLDPRT input id: 546582  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:21 Message: Start build Dxf file
-Time:17.03.2017 16:56:22 Message: 	Opened document ВНС-902.35.404.SLDPRT
-Time:17.03.2017 16:56:22 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:56:22 Message: 	 got configuration 1 for opened document. Statrt bust configurations
-Time:17.03.2017 16:56:22 Message: 	 Show configuration 00
-Time:17.03.2017 16:56:29 Message: end FixOneBand
-Time:17.03.2017 16:56:29 Message: 	 Fix bends 00
-Time:17.03.2017 16:56:31 Message: 	Completed building ВНС-902.35.404.SLDPRT with configuration "00"
-Time:17.03.2017 16:56:32 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
-Time:17.03.2017 16:56:32 Message: 
- line 75 cut list: 231.5
+Time:21.03.2017 11:53:33 Message: Start build Dxf file
+Time:21.03.2017 11:53:35 Message: 	Opened document ВНС-901.46.223.SLDPRT
+Time:21.03.2017 11:53:35 Message: Check is sheet metal part; returned True
+Time:21.03.2017 11:53:35 Message: 	 got configuration 4 for opened document. Statrt bust configurations
+Time:21.03.2017 11:53:35 Message: 	 Show configuration 00
+Time:21.03.2017 11:53:42 Message: end FixOneBand
+Time:21.03.2017 11:53:42 Message: 	 Fix bends 00
+Time:21.03.2017 11:53:44 Message: 	Completed building ВНС-901.46.223.SLDPRT with configuration "00"
+Time:21.03.2017 11:53:44 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:53:45 Message: 
+ line 75 cut list: 1134.76
 
-Time:17.03.2017 16:56:32 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:56:32 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Клемма и клеммная колодка\Пластина торцевая 260-361.SLDPRT input id: 98759  input ver: 4
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:32 Message: Start build Dxf file
-Time:17.03.2017 16:56:33 Message: 	Opened document Пластина торцевая 260-361.SLDPRT
-Time:17.03.2017 16:56:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Пистон проходной.SLDPRT input id: 6565  input ver: 7
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:33 Message: Start build Dxf file
-Time:17.03.2017 16:56:33 Message: 	Opened document Пистон проходной.SLDPRT
-Time:17.03.2017 16:56:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Варистор VCR-20D391K 390.SLDPRT input id: 6588  input ver: 4
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:33 Message: Start build Dxf file
-Time:17.03.2017 16:56:34 Message: 	Opened document Варистор VCR-20D391K 390.SLDPRT
-Time:17.03.2017 16:56:34 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:34 Message: Start build Dxf file
-Time:17.03.2017 16:56:34 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:34 Message: 	Opened document Threaded Rivets.sldprt
-Time:17.03.2017 16:56:34 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Термостат защиты от перегрева TSD 020-90.SLDPRT input id: 271190  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:34 Message: Start build Dxf file
-Time:17.03.2017 16:56:35 Message: 	Opened document Термостат защиты от перегрева TSD 020-90.SLDPRT
-Time:17.03.2017 16:56:35 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:35 Message: Start build Dxf file
-Time:17.03.2017 16:56:35 Message: 	Opened document SC GOST 17473_gost.sldprt
-Time:17.03.2017 16:56:36 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:36 Message: Start build Dxf file
-Time:17.03.2017 16:56:36 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:56:36 Message: 	Opened document Rivet Bralo.sldprt
-Time:17.03.2017 16:56:36 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.401.SLDPRT input id: 545721  input ver: 5
- Thread sleep 4 sec.
-Time:17.03.2017 16:56:36 Message: Start build Dxf file
-Time:17.03.2017 16:56:37 Message: 	Opened document ВНС-902.35.401.SLDPRT
-Time:17.03.2017 16:56:37 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:56:37 Message: 	 got configuration 2 for opened document. Statrt bust configurations
-Time:17.03.2017 16:56:37 Message: 	 Show configuration 00
-Time:17.03.2017 16:56:45 Message: end FixOneBand
-Time:17.03.2017 16:56:45 Message: 	 Fix bends 00
-Time:17.03.2017 16:56:46 Message: 	Completed building ВНС-902.35.401.SLDPRT with configuration "00"
-Time:17.03.2017 16:56:47 Message: GetTypeName2: CutListFolder; swSubFeat.Name Sheet<2>
-Time:17.03.2017 16:56:47 Message: 
- line 75 cut list: 185.01
+Time:21.03.2017 11:53:45 Message: 	00 succsess building. Add to result list
+Time:21.03.2017 11:53:46 Message: 	 Show configuration 01
+Time:21.03.2017 11:53:52 Message: end FixOneBand
+Time:21.03.2017 11:53:52 Message: 	 Fix bends 01
+Time:21.03.2017 11:53:54 Message: 	Completed building ВНС-901.46.223.SLDPRT with configuration "01"
+Time:21.03.2017 11:53:54 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:53:54 Message: 
+ line 75 cut list: 1138.76
 
-Time:17.03.2017 16:56:48 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:56:50 Message: 	 Show configuration 01
-Time:17.03.2017 16:56:57 Message: end FixOneBand
-Time:17.03.2017 16:56:57 Message: 	 Fix bends 01
-Time:17.03.2017 16:56:59 Message: 	Completed building ВНС-902.35.401.SLDPRT with configuration "01"
-Time:17.03.2017 16:56:59 Message: GetTypeName2: CutListFolder; swSubFeat.Name Sheet<2>
-Time:17.03.2017 16:56:59 Message: 
- line 75 cut list: 185.01
+Time:21.03.2017 11:53:55 Message: 	01 succsess building. Add to result list
+Time:21.03.2017 11:53:55 Message: 	 Show configuration 03
+Time:21.03.2017 11:54:02 Message: end FixOneBand
+Time:21.03.2017 11:54:02 Message: 	 Fix bends 03
+Time:21.03.2017 11:54:04 Message: 	Completed building ВНС-901.46.223.SLDPRT with configuration "03"
+Time:21.03.2017 11:54:04 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:54:04 Message: 
+ line 75 cut list: 1134.76
 
-Time:17.03.2017 16:57:00 Message: 	01 succsess building. Add to result list
-Time:17.03.2017 16:57:00 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Тэны электрические\Нагреватель воздуха позисторный 350Вт 220В размер 121х45х20мм.SLDPRT input id: 225462  input ver: 2
- Thread sleep 4 sec.
-Time:17.03.2017 16:57:00 Message: Start build Dxf file
-Time:17.03.2017 16:57:01 Message: 	Opened document Нагреватель воздуха позисторный 350Вт 220В размер 121х45х20мм.SLDPRT
-Time:17.03.2017 16:57:03 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Шуруп ГОСТ 1144-80.SLDPRT input id: 3  input ver: 6
- Thread sleep 4 sec.
-Time:17.03.2017 16:57:03 Message: Start build Dxf file
-Time:17.03.2017 16:57:04 Message: 	Opened document Шуруп ГОСТ 1144-80.SLDPRT
-Time:17.03.2017 16:57:04 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Саморез по металлу DIN 7981.SLDPRT input id: 4  input ver: 31
- Thread sleep 4 sec.
-Time:17.03.2017 16:57:04 Message: Start build Dxf file
-Time:17.03.2017 16:57:04 Message: 	Opened document Саморез по металлу DIN 7981.SLDPRT
-Time:17.03.2017 16:57:04 Message: 		 debug: input path D:\Vents-PDM\Проекты\Воздухообрабатывающие агрегаты\Приточно-вытяжные агрегаты\ДВУТ... ЕС(АС)\ВНС-902.35.000 - ДВУТ 300 ПБ (Е;Е2) ЕС А17 (А18) New\ВНС-902.35.401.SLDPRT input id: 545721  input ver: 5
- Thread sleep 4 sec.
-Time:17.03.2017 16:57:04 Message: Start build Dxf file
-Time:17.03.2017 16:57:05 Message: 	Opened document ВНС-902.35.401.SLDPRT
-Time:17.03.2017 16:57:05 Message: Check is sheet metal part; returned True
-Time:17.03.2017 16:57:05 Message: 	 got configuration 2 for opened document. Statrt bust configurations
-Time:17.03.2017 16:57:05 Message: 	 Show configuration 00
-Time:17.03.2017 16:57:13 Message: end FixOneBand
-Time:17.03.2017 16:57:13 Message: 	 Fix bends 00
-Time:17.03.2017 16:57:14 Message: 	Completed building ВНС-902.35.401.SLDPRT with configuration "00"
-Time:17.03.2017 16:57:14 Message: GetTypeName2: CutListFolder; swSubFeat.Name Sheet<2>
-Time:17.03.2017 16:57:14 Message: 
- line 75 cut list: 185.01
+Time:21.03.2017 11:54:04 Message: 	03 succsess building. Add to result list
+Time:21.03.2017 11:54:05 Message: 	 Show configuration 04
+Time:21.03.2017 11:54:11 Message: end FixOneBand
+Time:21.03.2017 11:54:11 Message: 	 Fix bends 04
+Time:21.03.2017 11:54:13 Message: 	Completed building ВНС-901.46.223.SLDPRT with configuration "04"
+Time:21.03.2017 11:54:13 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:21.03.2017 11:54:13 Message: 
+ line 75 cut list: 1134.76
 
-Time:17.03.2017 16:57:15 Message: 	00 succsess building. Add to result list
-Time:17.03.2017 16:57:16 Message: 	 Show configuration 01
-Time:17.03.2017 16:57:26 Message: end FixOneBand
-Time:17.03.2017 16:57:26 Message: 	 Fix bends 01
-Time:17.03.2017 16:57:27 Message: 	Completed building ВНС-902.35.401.SLDPRT with configuration "01"
-Time:17.03.2017 16:57:27 Message: GetTypeName2: CutListFolder; swSubFeat.Name Sheet<2>
-Time:17.03.2017 16:57:27 Message: 
- line 75 cut list: 185.01
-
-Time:17.03.2017 16:57:28 Message: 	01 succsess building. Add to result list
-Time:17.03.2017 16:57:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Электротехнические изделия\Термовыключатель 60С.SLDPRT input id: 65137  input ver: 7
+Time:21.03.2017 11:54:14 Message: 	04 succsess building. Add to result list
+Time:21.03.2017 11:54:14 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:57:28 Message: Start build Dxf file
-Time:17.03.2017 16:57:29 Message: 	Opened document Термовыключатель 60С.SLDPRT
-Time:17.03.2017 16:57:29 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+Time:21.03.2017 11:54:14 Message: Start build Dxf file
+Time:21.03.2017 11:54:14 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:14 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23512.SLDPRT input id: 454319  input ver: 1
  Thread sleep 4 sec.
-Time:17.03.2017 16:57:29 Message: Start build Dxf file
-Time:17.03.2017 16:57:29 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:57:29 Message: 	Opened document Washer 11371_gost.sldprt
-Time:17.03.2017 16:57:29 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+Time:21.03.2017 11:54:14 Message: Start build Dxf file
+Time:21.03.2017 11:54:15 Message: 	Opened document 02-23512.SLDPRT
+Time:21.03.2017 11:54:15 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
  Thread sleep 4 sec.
-Time:17.03.2017 16:57:29 Message: Start build Dxf file
-Time:17.03.2017 16:57:29 Message: Warning at open solid works document: code {2}, description warning {0}
-Time:17.03.2017 16:57:29 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:15 Message: Start build Dxf file
+Time:21.03.2017 11:54:15 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:15 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23509.SLDPRT input id: 454315  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:15 Message: Start build Dxf file
+Time:21.03.2017 11:54:16 Message: 	Opened document 02-23509.SLDPRT
+Time:21.03.2017 11:54:16 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26320.SLDPRT input id: 484908  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:16 Message: Start build Dxf file
+Time:21.03.2017 11:54:16 Message: 	Opened document 02-26320.SLDPRT
+Time:21.03.2017 11:54:16 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV20\ВНС-903.49.200 Блок филтра\Жгут полизол 20 ВНС-903.49.260.SLDPRT input id: 22596  input ver: 4
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:16 Message: Start build Dxf file
+Time:21.03.2017 11:54:17 Message: 	Opened document Жгут полизол 20 ВНС-903.49.260.SLDPRT
+Time:21.03.2017 11:54:17 Message: Failed check is sheet metal part; returned False
+Time:21.03.2017 11:54:17 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV20\ВНС-903.49.200 Блок филтра\держатель1.SLDPRT input id: 20466  input ver: 6
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:17 Message: Start build Dxf file
+Time:21.03.2017 11:54:17 Message: 	Opened document держатель1.SLDPRT
+Time:21.03.2017 11:54:17 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:17 Message: Start build Dxf file
+Time:21.03.2017 11:54:17 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:18 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV20\ВНС-903.49.200 Блок филтра\BHC-903.49.272.SLDPRT input id: 20468  input ver: 15
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:18 Message: Start build Dxf file
+Time:21.03.2017 11:54:20 Message: 	Opened document BHC-903.49.272.SLDPRT
+Time:21.03.2017 11:54:20 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:20 Message: Start build Dxf file
+Time:21.03.2017 11:54:21 Message: 	Opened document SC GOST 17473_gost.sldprt
+Time:21.03.2017 11:54:21 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:21 Message: Start build Dxf file
+Time:21.03.2017 11:54:21 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 11:54:21 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.273.SLDPRT input id: 447835  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:21 Message: Start build Dxf file
+Time:21.03.2017 11:54:22 Message: 	Opened document ВНС-901.46.273.SLDPRT
+Time:21.03.2017 11:54:22 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:22 Message: Start build Dxf file
+Time:21.03.2017 11:54:23 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:23 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.274.SLDPRT input id: 447836  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:23 Message: Start build Dxf file
+Time:21.03.2017 11:54:23 Message: 	Opened document ВНС-901.46.274.SLDPRT
+Time:21.03.2017 11:54:23 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.274.SLDPRT input id: 447836  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:23 Message: Start build Dxf file
+Time:21.03.2017 11:54:23 Message: 	Opened document ВНС-901.46.274.SLDPRT
+Time:21.03.2017 11:54:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:24 Message: Start build Dxf file
+Time:21.03.2017 11:54:24 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:24 Message: Start build Dxf file
+Time:21.03.2017 11:54:24 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:54:24 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:24 Message: Start build Dxf file
+Time:21.03.2017 11:54:25 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:25 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 13
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:25 Message: Start build Dxf file
+Time:21.03.2017 11:54:26 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT
+Time:21.03.2017 11:54:26 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:26 Message: Start build Dxf file
+Time:21.03.2017 11:54:26 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:27 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26317.SLDPRT input id: 484902  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:27 Message: Start build Dxf file
+Time:21.03.2017 11:54:27 Message: 	Opened document 02-26317.SLDPRT
+Time:21.03.2017 11:54:27 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:27 Message: Start build Dxf file
+Time:21.03.2017 11:54:28 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:28 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:28 Message: Start build Dxf file
+Time:21.03.2017 11:54:28 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:28 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26313.SLDPRT input id: 484892  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:28 Message: Start build Dxf file
+Time:21.03.2017 11:54:29 Message: 	Opened document 02-26313.SLDPRT
+Time:21.03.2017 11:54:29 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:29 Message: Start build Dxf file
+Time:21.03.2017 11:54:29 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:30 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23500.SLDPRT input id: 454295  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:30 Message: Start build Dxf file
+Time:21.03.2017 11:54:30 Message: 	Opened document 02-23500.SLDPRT
+Time:21.03.2017 11:54:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Заглушка пластикова для т.о. 16х13.SLDPRT input id: 106816  input ver: 10
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:30 Message: Start build Dxf file
+Time:21.03.2017 11:54:30 Message: 	Opened document Заглушка пластикова для т.о. 16х13.SLDPRT
+Time:21.03.2017 11:54:30 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:30 Message: Start build Dxf file
+Time:21.03.2017 11:54:31 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:31 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 K.SLDPRT input id: 90339  input ver: 7
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:31 Message: Start build Dxf file
+Time:21.03.2017 11:54:33 Message: 	Opened document Винт саморез DIN 7504 K.SLDPRT
+Time:21.03.2017 11:54:33 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:33 Message: Start build Dxf file
+Time:21.03.2017 11:54:33 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:33 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26320.SLDPRT input id: 484908  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:33 Message: Start build Dxf file
+Time:21.03.2017 11:54:34 Message: 	Opened document 02-26320.SLDPRT
+Time:21.03.2017 11:54:34 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:34 Message: Start build Dxf file
+Time:21.03.2017 11:54:34 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:34 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23508.SLDPRT input id: 454316  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:34 Message: Start build Dxf file
+Time:21.03.2017 11:54:34 Message: 	Opened document 02-23508.SLDPRT
+Time:21.03.2017 11:54:35 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:35 Message: Start build Dxf file
+Time:21.03.2017 11:54:35 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:35 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23509.SLDPRT input id: 454315  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:35 Message: Start build Dxf file
+Time:21.03.2017 11:54:35 Message: 	Opened document 02-23509.SLDPRT
+Time:21.03.2017 11:54:35 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:35 Message: Start build Dxf file
+Time:21.03.2017 11:54:36 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:21.03.2017 11:54:36 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 30
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:36 Message: Start build Dxf file
+Time:21.03.2017 11:54:36 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:21.03.2017 11:54:36 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26312.SLDPRT input id: 484893  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:36 Message: Start build Dxf file
+Time:21.03.2017 11:54:37 Message: 	Opened document 02-26312.SLDPRT
+Time:21.03.2017 11:54:37 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:37 Message: Start build Dxf file
+Time:21.03.2017 11:54:37 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:37 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:37 Message: Start build Dxf file
+Time:21.03.2017 11:54:38 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:38 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26313.SLDPRT input id: 484892  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:38 Message: Start build Dxf file
+Time:21.03.2017 11:54:38 Message: 	Opened document 02-26313.SLDPRT
+Time:21.03.2017 11:54:38 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:38 Message: Start build Dxf file
+Time:21.03.2017 11:54:38 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:54:38 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 21
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:38 Message: Start build Dxf file
+Time:21.03.2017 11:54:39 Message: 	Opened document Threaded Rivets.sldprt
+Time:21.03.2017 11:54:39 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23500.SLDPRT input id: 454295  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:39 Message: Start build Dxf file
+Time:21.03.2017 11:54:39 Message: 	Opened document 02-23500.SLDPRT
+Time:21.03.2017 11:54:39 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 16
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:39 Message: Start build Dxf file
+Time:21.03.2017 11:54:40 Message: 	Opened document Washer 11371_gost.sldprt
+Time:21.03.2017 11:54:40 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:54:40 Message: Start build Dxf file
+Time:21.03.2017 11:54:40 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:55:47 Message: Поиск успешно завершон, найдено объектов 2 по запросу %ВНС-901.46.210%
+Time:21.03.2017 11:55:52 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:55:52 Message: Start build Dxf file
+Time:21.03.2017 11:55:53 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 11:55:53 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Безкаркасные приточно-вытяжные агрегаты AV\АВ 20 Б\ВНС-901.46.200 Блок фильтра\ВНС-901.46.212.SLDPRT input id: 111050  input ver: 7
+ Thread sleep 4 sec.
+Time:21.03.2017 11:55:53 Message: Start build Dxf file
+Time:21.03.2017 11:55:54 Message: 	Opened document ВНС-901.46.212.SLDPRT
+Time:21.03.2017 11:55:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 11
+ Thread sleep 4 sec.
+Time:21.03.2017 11:55:54 Message: Start build Dxf file
+Time:21.03.2017 11:55:54 Message: 	Opened document Cаморез с пресшайбой с буром.SLDPRT
+Time:21.03.2017 11:55:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 19
+ Thread sleep 4 sec.
+Time:21.03.2017 11:55:54 Message: Start build Dxf file
+Time:21.03.2017 11:55:55 Message: 	Opened document Rivet Bralo.sldprt
+Time:21.03.2017 12:07:12 Message: Поиск по запросу %3535% завершон c ошибкой: System.Runtime.InteropServices.COMException (0x80040204): You haven't logged in on the file vault.
+   в EPDM.Interop.epdm.IEdmVault7.CreateUtility(EdmUtility eType)
+   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.SearchDoc(String segmentName) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 82 в связи с чем возвращена пустая колекция FileModelPdm
+Time:21.03.2017 12:07:21 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:21.03.2017 12:07:39 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%

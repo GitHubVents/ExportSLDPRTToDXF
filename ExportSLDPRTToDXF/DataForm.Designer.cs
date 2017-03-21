@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Settings_btn = new System.Windows.Forms.Button();
             this.SpecificationDataGrid = new System.Windows.Forms.DataGridView();
@@ -37,6 +38,7 @@
             this.ConfigurationsComboBox = new System.Windows.Forms.ComboBox();
             this.SearchResultList = new System.Windows.Forms.ListBox();
             this.UpLoadDxfButton = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -61,16 +63,15 @@
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 775);
             this.tableLayoutPanel1.TabIndex = 0;
-            
             // 
             // Settings_btn
             // 
-            this.Settings_btn.Location = new System.Drawing.Point(3, 712);
+            this.Settings_btn.Location = new System.Drawing.Point(3, 750);
             this.Settings_btn.Name = "Settings_btn";
-            this.Settings_btn.Size = new System.Drawing.Size(75, 23);
+            this.Settings_btn.Size = new System.Drawing.Size(75, 22);
             this.Settings_btn.TabIndex = 10;
             this.Settings_btn.Text = "Настройки";
             this.Settings_btn.UseVisualStyleBackColor = true;
@@ -85,7 +86,7 @@
             this.SpecificationDataGrid.MultiSelect = false;
             this.SpecificationDataGrid.Name = "SpecificationDataGrid";
             this.SpecificationDataGrid.ReadOnly = true;
-            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 668);
+            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 706);
             this.SpecificationDataGrid.TabIndex = 4;
             // 
             // Search_textBox
@@ -95,6 +96,7 @@
             this.Search_textBox.Name = "Search_textBox";
             this.Search_textBox.Size = new System.Drawing.Size(203, 20);
             this.Search_textBox.TabIndex = 6;
+            this.Search_textBox.MouseEnter += new System.EventHandler(this.Search_textBox_MouseEnter);
             // 
             // tableLayoutPanel3
             // 
@@ -129,21 +131,22 @@
             this.ConfigurationsComboBox.Size = new System.Drawing.Size(121, 21);
             this.ConfigurationsComboBox.TabIndex = 7;
             this.ConfigurationsComboBox.SelectedIndexChanged += new System.EventHandler(this.ConfigurationsComboBox_SelectedIndexChanged);
+            this.ConfigurationsComboBox.MouseEnter += new System.EventHandler(this.ConfigurationsComboBox_MouseEnter);
             // 
             // SearchResultList
             // 
             this.SearchResultList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchResultList.Location = new System.Drawing.Point(3, 38);
             this.SearchResultList.Name = "SearchResultList";
-            this.SearchResultList.Size = new System.Drawing.Size(203, 668);
+            this.SearchResultList.Size = new System.Drawing.Size(203, 706);
             this.SearchResultList.TabIndex = 0;
             this.SearchResultList.SelectedIndexChanged += new System.EventHandler(this.SearchResultList_SelectedIndexChanged);
             // 
             // UpLoadDxfButton
             // 
-            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 712);
+            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 750);
             this.UpLoadDxfButton.Name = "UpLoadDxfButton";
-            this.UpLoadDxfButton.Size = new System.Drawing.Size(102, 23);
+            this.UpLoadDxfButton.Size = new System.Drawing.Size(102, 22);
             this.UpLoadDxfButton.TabIndex = 11;
             this.UpLoadDxfButton.Text = "Выгрузить DXF";
             this.UpLoadDxfButton.UseVisualStyleBackColor = true;
@@ -157,7 +160,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).EndInit();
@@ -177,6 +179,7 @@
         private System.Windows.Forms.ListBox SearchResultList;
         private System.Windows.Forms.Button Settings_btn;
         private System.Windows.Forms.Button UpLoadDxfButton;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }
 

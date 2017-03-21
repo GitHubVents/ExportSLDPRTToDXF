@@ -1,18 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace ExportSLDPRTToDXF.Models.ORM
 {
     public class AdapterPdmDB
     {
-        PDMSolidWorksDBDataContext DataContext;
+        SWPlusDataContext DataContext;
 
+
+        public AdapterPdmDB(string connectionString )
+        {
+            DataContext = new SWPlusDataContext( );
+        }
         public AdapterPdmDB( )
         {
-            DataContext = new PDMSolidWorksDBDataContext( );
+            DataContext = new SWPlusDataContext( );
         }
-
-
         public IEnumerable<View_Part> Parts
         {
             get
@@ -25,25 +29,25 @@ namespace ExportSLDPRTToDXF.Models.ORM
 
             string configuration,
             byte[] DXFByte,
-            float workpieceX,
-            float workpieceY,
+            decimal workpieceX,
+            decimal workpieceY,
             int bend,
-            float thickness,
+            decimal thickness,
             int version,
             int paintX,
              int paintY,
              int paintZ,
             int IdPdm,
-            float surfaceArea,
+            decimal surfaceArea,
             int? materialID = null
             )
         {
 
             DataContext.DXFUpDateCutList(
-                                      workpieceX,
+                                    workpieceX,
                                       workpieceY,
                                       bend,
-                                      thickness,
+                                       thickness,
                                       configuration,
                                       version,
                                       paintX,
@@ -51,7 +55,7 @@ namespace ExportSLDPRTToDXF.Models.ORM
                                       paintZ,
                                       IdPdm,
                                       materialID,
-                                      surfaceArea,
+                                     surfaceArea,
                                       new System.Data.Linq.Binary(DXFByte)
                                       );
         }

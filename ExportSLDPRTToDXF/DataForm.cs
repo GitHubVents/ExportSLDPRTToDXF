@@ -3,26 +3,23 @@ using System.Windows.Forms;
 using ExportSLDPRTToDXF.Models;
 using ExportSLDPRTToDXF.Models.ORM;
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
+using EPDM.Interop.EPDMResultCode;
 
 namespace ExportSLDPRTToDXF
 {
     public partial class DataForm : Form
     {
         #region fields
-        /// <summary>
-        /// The SolidWorksPdmAdapter exemplare which the providing 
-        /// interface to work with SolidWorks pdm
-        /// </summary>
-        SolidWorksPdmAdapter PDMAdapter = new SolidWorksPdmAdapter();
+      
 
         /// <summary>
         /// The AdapterPdmDB exemplare which the providing 
         /// interface to work with PDM SolidWorks data base
         /// </summary>
-        AdapterPdmDB AdapterPdmDB = new AdapterPdmDB();
+        AdapterPdmDB AdapterPdmDB;
         /// <summary>
         /// The FileModelPdm exemplar which contains 
         /// the main data about file in the PDM
@@ -34,14 +31,31 @@ namespace ExportSLDPRTToDXF
 
         public DataForm()
         {
+           
+               AdapterPdmDB = new AdapterPdmDB( settings.DBConnectionString );
+
             InitializeComponent();
             Search_textBox.Text = "3535";
             Patterns.Observer.MessageObserver.Instance.ReceivedMessage += Instance_ReceivedMessage;
+            SolidWorksPdmAdapter.Instance.BoomId = DataForm.settings.BoomId;
+            PdmLogin( );
+        }         
 
-             
+        public   void PdmLogin ()
+        {
+            try
+            {
+                if (!String.IsNullOrEmpty(settings.VaultName))
+
+                {
+                    SolidWorksPdmAdapter.Instance.AuthoLogin(settings.VaultName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не верное имя PDM вида: " + settings.VaultName + "\n" + ex.Message);
+            }
         }
-
-         
 
         private void Settings_btn_Click(object sender, EventArgs e)
         {  
@@ -58,12 +72,20 @@ namespace ExportSLDPRTToDXF
         private void Search_btn_Click(object sender, EventArgs e)
         {
             ClearAllControllers( );
-            var Resaltlist = PDMAdapter.SearchDoc("%" + Search_textBox.Text + "%");             
-            foreach (var item in Resaltlist)
+            try
             {
-                
-                SearchResultList.Items.Add(item);
+                var Resaltlist =  SolidWorksPdmAdapter.Instance.SearchDoc("%" + Search_textBox.Text + "%");
+                foreach (var item in Resaltlist)
+                {
+                    SearchResultList.Items.Add(item);
+                }
+
             }
+            catch (COMException ex)
+            {
+                MessageBox.Show("Error: " + (EdmResultErrorCodes_e)ex.ErrorCode);
+            }
+
         }
 
         /// <summary>
@@ -75,7 +97,7 @@ namespace ExportSLDPRTToDXF
         {
             ConfigurationsComboBoxClear( );
             FileModelPdm = SearchResultList.SelectedItem as FileModelPdm;
-            ConfigurationsComboBox.Items.AddRange( PDMAdapter.GetConfigigurations(FileModelPdm.Path));
+            ConfigurationsComboBox.Items.AddRange(  SolidWorksPdmAdapter.Instance.GetConfigigurations(FileModelPdm.Path));
 
             if (ConfigurationsComboBox.Items.Count > 0)
             {
@@ -104,15 +126,15 @@ namespace ExportSLDPRTToDXF
             SpecificationDataGridClear( );
              
                 specification = GetSpecification(FileModelPdm.Path, configuration);
-            SpecificationDataGrid.DataSource = specification; //from viewSpec in specification
-            //                                   select new
-            //                                   {
-            //                                       DXF = viewSpec.isDxf,
-            //                                       Наименование = viewSpec.PartNumber,
-            //                                       Обозначение = viewSpec.Description,
-            //                                       Конфигурация = viewSpec.Configuration,
-            //                                       Версия = viewSpec.Version
-            //                                   };             
+            SpecificationDataGrid.DataSource = specification; //  from viewSpec in specification
+            //select new
+            //{
+            //    DXF = viewSpec.isDxf,
+            //    Наименование = viewSpec.PartNumber,
+            //    Обозначение = viewSpec.Description,
+            //    Конфигурация = viewSpec.Configuration,
+            //    Версия = viewSpec.Version
+            //};
         }
 
         /// <summary>
@@ -122,23 +144,18 @@ namespace ExportSLDPRTToDXF
         /// <param name="configuration"></param>
         /// <returns></returns>
         public Specification[] GetSpecification(string filePath, string configuration)
-        {          
-               
-                var parts = AdapterPdmDB.Parts;
-          
+        {
+            var parts = AdapterPdmDB.Parts;         
 
-                var bomShell = PDMAdapter.GetBomShell(filePath, configuration);
-
+                var bomShell =  SolidWorksPdmAdapter.Instance.GetBomShell(filePath, configuration);
             if (bomShell != null)
             {
                 IEnumerable<Specification> specifications = null;
-
                 try
-                {
-
+                { 
                     specifications = from eachBom in bomShell
-                                     join eachPart in parts on new { id = (int)eachBom.IdPdm, ver = (int)eachBom.Version, conf = eachBom.Configuration }
-                                        equals new { id = (int)eachPart.IDPDM, ver = (int)eachPart.Version, conf = eachPart.ConfigurationName }
+                                     join eachPart in parts on new { id =  eachBom.IdPdm, ver =  eachBom.Version, conf = eachBom.Configuration }
+                                        equals new { id =  (int)eachPart.IDPDM, ver =  eachPart.Version, conf = eachPart.ConfigurationName }
                                         into Spec_s
                                      from spec in Spec_s.DefaultIfEmpty( )
                                      select new Specification
@@ -148,29 +165,29 @@ namespace ExportSLDPRTToDXF
                                          Version = eachBom.Version,
                                          Configuration = eachBom.Configuration,
                                          IDPDM = eachBom.IdPdm,
-                                          
-                                         Bend = (int)(spec == null ? 0 : spec.Bend),
-                                         PaintX = (int)(spec == null ? 0 : spec.PaintX),
-                                         PaintY = (int)(spec == null ? 0 : spec.PaintY),
-                                         PaintZ = (int)(spec == null ? 0 : spec.PaintZ),
-                                         WorkpieceX = (double)(spec == null ? 0 : spec.WorkpieceX),
-                                         WorkpieceY = (double)(spec == null ? 0 : spec.WorkpieceY),
-                                         SurfaceArea = (double)(spec == null ? 0 : spec.SurfaceArea),
+
+                                         Bend =  (spec == null ? 0 : spec.Bend),
+                                         PaintX =  (spec == null ? 0 : spec.PaintX),
+                                         PaintY =  (spec == null ? 0 : spec.PaintY),
+                                         PaintZ =  (spec == null ? 0 : spec.PaintZ),
+                                         WorkpieceX = (spec == null ? 0 : spec.WorkpieceX),
+                                         WorkpieceY = (spec == null ? 0 : spec.WorkpieceY),
+                                         SurfaceArea = (spec == null ? 0 : spec.SurfaceArea),
                                          isDxf = (spec == null || spec.DXF != "1") ? false : true,
                                          FileName = eachBom.FileName,
-                                         FilePath = Path.Combine(eachBom.FolderPath, eachBom.FileName)
+                                         FilePath = Path.Combine(eachBom.FolderPath, eachBom.FileName),
+                                         Thickness = (spec == null ? 0 : spec.Thickness)
                                      };
-                }
 
+                    return specifications.ToArray( );
+                }
                 catch (Exception ex)
                 {
-
                      MessageBox.Show( ex.ToString());
                 }
-                return specifications.ToArray( );
+               
             }
-            return null;
-           
+            return null;           
         }
 
 
@@ -180,8 +197,6 @@ namespace ExportSLDPRTToDXF
         {
             SearchResultList.Items.Clear( );
         }
-
-      
 
         void SpecificationDataGridClear ()
         {
@@ -210,23 +225,34 @@ namespace ExportSLDPRTToDXF
         private void UpLoadDxfButton_Click(object sender, EventArgs e)
         {
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
-           
-            DxfBulder.DxfFolder = @"C:\DXF";
-            DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
-            PDMAdapter.GetEdmFile5(FileModelPdm.Path);
 
-
-            if (specification != null)
+            string pathToDxf = settings.DxfPath;
+            if (String.IsNullOrEmpty(pathToDxf))
             {
-                foreach (var item in specification)
+                MessageBox.Show("Не указан путь для выгрузки DXF");
+                //003540.
+            }
+            else
+            {
+                pathToDxf = Path.Combine(settings.DxfPath, "DXF");
+                DxfBulder.DxfFolder = pathToDxf;
+                DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
+                 SolidWorksPdmAdapter.Instance.GetEdmFile5(FileModelPdm.Path);
+                if (specification != null)
                 {
-                    if (!item.isDxf && Path.GetExtension( item.FileName).ToUpper() == ".SLDPRT")
-                    {                   
-                              
-                        DxfBulder.Build(item.FilePath, item.IDPDM, item.Version);
+                    foreach (var item in specification)
+                    {
+                        if (!item.isDxf && Path.GetExtension(item.FileName).ToUpper() == ".SLDPRT")
+                        {
+                           
+                            DxfBulder.Build(item.FilePath, item.IDPDM, item.Version);
+                        }
                     }
                 }
-            } 
+                SpecificationDataGrid.Update( );
+                SpecificationDataGrid.Refresh( );
+            }
+
         }
         /// <summary>
         /// Выгрузка CutList для каждого построеного dxf
@@ -234,8 +260,22 @@ namespace ExportSLDPRTToDXF
         /// <param name="dataToExport"></param>
         private void DxfBulder_FinishedBuilding(SolidWorksLibrary.Builders.Dxf.DataToExport dataToExport)
         {
-            AdapterPdmDB.UpDateCutList(  dataToExport.Configuration, dataToExport.DXFByte,dataToExport.WorkpieceX,dataToExport.WorkpieceY,  dataToExport.Bend, dataToExport.Thickness, dataToExport.Version, 
-                dataToExport.PaintX, dataToExport.PaintY, dataToExport.PaintZ, dataToExport.IdPdm, dataToExport.SurfaceArea,dataToExport.MaterialID);
+            //MessageBox.Show($"DxfBulder_FinishedBuilding: x {dataToExport.PaintX}, Y  {dataToExport.PaintY}, Z {dataToExport.PaintZ}");
+
+            AdapterPdmDB.UpDateCutList(  dataToExport.Configuration, 
+                dataToExport.DXFByte,
+                dataToExport.WorkpieceX,
+                dataToExport.WorkpieceY,  
+                dataToExport.Bend, 
+                dataToExport.Thickness, 
+                dataToExport.Version, 
+                dataToExport.PaintX, 
+                dataToExport.PaintY,
+                dataToExport.PaintZ,
+                dataToExport.IdPdm, 
+                dataToExport.SurfaceArea,
+                dataToExport.MaterialID
+                );
         }
         /// <summary>
         /// Обработка системных сообщений
@@ -247,7 +287,15 @@ namespace ExportSLDPRTToDXF
             if (massage.Type == Patterns.Observer.MessageType.Error)
                 MessageBox.Show(massage.Message);
         }
-         
-      
+
+        private void Search_textBox_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip.SetToolTip(Search_textBox, "Поле поиска");
+        }
+
+        private void ConfigurationsComboBox_MouseEnter(object sender, EventArgs e)
+        {
+            ToolTip.SetToolTip(ConfigurationsComboBox, "Список конфигураций");
+        }
     }
 }

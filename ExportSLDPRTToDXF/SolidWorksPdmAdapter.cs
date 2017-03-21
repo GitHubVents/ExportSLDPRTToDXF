@@ -10,35 +10,45 @@ using ExportSLDPRTToDXF.Models;
 using EPDM.Interop.EPDMResultCode;
 using Patterns.Observer;
 using System.Windows.Forms;
+using Patterns;
 
 namespace ExportSLDPRTToDXF
 {
-    public class SolidWorksPdmAdapter 
-    {         
-        public SolidWorksPdmAdapter() : base()
-        {
-            edmVeult8 = (IEdmVault8)PdmExemplar;
-        }
+    public class SolidWorksPdmAdapter : Singeton <SolidWorksPdmAdapter>
+    { 
+        
+       
+        private string vaultName;
+        public string VaultName { get; set; }
+        public int BoomId { get; set; }
 
-        private string vaultName = "Vents-PDM";
-        private int BOM_ID = 22;
+        protected SolidWorksPdmAdapter( ) : base()
+        {
+
+        }
+        //DataForm.settings.
         /// <summary>
         /// PDM exemplar.
         /// </summary>
         private static IEdmVault5 edmVeult5 = null;
         private static IEdmVault8 edmVeult8;
-        private static EdmViewInfo[] Views = null;
-
-        public void AuthoLogin (string vaultName)
-        {
-            this.vaultName = vaultName;
-
-
+        
+        public void AuthoLogin (string vaultName, bool isRelogin = false)
+        {           
+            this.VaultName = vaultName;
+            
+            if (isRelogin )
+            {
+                edmVeult5 = null; 
+            }
+            
             if (!PdmExemplar.IsLoggedIn)
             {
-                edmVeult5.LoginAuto(this.vaultName, 0); 
+                edmVeult5.LoginAuto(this.VaultName, 0); 
+                
             } 
         }
+
         /// <summary>
         /// Returns exemplar pdm SolidWorks 
         /// </summary>
@@ -55,11 +65,12 @@ namespace ExportSLDPRTToDXF
 
                         edmVeult5 = new EdmVault5();                       
                     }
+                    edmVeult8 = edmVeult5 as IEdmVault8;
                     return edmVeult5;
                 }
                 catch (Exception exception)
                 {
-                    MessageObserver.Instance.SetMessage("Невозможно создать экземпляр Vents-PDM - " + vaultName + "\n" + exception);
+                    MessageObserver.Instance.SetMessage("Невозможно создать экземпляр Vents-PDM - " + VaultName + "\n" + exception);
                     return null;
                 }
 
@@ -181,13 +192,16 @@ namespace ExportSLDPRTToDXF
             {
                 IEdmFolder5 oFolder;
                 var edmFile5 = PdmExemplar.GetFileFromPath(path, out oFolder);
-                edmFile5.GetFileCopy(1, 0, oFolder.ID, (int)EdmGetFlag.EdmGet_RefsVerLatest);
+                edmFile5.GetFileCopy(1, 0, oFolder.ID, (int)EdmGetFlag.EdmGet_Refs +
+                                                       (int)EdmGetFlag.EdmGet_RefsOnlyMissing +
+                                                       (int)EdmGetFlag.EdmGet_MakeReadOnly +
+                                                       (int)EdmGetFlag.EdmGet_RefsVerLatest);
                 return edmFile5;
             }
-            catch (Exception exception)
+            catch (COMException ex)
             {
-                //Логгер.Ошибка($"Message - {exception.ToString()}\nPath - {path}\nStackTrace - {exception.StackTrace}", null, "GetEdmFile5", "SwEpdm");
-                throw exception;
+                MessageBox.Show("Error: " + (EdmResultErrorCodes_e)ex.ErrorCode);
+                throw ex;
             }
         } 
         private void KillProcsses (string name)
@@ -210,7 +224,7 @@ namespace ExportSLDPRTToDXF
                 IEdmFolder5 oFolder;
 
                 IEdmFile7 EdmFile7 = (IEdmFile7)PdmExemplar.GetFileFromPath(filePath, out oFolder);
-                var bomView = EdmFile7.GetComputedBOM(22, -1, bomConfiguration, (int)EdmBomFlag.EdmBf_ShowSelected);
+                var bomView = EdmFile7.GetComputedBOM(BoomId, -1, bomConfiguration, 3);
 
                 if (bomView == null)
                     throw new Exception("Computed BOM it can not be null");
@@ -276,7 +290,7 @@ namespace ExportSLDPRTToDXF
                 MessageBox.Show("Failed get bom shell " + (EdmResultErrorCodes_e)ex.ErrorCode);
 
                 throw  ex;
-                return null;
+                //return null;
             }
 
         }
