@@ -45,7 +45,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ExportSLDPRTToDXF.Properties.Resources.loadimg;
+            //this.pictureBox1.Image = global::ExportSLDPRTToDXF.Properties.Resources.loadimg;
             this.pictureBox1.Location = new System.Drawing.Point(293, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 46);

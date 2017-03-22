@@ -1,6 +1,13 @@
-﻿namespace ExportSLDPRTToDXF.Models
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+
+namespace ExportSLDPRTToDXF.Models
 {
-   public class Specification
+    /// <summary>
+    /// The describes specification properties.
+    /// </summary>
+    public class Specification : ISpecificationView
     {
 
         public bool isDxf { get; set; }
@@ -16,8 +23,35 @@
         public int PaintY { get; set; }
         public int PaintZ { get; set; }
         public decimal SurfaceArea { get; set; }
-        public string FileName { get; set; }           
+        public string FileName { get; set; }
         public int IDPDM { get; set; }
         public string FilePath { get; set; }
+
+        public static IEnumerable <ISpecificationView> ToView (IEnumerable<Specification> specification)
+        {
+            List<ISpecificationView> resultList = new List<ISpecificationView>( );
+            foreach (var item in specification)
+            {
+                resultList.Add(item);
+            }
+            return resultList;
+        }
+    }
+
+    /// <summary>
+    /// The describes properties which will view to user. 
+    /// </summary>
+    public interface ISpecificationView
+    { 
+        [DisplayName("DXF")]                
+        bool isDxf { get; set; }      
+        [DisplayName("Обозначение")]          
+        string PartNumber { get; set; }
+        [DisplayName("Наименование")]
+        string Description { get; set; }
+        [DisplayName("Конфигурация")]
+        string Configuration { get; set; }
+        [DisplayName("Версия")]
+        int Version { get; set; }
     }
 }

@@ -217,38 +217,24 @@ namespace ExportSLDPRTToDXF
         #region bom
         public IEnumerable<BomShell> GetBomShell(string filePath, string bomConfiguration )
         {
-
             try
             {
                 IEdmFolder5 oFolder;
-
                 IEdmFile7 EdmFile7 = (IEdmFile7)PdmExemplar.GetFileFromPath(filePath, out oFolder);
-                //MessageBox.Show(BoomId.ToString());
                 var bomView = EdmFile7.GetComputedBOM(BoomId, -1, bomConfiguration, 3);
-
                 if (bomView == null)
+                {
                     throw new Exception("Computed BOM it can not be null");
+                }
                 object[] bomRows;
                 EdmBomColumn[] bomColumns;
                 bomView.GetRows(out bomRows);
                 bomView.GetColumns(out bomColumns);
-
-
-                var bomTable = new DataTable();
-
-                string str = "";
+                DataTable bomTable = new DataTable();
                 foreach (EdmBomColumn bomColumn in bomColumns)
-                {
-                    str += bomColumn.mbsCaption + " ";
+                { 
                     bomTable.Columns.Add(new DataColumn { ColumnName = bomColumn.mbsCaption });
-                }
-
-                //bomTable.Columns.Add(new DataColumn { ColumnName = "Путь" });
-                //bomTable.Columns.Add(new DataColumn { ColumnName = "Уровень" });
-                //bomTable.Columns.Add(new DataColumn { ColumnName = "КонфГлавнойСборки" });
-                //bomTable.Columns.Add(new DataColumn { ColumnName = "ТипОбъекта" });
-                //bomTable.Columns.Add(new DataColumn { ColumnName = "GetPathName" });
-
+                } 
                 for (var i = 0; i < bomRows.Length; i++)
                 {
                     var cell = (IEdmBomCell)bomRows.GetValue(i);
@@ -257,13 +243,11 @@ namespace ExportSLDPRTToDXF
 
                     for (var j = 0; j < bomColumns.Length; j++)
                     {
-                        var column = (EdmBomColumn)bomColumns.GetValue(j);
-
+                        EdmBomColumn column = (EdmBomColumn)bomColumns.GetValue(j);
                         object value;
                         object computedValue;
                         string config;
                         bool readOnly;
-
                         cell.GetVar(column.mlVariableID, column.meType, out value, out computedValue, out config, out readOnly);
 
                         if (value != null)
@@ -273,54 +257,42 @@ namespace ExportSLDPRTToDXF
                         else
                         {
                             bomTable.Rows[i][j] = null;
-                        }
-                       // bomTable.Rows[i][j + 1] = cell.GetTreeLevel( );
-
-                      //  bomTable.Rows[i][j + 2] = bomConfiguration;
-                      //  bomTable.Rows[i][j + 3] = config;
-                      //  bomTable.Rows[i][j + 4] = cell.GetPathName( );
+                        } 
                     }
                 }
-
                 return BomTableToBomList(bomTable);
-
             }
             catch (COMException ex)
             {
                 MessageBox.Show("Failed get bom shell " + (EdmResultErrorCodes_e)ex.ErrorCode + ". Укажите вид PDM или тип спецификации");
-
-                throw  ex;
-                //return null;
+                throw  ex; 
             }
-
         }
         #endregion
 
         private   IEnumerable<BomShell> BomTableToBomList(DataTable table)
         {
-            List<BomShell> BoomShellList = new List<BomShell>(table.Rows.Count);
+            List<BomShell> BoomShellList = new List<BomShell>(table.Rows.Count);          
+           
             try
             {
-                BoomShellList.AddRange(from DataRow row in table.Rows
-                                       select row.ItemArray into values
+                BoomShellList.AddRange(from DataRow eachRow in table.Rows
+                                       select eachRow.ItemArray into values
                                        select new BomShell
-                                       {
+                                       {                                           
                                            PartNumber = values[0].ToString( ),
                                            Description = values[1].ToString( ),
-                                           FolderPath = values[2].ToString( ),
-                                           IdPdm = Convert.ToInt32(values[3]),
-                                           Configuration = values[4].ToString( ),
-                                           Version = Convert.ToInt32(values[5])      
-                                           , FileName = values[6].ToString( )
-
+                                           IdPdm = Convert.ToInt32(values[2]),
+                                           Configuration = values[3].ToString( ),
+                                           Version = Convert.ToInt32(values[4]),
+                                           FileName = values[5].ToString( ),
+                                           FolderPath = values[6].ToString( ),
                                        });
             }
             catch(Exception exception)
             {
-                MessageObserver.Instance.SetMessage("Failed get bom shell list: " + exception.ToString());
+                MessageObserver.Instance.SetMessage("Failed get bom shell list\n" + exception.ToString() , MessageType.Error);                
             }
-
-            //LoggerInfo("Список из полученой таблицы успешно заполнен элементами в количестве" + bomList.Count);
             return BoomShellList;
         }
 

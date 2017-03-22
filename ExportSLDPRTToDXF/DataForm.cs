@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using EPDM.Interop.EPDMResultCode;
+using Patterns.Observer;
 
 namespace ExportSLDPRTToDXF
 {
@@ -30,8 +31,16 @@ namespace ExportSLDPRTToDXF
 
             InitializeComponent();
             //Search_textBox.Text = "3535";
-            Patterns.Observer.MessageObserver.Instance.ReceivedMessage += Instance_ReceivedMessage;
-            SolidWorksPdmAdapter.Instance.BoomId = settings.BoomId ; 
+          MessageObserver.Instance.ReceivedMessage += Instance_ReceivedMessage;
+            try
+            {
+                SolidWorksPdmAdapter.Instance.BoomId = settings.BoomId;
+            }
+            catch(Exception ex)
+            {
+                MessageObserver.Instance.SetMessage(ex.ToString( ));
+                MessageBox.Show( ex.ToString());
+            }
             PdmLogin( );
         }         
 
@@ -119,7 +128,8 @@ namespace ExportSLDPRTToDXF
             SpecificationDataGridClear( );
              
                 specification = GetSpecification(FileModelPdm.Path, configuration);
-            SpecificationDataGrid.DataSource = specification; //  from viewSpec in specification
+
+            SpecificationDataGrid.DataSource = Specification.ToView(specification); //from viewSpec in specification // specification; // 
             //select new
             //{
             //    DXF = viewSpec.isDxf,
@@ -136,16 +146,16 @@ namespace ExportSLDPRTToDXF
         /// <param name="filePath"></param>
         /// <param name="configuration"></param>
         /// <returns></returns>
-        public Specification[] GetSpecification(string filePath, string configuration)
+        internal Specification[] GetSpecification(string filePath, string configuration)
         {
             try
             {
                 var parts = AdapterPdmDB.Instance.Parts;
-                var bomShell = SolidWorksPdmAdapter.Instance.GetBomShell(filePath, configuration);
+                var bomShell = SolidWorksPdmAdapter.Instance.GetBomShell(filePath, configuration);                 
                 if (bomShell != null)
                 {
                     IEnumerable<Specification> specifications = null;
-
+                     
                     specifications = from eachBom in bomShell
                                      join eachPart in parts on new { id = eachBom.IdPdm, ver = eachBom.Version, conf = eachBom.Configuration }
                                         equals new { id = (int)eachPart.IDPDM, ver = eachPart.Version, conf = eachPart.ConfigurationName }
@@ -153,8 +163,8 @@ namespace ExportSLDPRTToDXF
                                      from spec in Spec_s.DefaultIfEmpty( )
                                      select new Specification
                                      {
-                                         Description = eachBom.Description,
-                                         PartNumber = eachBom.PartNumber,
+                                           Description = eachBom.Description,
+                                          PartNumber = eachBom.PartNumber,
                                          Version = eachBom.Version,
                                          Configuration = eachBom.Configuration,
                                          IDPDM = eachBom.IdPdm,
@@ -221,14 +231,10 @@ namespace ExportSLDPRTToDXF
         {
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
             StatusForm statusForm = new StatusForm( );
-            statusForm.Show( );
-            string appdataFolder = Environment.GetFolderPath( Environment.SpecialFolder.Templates);
-            MessageBox.Show( appdataFolder);
-          
-            //Environment.CurrentDirectory;//settings.DxfPath;
-           
-
-            if (String.IsNullOrEmpty(appdataFolder))
+            statusForm.ShowDialog( );
+            
+            string appdataFolder = Environment.GetFolderPath( Environment.SpecialFolder.Templates);    
+            if (String.IsNullOrEmpty(settings.DxfPath))
             {
                 MessageBox.Show("Не указан путь для выгрузки DXF");
                 //003540.
@@ -246,7 +252,7 @@ namespace ExportSLDPRTToDXF
                     specification = specification.GroupBy(each=>each.FilePath).Select(each=> new Specification
                     {
                         Description = each.First().Description,
-                        PartNumber = each.First( ).PartNumber,
+                         PartNumber = each.First( ).PartNumber,
                         Version = each.First( ).Version,
                         Configuration = each.First( ).Configuration,
                         IDPDM = each.First( ).IDPDM,
@@ -269,6 +275,7 @@ namespace ExportSLDPRTToDXF
                         if (!item.isDxf && Path.GetExtension(item.FileName).ToUpper() == ".SLDPRT")
                         { 
                             DxfBulder.Build(item.FilePath, item.IDPDM, item.Version);
+
                         }                        
                     }                     
                 }
@@ -279,12 +286,19 @@ namespace ExportSLDPRTToDXF
             #region  load dxf as binary from database  and save as dxf file
             foreach (var item in specification)
             {
-              if (  AdapterPdmDB.Instance.IsDxf(item.IDPDM,item.Configuration,item.Version))
+                if (AdapterPdmDB.Instance.IsDxf(item.IDPDM, item.Configuration, item.Version))
                 {
                     byte[] binary = AdapterPdmDB.Instance.GetDXF(item.IDPDM, item.Configuration, item.Version);
-                    string fileName = Path.GetFileNameWithoutExtension(item.FileName );
-
-                    BinaryToDxfFile(binary, fileName, settings.DxfPath);
+                    string fileName = Path.GetFileNameWithoutExtension(item.FileName);
+                    if (Path.GetExtension(FileModelPdm.FileName.ToUpper( )) == ".SLDPRT")
+                    {
+                        BinaryToDxfFile(binary, fileName, Path.Combine(settings.DxfPath, "Детали"));
+                    }
+                    else
+                    {
+                        BinaryToDxfFile(binary, fileName, Path.Combine(settings.DxfPath, Path.GetFileNameWithoutExtension(FileModelPdm.FileName)));
+                    }
+                
                 }
             }
             #endregion
@@ -301,8 +315,7 @@ namespace ExportSLDPRTToDXF
         }
 
         private void BinaryToDxfFile(byte [] inputBinary, string fileName, string directory)
-        {
-            MessageBox.Show(fileName);
+        { 
             string path = Path.Combine(directory , $"{fileName}.dxf");
             File.WriteAllBytes(path, inputBinary);
         }
@@ -349,11 +362,6 @@ namespace ExportSLDPRTToDXF
         private void ConfigurationsComboBox_MouseEnter(object sender, EventArgs e)
         {
             ToolTip.SetToolTip(ConfigurationsComboBox, "Список конфигураций");
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        } 
     }
 }

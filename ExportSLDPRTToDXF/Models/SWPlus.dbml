@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SWPlusDB" Class="SWPlusDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=AirVentsCad" SettingsObjectName="ExportSLDPRTToDXF.Properties.Settings" SettingsPropertyName="SWPlusDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.View_Parts" Member="View_Parts">
+    <Type Name="View_Part">
+      <Column Name="Bend" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaintX" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaintY" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaintZ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurfaceArea" Type="System.Decimal" DbType="Decimal(10,3) NOT NULL" CanBeNull="false" />
+      <Column Name="Thickness" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WorkpieceX" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkpieceY" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="IDPDM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConfigurationName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DXF" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DXF_GET" Method="DXF_GET">
+    <Parameter Name="IDPDM" Parameter="iDPDM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ConfigName" Parameter="configName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Vertion" Parameter="vertion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DXF" Parameter="dXF" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DXFCheck" Method="DXFCheck">
+    <Parameter Name="IDPDM" Parameter="iDPDM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Configuration" Parameter="configuration" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Version" Parameter="version" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DXFUpDateCutList" Method="DXFUpDateCutList">
+    <Parameter Name="WorkpieceX" Parameter="workpieceX" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="WorkpieceY" Parameter="workpieceY" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="Bend" Parameter="bend" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Thickness" Parameter="thickness" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="Configuration" Parameter="configuration" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Version" Parameter="version" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PaintX" Parameter="paintX" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PaintY" Parameter="paintY" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PaintZ" Parameter="paintZ" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPDM" Parameter="iDPDM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaterialID" Parameter="materialID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SurfaceArea" Parameter="surfaceArea" Type="System.Decimal" DbType="Decimal(10,3)" />
+    <Parameter Name="DXF" Parameter="dXF" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DXFDelete" Method="DXFDelete">
+    <Parameter Name="IDPDM" Parameter="iDPDM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Configuration" Parameter="configuration" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Version" Parameter="version" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

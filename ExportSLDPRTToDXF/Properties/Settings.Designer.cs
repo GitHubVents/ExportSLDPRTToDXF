@@ -49,7 +49,7 @@ namespace ExportSLDPRTToDXF.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("8")]
         public int BoomId {
             get {
                 return ((int)(this["BoomId"]));

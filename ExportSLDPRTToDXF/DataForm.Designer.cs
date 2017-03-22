@@ -79,7 +79,9 @@
             // 
             // SpecificationDataGrid
             // 
+            this.SpecificationDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SpecificationDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.SpecificationDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.SpecificationDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SpecificationDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SpecificationDataGrid.Location = new System.Drawing.Point(212, 38);
@@ -112,7 +114,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(942, 29);
             this.tableLayoutPanel3.TabIndex = 3;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // Search_btn
             // 
