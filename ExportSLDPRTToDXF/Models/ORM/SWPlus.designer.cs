@@ -33,7 +33,7 @@ namespace ExportSLDPRTToDXF.Models.ORM
     #endregion
 		
 		public SWPlusDataContext() : 
-				base(DataForm.settings.DBConnectionString, mappingSource)
+				base(global::ExportSLDPRTToDXF.Properties.Settings.Default.SWPlusDBConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -88,6 +88,14 @@ namespace ExportSLDPRTToDXF.Models.ORM
 		public int DXFDelete([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Configuration", DbType="NVarChar(255)")] string configuration, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Version", DbType="Int")] System.Nullable<int> version)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDPDM, configuration, version);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DXF_GET")]
+		public int DXF_GET([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPDM", DbType="Int")] System.Nullable<int> iDPDM, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ConfigName", DbType="NVarChar(255)")] string configName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Vertion", DbType="Int")] System.Nullable<int> vertion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DXF", DbType="VarBinary(MAX)")] ref System.Data.Linq.Binary dXF)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDPDM, configName, vertion, dXF);
+			dXF = ((System.Data.Linq.Binary)(result.GetParameterValue(3)));
 			return ((int)(result.ReturnValue));
 		}
 	}

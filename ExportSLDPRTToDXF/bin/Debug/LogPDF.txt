@@ -1216,3 +1216,40 @@ Time:21.03.2017 17:20:05 Message: 	Opened document 02-26540.SLDPRT
 Time:21.03.2017 17:20:05 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26541.SLDPRT input id: 486669  input ver: 1
  Thread sleep 4 sec.
 Time:21.03.2017 17:20:05 Message: Start build Dxf file
+Time:21.03.2017 17:20:05 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:05 Message: 	Opened document 02-26541.SLDPRT
+Time:21.03.2017 17:20:06 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 K.SLDPRT input id: 90339  input ver: 6
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:06 Message: Start build Dxf file
+Time:21.03.2017 17:20:07 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:07 Message: 	Opened document Винт саморез DIN 7504 K.SLDPRT
+Time:21.03.2017 17:20:07 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23743.SLDPRT input id: 455578  input ver: 1
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:07 Message: Start build Dxf file
+Time:21.03.2017 17:20:07 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:07 Message: 	Opened document 02-23743.SLDPRT
+Time:21.03.2017 17:20:07 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-16668.SLDPRT input id: 447263  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:07 Message: Start build Dxf file
+Time:21.03.2017 17:20:08 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:08 Message: 	Opened document 02-16668.SLDPRT
+Time:21.03.2017 17:20:08 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-16968.SLDPRT input id: 447262  input ver: 2
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:08 Message: Start build Dxf file
+Time:21.03.2017 17:20:08 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:08 Message: 	Opened document 02-16968.SLDPRT
+Time:21.03.2017 17:20:08 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV20\ВНС-903.49.600 Блок шумоглушителя\ParocInvent.SLDPRT input id: 21724  input ver: 5
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:08 Message: Start build Dxf file
+Time:21.03.2017 17:20:09 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:09 Message: 	Opened document ParocInvent.SLDPRT
+Time:21.03.2017 17:20:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:09 Message: Start build Dxf file
+Time:21.03.2017 17:20:09 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:09 Message: 	Opened document SC GOST 17473_gost.sldprt
+Time:21.03.2017 17:20:09 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 12
+ Thread sleep 4 sec.
+Time:21.03.2017 17:20:09 Message: Start build Dxf file
+Time:21.03.2017 17:20:10 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:21.03.2017 17:20:10 Message: 	Opened document Threaded Rivets с насечкой.SLDPRT

@@ -44,4 +44,11 @@
     <Parameter Name="Version" Parameter="version" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.DXF_GET" Method="DXF_GET">
+    <Parameter Name="IDPDM" Parameter="iDPDM" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ConfigName" Parameter="configName" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="Vertion" Parameter="vertion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DXF" Parameter="dXF" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

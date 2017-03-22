@@ -222,22 +222,28 @@ namespace ExportSLDPRTToDXF
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
             StatusForm statusForm = new StatusForm( );
             statusForm.Show( );
-            string pathToDxf = settings.DxfPath;
-            if (String.IsNullOrEmpty(pathToDxf))
+            string appdataFolder = Environment.GetFolderPath( Environment.SpecialFolder.Templates);
+            MessageBox.Show( appdataFolder);
+          
+            //Environment.CurrentDirectory;//settings.DxfPath;
+           
+
+            if (String.IsNullOrEmpty(appdataFolder))
             {
                 MessageBox.Show("Не указан путь для выгрузки DXF");
                 //003540.
             }
             else
             {
-                pathToDxf = Path.Combine(settings.DxfPath, "DXF");
-                DxfBulder.DxfFolder = pathToDxf;
+                appdataFolder = Path.Combine(appdataFolder, "DXF"); 
+
+                DxfBulder.DxfFolder = appdataFolder;
                 DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
                  SolidWorksPdmAdapter.Instance.GetEdmFile5(FileModelPdm.Path);
 
                 if (specification != null)
                 {
-                    var groupSpec = specification.GroupBy(each=>each.FilePath).Select(each=> new Specification
+                    specification = specification.GroupBy(each=>each.FilePath).Select(each=> new Specification
                     {
                         Description = each.First().Description,
                         PartNumber = each.First( ).PartNumber,
@@ -255,9 +261,9 @@ namespace ExportSLDPRTToDXF
                         FileName = each.First( ).FileName,
                         FilePath = each.First( ).FilePath,
                         Thickness = each.First( ).Thickness
-                    });
+                    }).ToArray();
                     
-                    foreach (var item in groupSpec)
+                    foreach (var item in specification)
                     {
                         
                         if (!item.isDxf && Path.GetExtension(item.FileName).ToUpper() == ".SLDPRT")
@@ -269,8 +275,38 @@ namespace ExportSLDPRTToDXF
                 SpecificationDataGrid.Update( );
                 SpecificationDataGrid.Refresh( );
             }
+
+            #region  load dxf as binary from database  and save as dxf file
+            foreach (var item in specification)
+            {
+              if (  AdapterPdmDB.Instance.IsDxf(item.IDPDM,item.Configuration,item.Version))
+                {
+                    byte[] binary = AdapterPdmDB.Instance.GetDXF(item.IDPDM, item.Configuration, item.Version);
+                    string fileName = Path.GetFileNameWithoutExtension(item.FileName );
+
+                    BinaryToDxfFile(binary, fileName, settings.DxfPath);
+                }
+            }
+            #endregion
+
+            #region clear temp dxf directory
+            var files =  Directory.GetFiles(appdataFolder);
+            foreach (var file in files)
+            {
+                File.Delete(file);
+            }
+            #endregion
+
             statusForm.Close( );
         }
+
+        private void BinaryToDxfFile(byte [] inputBinary, string fileName, string directory)
+        {
+            MessageBox.Show(fileName);
+            string path = Path.Combine(directory , $"{fileName}.dxf");
+            File.WriteAllBytes(path, inputBinary);
+        }
+
         /// <summary>
         /// Выгрузка CutList для каждого построеного dxf
         /// </summary>
@@ -293,6 +329,7 @@ namespace ExportSLDPRTToDXF
                 dataToExport.MaterialID
                 );
         }
+       
         /// <summary>
         /// Обработка системных сообщений
         /// </summary>

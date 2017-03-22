@@ -19,4 +19,4 @@ C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\b
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Release\ExportSLDPRTToDXF.application
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Release\ExportSLDPRTToDXF.exe.manifest
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Release\ExportSLDPRTToDXF.application
-C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Release\ExportSLDPRTToDXF.csprojResolveAssemblyReference.cache
+C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Release\ExportSLDPRTToDXF.StatusForm.resources

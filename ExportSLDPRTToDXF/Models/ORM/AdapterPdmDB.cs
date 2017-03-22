@@ -1,11 +1,13 @@
-﻿using Patterns;
+﻿using ExportSLDPRTToDXF.Properties;
+using Patterns;
 using System.Collections.Generic;
+using System.Data.Linq;
 
 namespace ExportSLDPRTToDXF.Models.ORM
 {
     public class AdapterPdmDB : Singeton <AdapterPdmDB>
     {
-        SWPlusDataContext DataContext { get { return new SWPlusDataContext( ); } }
+        SWPlusDataContext DataContext { get { return new SWPlusDataContext(Settings.Default.DBConnectionString ); } }
 
         protected AdapterPdmDB( ): base()
         {
@@ -52,6 +54,18 @@ namespace ExportSLDPRTToDXF.Models.ORM
                                      surfaceArea,
                                       new System.Data.Linq.Binary(DXFByte)
                                       );
+        }
+
+       public bool IsDxf (int IdPDM, string configuration, int version)
+        {
+            return DataContext.DXFCheck(IdPDM, configuration, version) != 0 ? true:false;
+        }
+
+        public byte[] GetDXF (int IdPDM, string configuration, int version)
+        {
+            Binary binaryDxf = null;
+             DataContext.DXF_GET(IdPDM, configuration, version, ref binaryDxf);
+            return binaryDxf.ToArray( );
         }
     }
 }
