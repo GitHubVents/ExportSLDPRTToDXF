@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace ExportSLDPRTToDXF.Models
@@ -32,6 +31,7 @@ namespace ExportSLDPRTToDXF.Models
             List<ISpecificationView> resultList = new List<ISpecificationView>( );
             foreach (var item in specification)
             {
+                
                 resultList.Add(item);
             }
             return resultList;

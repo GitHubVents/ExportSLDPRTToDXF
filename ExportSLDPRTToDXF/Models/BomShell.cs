@@ -42,7 +42,7 @@ namespace ExportSLDPRTToDXF.Models
         public string FileName { get; set; }
         public string FolderPath { get; set; }
     
-      
-      
+      public string ObjectType { get; set; }
+
     }
 }

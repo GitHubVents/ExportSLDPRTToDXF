@@ -38,6 +38,7 @@
             this.ConfigurationsComboBox = new System.Windows.Forms.ComboBox();
             this.SearchResultList = new System.Windows.Forms.ListBox();
             this.UpLoadDxfButton = new System.Windows.Forms.Button();
+            this.StatusLabel = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).BeginInit();
@@ -57,19 +58,21 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.SearchResultList, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.UpLoadDxfButton, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.StatusLabel, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 775);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 786);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Settings_btn
             // 
-            this.Settings_btn.Location = new System.Drawing.Point(3, 750);
+            this.Settings_btn.Location = new System.Drawing.Point(3, 734);
             this.Settings_btn.Name = "Settings_btn";
             this.Settings_btn.Size = new System.Drawing.Size(75, 22);
             this.Settings_btn.TabIndex = 10;
@@ -88,7 +91,7 @@
             this.SpecificationDataGrid.MultiSelect = false;
             this.SpecificationDataGrid.Name = "SpecificationDataGrid";
             this.SpecificationDataGrid.ReadOnly = true;
-            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 706);
+            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 690);
             this.SpecificationDataGrid.TabIndex = 4;
             // 
             // Search_textBox
@@ -141,13 +144,13 @@
             this.SearchResultList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchResultList.Location = new System.Drawing.Point(3, 38);
             this.SearchResultList.Name = "SearchResultList";
-            this.SearchResultList.Size = new System.Drawing.Size(203, 706);
+            this.SearchResultList.Size = new System.Drawing.Size(203, 690);
             this.SearchResultList.TabIndex = 0;
             this.SearchResultList.SelectedIndexChanged += new System.EventHandler(this.SearchResultList_SelectedIndexChanged);
             // 
             // UpLoadDxfButton
             // 
-            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 750);
+            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 734);
             this.UpLoadDxfButton.Name = "UpLoadDxfButton";
             this.UpLoadDxfButton.Size = new System.Drawing.Size(102, 22);
             this.UpLoadDxfButton.TabIndex = 11;
@@ -155,11 +158,24 @@
             this.UpLoadDxfButton.UseVisualStyleBackColor = true;
             this.UpLoadDxfButton.Click += new System.EventHandler(this.UpLoadDxfButton_Click);
             // 
+            // StatusLabel
+            // 
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StatusLabel.Location = new System.Drawing.Point(212, 761);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StatusLabel.Size = new System.Drawing.Size(942, 25);
+            this.StatusLabel.TabIndex = 12;
+            this.StatusLabel.Text = "Статус";
+            this.ToolTip.SetToolTip(this.StatusLabel, "Статус");
+            // 
             // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 775);
+            this.ClientSize = new System.Drawing.Size(1157, 786);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -183,6 +199,7 @@
         private System.Windows.Forms.Button Settings_btn;
         private System.Windows.Forms.Button UpLoadDxfButton;
         private System.Windows.Forms.ToolTip ToolTip;
+        private System.Windows.Forms.Label StatusLabel;
     }
 }
 

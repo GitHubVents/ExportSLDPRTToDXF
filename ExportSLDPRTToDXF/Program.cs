@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ExportSLDPRTToDXF
@@ -14,9 +11,16 @@ namespace ExportSLDPRTToDXF
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataForm());
+            try
+            {
+                Application.EnableVisualStyles( );
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new DataForm( ));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show( ex.Message);
+            }
         }
     }
 }

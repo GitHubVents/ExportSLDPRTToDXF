@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ExportSLDPRTToDXF
 { 
@@ -189,7 +190,7 @@ namespace ExportSLDPRTToDXF
             }
             catch (Exception exception)
             {
-                // //MessageBox.Show(exception.Message + "; \n" + exception.StackTrace);
+               MessageBox.Show(exception.Message + "; \n" + exception.StackTrace);
             }
         }
         #endregion
