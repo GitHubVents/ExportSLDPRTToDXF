@@ -26,6 +26,7 @@ namespace ExportSLDPRTToDXF.Models
         public int IDPDM { get; set; }
         public string FilePath { get; set; }
 
+        public string Partition { get; set; }
         public static IEnumerable <ISpecificationView> ToView (IEnumerable<Specification> specification)
         {
             List<ISpecificationView> resultList = new List<ISpecificationView>( );
@@ -43,7 +44,7 @@ namespace ExportSLDPRTToDXF.Models
     /// </summary>
     public interface ISpecificationView
     { 
-        [DisplayName("DXF")]                
+        [DisplayName("Текущий DXF статус")]                
         bool isDxf { get; set; }      
         [DisplayName("Обозначение")]          
         string PartNumber { get; set; }

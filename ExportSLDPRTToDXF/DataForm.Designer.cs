@@ -40,9 +40,12 @@
             this.UpLoadDxfButton = new System.Windows.Forms.Button();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.VersionLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -58,21 +61,21 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.SearchResultList, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.UpLoadDxfButton, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.StatusLabel, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 786);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 805);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Settings_btn
             // 
-            this.Settings_btn.Location = new System.Drawing.Point(3, 734);
+            this.Settings_btn.Location = new System.Drawing.Point(3, 753);
             this.Settings_btn.Name = "Settings_btn";
             this.Settings_btn.Size = new System.Drawing.Size(75, 22);
             this.Settings_btn.TabIndex = 10;
@@ -91,7 +94,7 @@
             this.SpecificationDataGrid.MultiSelect = false;
             this.SpecificationDataGrid.Name = "SpecificationDataGrid";
             this.SpecificationDataGrid.ReadOnly = true;
-            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 690);
+            this.SpecificationDataGrid.Size = new System.Drawing.Size(942, 709);
             this.SpecificationDataGrid.TabIndex = 4;
             // 
             // Search_textBox
@@ -144,13 +147,13 @@
             this.SearchResultList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SearchResultList.Location = new System.Drawing.Point(3, 38);
             this.SearchResultList.Name = "SearchResultList";
-            this.SearchResultList.Size = new System.Drawing.Size(203, 690);
+            this.SearchResultList.Size = new System.Drawing.Size(203, 709);
             this.SearchResultList.TabIndex = 0;
             this.SearchResultList.SelectedIndexChanged += new System.EventHandler(this.SearchResultList_SelectedIndexChanged);
             // 
             // UpLoadDxfButton
             // 
-            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 734);
+            this.UpLoadDxfButton.Location = new System.Drawing.Point(212, 753);
             this.UpLoadDxfButton.Name = "UpLoadDxfButton";
             this.UpLoadDxfButton.Size = new System.Drawing.Size(102, 22);
             this.UpLoadDxfButton.TabIndex = 11;
@@ -161,21 +164,44 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StatusLabel.Location = new System.Drawing.Point(212, 761);
+            this.StatusLabel.Location = new System.Drawing.Point(0, 0);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StatusLabel.Size = new System.Drawing.Size(942, 25);
+            this.StatusLabel.Size = new System.Drawing.Size(59, 17);
             this.StatusLabel.TabIndex = 12;
             this.StatusLabel.Text = "Статус";
             this.ToolTip.SetToolTip(this.StatusLabel, "Статус");
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.VersionLabel);
+            this.panel1.Controls.Add(this.StatusLabel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(212, 782);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(942, 20);
+            this.panel1.TabIndex = 13;
+            // 
+            // VersionLabel
+            // 
+            this.VersionLabel.AutoSize = true;
+            this.VersionLabel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.VersionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.VersionLabel.Location = new System.Drawing.Point(924, 0);
+            this.VersionLabel.Name = "VersionLabel";
+            this.VersionLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.VersionLabel.Size = new System.Drawing.Size(18, 13);
+            this.VersionLabel.TabIndex = 13;
+            this.VersionLabel.Text = "v.";
+            this.ToolTip.SetToolTip(this.VersionLabel, "Версия");
             // 
             // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 786);
+            this.ClientSize = new System.Drawing.Size(1157, 805);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -183,6 +209,8 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +228,8 @@
         private System.Windows.Forms.Button UpLoadDxfButton;
         private System.Windows.Forms.ToolTip ToolTip;
         private System.Windows.Forms.Label StatusLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label VersionLabel;
     }
 }
 

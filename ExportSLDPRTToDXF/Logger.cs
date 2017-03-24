@@ -1,36 +1,52 @@
-﻿using System;
+﻿using Patterns;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
 namespace ExportSLDPRTToDXF
-{ 
-  public  static class Logger
+{
+    public  class Logger : Singeton <Logger>
     {
         #region Log
 
-        static string myDir = AppDomain.CurrentDomain.BaseDirectory;
-        static string path = myDir + "\\LogPDF.txt";
-
-        //static string path = @"\\" + "192.168.14.11" + @"\SolidWorks Admin\Bat\Log.txt";
-
-        static string log;
-
-        public static void ToLog(string Message)
+        private   string rootDir;
+        public  string RootDirectory
         {
+            get
+            {
+                if (rootDir == null || rootDir == string.Empty)
+                {
+                    return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                } 
+                return rootDir;
+            }
+            set
+            {
+                rootDir = value;
+            }
+        }
+        private  string LogPath { get { return RootDirectory + "\\Log.txt"; } }
+        protected  Logger( ) : base()
+        {
+
+        }
+        string log;
+        public  void ToLog(string Message)
+        {
+
             ToLog(Message, 0);
         }
-        public static void ToLog(string errMessage, int errors)
+        public  void ToLog(string errMessage, int errors)
         {
             try
             {
-                if (!Directory.Exists(myDir))
+                if (!Directory.Exists(RootDirectory))
                 {
-                    Directory.CreateDirectory(myDir);
+                    Directory.CreateDirectory(Path.GetDirectoryName(RootDirectory));
                 }
                 else
                 {
-                    //using (StreamWriter writetext = new StreamWriter(path))
-                    using (StreamWriter writetext = File.AppendText(path))
+                    using (StreamWriter writetext = File.AppendText(LogPath))
                     {
                         writetext.WriteLine(errMessage);
 
@@ -190,7 +206,7 @@ namespace ExportSLDPRTToDXF
             }
             catch (Exception exception)
             {
-               MessageBox.Show(exception.Message + "; \n" + exception.StackTrace);
+                MessageBox.Show(exception.Message + "; \n" + exception.StackTrace);
             }
         }
         #endregion

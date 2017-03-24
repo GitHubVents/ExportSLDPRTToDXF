@@ -111,8 +111,9 @@ namespace ExportSLDPRTToDXF
             }
             catch (Exception exception)
             {
+                MessageBox.Show("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString( ) + " в связи с чем возвращена пустая колекция FileModelPdm");
                 MessageObserver.Instance.SetMessage("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString( ) + " в связи с чем возвращена пустая колекция FileModelPdm");
-                throw exception;
+                //throw exception;
             }
             return searchResult.Where(each => Path.GetExtension(each.FileName).ToUpper( ) == ".SLDPRT" || Path.GetExtension(each.FileName).ToUpper( ) == ".SLDASM");
         }
@@ -136,6 +137,7 @@ namespace ExportSLDPRTToDXF
             }
             catch (Exception exception)
             {
+                MessageBox.Show("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
                 MessageObserver.Instance.SetMessage("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
                 throw exception;
 
@@ -278,14 +280,20 @@ namespace ExportSLDPRTToDXF
                 BoomShellList.AddRange(from DataRow eachRow in table.Rows
                                        select eachRow.ItemArray into values
                                        select new BomShell
-                                       { PartNumber = values[0].ToString( ), Description = values[1].ToString( ),
-                                         IdPdm = Convert.ToInt32(values[2]), Configuration = values[3].ToString( ),
-                                         Version = Convert.ToInt32(values[4]), FileName = values[5].ToString( ),
-                                         FolderPath = values[6].ToString( ), ObjectType = values[7].ToString( )
+                                       { PartNumber = values[0].ToString( ),
+                                           Description = values[1].ToString( ),
+                                           IdPdm = Convert.ToInt32(values[2]),
+                                           Configuration = values[3].ToString( ),
+                                           Version = Convert.ToInt32(values[4]),
+                                           FileName = values[5].ToString( ),
+                                           FolderPath = values[6].ToString( ),
+                                           ObjectType = values[7].ToString( ),
+                                           Partition = values[8].ToString( )
                                        });
             }
             catch (Exception exception)
             {
+                MessageBox.Show("Failed get bom shell list\n" + exception.ToString( ));
                 MessageObserver.Instance.SetMessage("Failed get bom shell list\n" + exception.ToString( ), MessageType.Error);
             }
 
@@ -470,33 +478,7 @@ m4:
             }
 
         }
-
-
-        //public bool IsNotVirtual(string path, int idPdm)
-        //{
-        //    //IEdmFolder5 ppoRetParentFolder;
-        //    //IEdmFile5 aFile;
-        //    try
-        //    {
-        //        //    aFile = PdmExemplar.GetFileFromPath(path, out ppoRetParentFolder);
-
-        //        //    // Берет интерфейс обьекта pdm как физический файл, если физически файла нет возвращает ложь
-        //        //    // Необходимо для проверки виртуальных файлов находящихся только в сборке
-        //        //    IEdmFile5 file = (IEdmFile5)PdmExemplar.GetObject(EdmObjectType.EdmObject_File, idPdm);
-        //        //    bool isVirtual = file != null ? true : false;
-        //        //    MessageBox.Show(isVirtual + " " + file.Name +  "\n" +File.Exists(path) + "\n " + path);
-
-        //        //  
-        //        return File.Exists(path)
-        //       }
-        //    catch (Exception ex)
-        //    {
-        //        MessageObserver.Instance.SetMessage($"Message - {ex.ToString( )}\nStackTrace - {ex.StackTrace}");
-        //        return false;
-        //    }
-
-
-        //}
+         
 
         /// <summary>
         /// Adds file to pdm. File must the locate in local directory pdm.
@@ -568,7 +550,5 @@ m4:
             edmVeult8.GetVaultViews(out edmViewInfo, false);
             return edmViewInfo;
         }
-    }
-
-    
+    }    
 }

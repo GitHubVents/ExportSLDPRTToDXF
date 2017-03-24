@@ -1172,3 +1172,462 @@ Time:23.03.2017 12:33:22 Message:
  line 75 cut list: 220
 
 Time:23.03.2017 12:33:22 Message: 	00 succsess building. Add to result list
+Time:23.03.2017 14:36:16 Message: Поиск успешно завершон, найдено объектов 3926 по запросу %902%
+Time:23.03.2017 14:36:20 Message: Create DxfBulder
+Time:23.03.2017 14:36:20 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV15\ВНС-902.49.280 Регулятор расхода воздуха\ВНС-902.49.282.SLDPRT input id: 25895  input ver: 4
+ Thread sleep 4 sec.
+Time:23.03.2017 14:36:20 Message: Start build Dxf file
+Time:23.03.2017 14:36:20 Message: Initialize SolidWorks exemplare
+Time:23.03.2017 14:36:20 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 39
+Time:23.03.2017 14:36:30 Message: 		Created exemplar SolidWorks Application
+Time:23.03.2017 14:36:33 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 14:36:33 Message: 	Opened document ВНС-902.49.282.SLDPRT
+Time:23.03.2017 14:36:34 Message: Check is sheet metal part; returned True
+Time:23.03.2017 14:36:34 Message: 	 got configuration 3 for opened document. Statrt bust configurations
+Time:23.03.2017 14:36:34 Message: 	 Show configuration По умолчанию
+Time:23.03.2017 14:36:41 Message: end FixOneBand
+Time:23.03.2017 14:36:41 Message: 	 Fix bends По умолчанию
+Time:23.03.2017 14:36:44 Message: 	Completed building ВНС-902.49.282.SLDPRT with configuration "По умолчанию"
+Time:23.03.2017 14:36:44 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 14:36:44 Message: 
+ line 75 cut list: 1202
+
+Time:23.03.2017 14:36:46 Message: 	По умолчанию succsess building. Add to result list
+Time:23.03.2017 14:36:47 Message: 	 Show configuration развертка
+Time:23.03.2017 14:36:53 Message: end FixOneBand
+Time:23.03.2017 14:36:53 Message: 	 Fix bends развертка
+Time:23.03.2017 14:36:54 Message: 	Completed building ВНС-902.49.282.SLDPRT with configuration "развертка"
+Time:23.03.2017 14:36:54 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 14:36:54 Message: 
+ line 75 cut list: 1202
+
+Time:23.03.2017 14:36:55 Message: 	развертка succsess building. Add to result list
+Time:23.03.2017 14:36:55 Message: 	 Show configuration иваив
+Time:23.03.2017 14:37:01 Message: end FixOneBand
+Time:23.03.2017 14:37:01 Message: 	 Fix bends иваив
+Time:23.03.2017 14:37:03 Message: 	Completed building ВНС-902.49.282.SLDPRT with configuration "иваив"
+Time:23.03.2017 14:37:03 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 14:37:03 Message: 
+ line 75 cut list: 1202
+
+Time:23.03.2017 14:37:03 Message: 	иваив succsess building. Add to result list
+Time:23.03.2017 15:07:10 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:23.03.2017 15:07:11 Message: Create DxfBulder
+Time:23.03.2017 15:11:06 Message: Поиск успешно завершон, найдено объектов 3926 по запросу %902%
+Time:23.03.2017 15:11:39 Message: Create DxfBulder
+Time:23.03.2017 15:11:46 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-04-500-980.SLDPRT input id: 321625  input ver: 1
+ Thread sleep 4 sec.
+Time:23.03.2017 15:11:46 Message: Start build Dxf file
+Time:23.03.2017 15:11:46 Message: Initialize SolidWorks exemplare
+Time:23.03.2017 15:11:46 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 39
+Time:23.03.2017 15:11:55 Message: 		Created exemplar SolidWorks Application
+Time:23.03.2017 15:11:58 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:11:58 Message: 	Opened document 02-04-500-980.SLDPRT
+Time:23.03.2017 15:11:59 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV12\ВНС-901.39.100 Блок вентилятора\ВНС-901.39.124.SLDPRT input id: 258909  input ver: 2
+ Thread sleep 4 sec.
+Time:23.03.2017 15:11:59 Message: Start build Dxf file
+Time:23.03.2017 15:12:00 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:12:00 Message: 	Opened document ВНС-901.39.124.SLDPRT
+Time:23.03.2017 15:12:00 Message: Check is sheet metal part; returned True
+Time:23.03.2017 15:12:00 Message: 	 got configuration 3 for opened document. Statrt bust configurations
+Time:23.03.2017 15:12:01 Message: 	 Show configuration 00
+Time:23.03.2017 15:12:12 Message: end FixOneBand
+Time:23.03.2017 15:12:12 Message: 	 Fix bends 00
+Time:23.03.2017 15:12:15 Message: 	Completed building ВНС-901.39.124.SLDPRT with configuration "00"
+Time:23.03.2017 15:12:16 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 15:12:16 Message: 
+ line 75 cut list: 178.96
+
+Time:23.03.2017 15:12:17 Message: 	00 succsess building. Add to result list
+Time:23.03.2017 15:12:19 Message: 	 Show configuration 01
+Time:23.03.2017 15:12:30 Message: end FixOneBand
+Time:23.03.2017 15:12:30 Message: 	 Fix bends 01
+Time:23.03.2017 15:12:33 Message: 	Completed building ВНС-901.39.124.SLDPRT with configuration "01"
+Time:23.03.2017 15:12:33 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 15:12:33 Message: 
+ line 75 cut list: 183.76
+
+Time:23.03.2017 15:12:33 Message: 	01 succsess building. Add to result list
+Time:23.03.2017 15:12:35 Message: 	 Show configuration 02
+Time:23.03.2017 15:12:46 Message: end FixOneBand
+Time:23.03.2017 15:12:46 Message: 	 Fix bends 02
+Time:23.03.2017 15:12:49 Message: 	Completed building ВНС-901.39.124.SLDPRT with configuration "02"
+Time:23.03.2017 15:12:49 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 15:12:49 Message: 
+ line 75 cut list: 198.96
+
+Time:23.03.2017 15:12:49 Message: 	02 succsess building. Add to result list
+Time:23.03.2017 15:12:50 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 9
+ Thread sleep 4 sec.
+Time:23.03.2017 15:12:50 Message: Start build Dxf file
+Time:23.03.2017 15:12:50 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:12:50 Message: 	Opened document Washer 11371_gost.sldprt
+Time:23.03.2017 15:12:50 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets Increased.SLDPRT input id: 18  input ver: 7
+ Thread sleep 4 sec.
+Time:23.03.2017 15:12:50 Message: Start build Dxf file
+Time:23.03.2017 15:12:51 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:12:51 Message: 	Opened document Threaded Rivets Increased.SLDPRT
+Time:23.03.2017 15:12:51 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV15\ВНС-902.49.100 Блок вентилятора\ВНС-902.49.194.SLDPRT input id: 321638  input ver: 2
+ Thread sleep 4 sec.
+Time:23.03.2017 15:12:51 Message: Start build Dxf file
+Time:23.03.2017 15:12:51 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:12:51 Message: 	Opened document ВНС-902.49.194.SLDPRT
+Time:23.03.2017 15:12:51 Message: Check is sheet metal part; returned True
+Time:23.03.2017 15:12:51 Message: 	 got configuration 1 for opened document. Statrt bust configurations
+Time:23.03.2017 15:12:52 Message: 	 Show configuration 00
+Time:23.03.2017 15:12:59 Message: end FixOneBand
+Time:23.03.2017 15:12:59 Message: 	 Fix bends 00
+Time:23.03.2017 15:13:01 Message: 	Completed building ВНС-902.49.194.SLDPRT with configuration "00"
+Time:23.03.2017 15:13:01 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 15:13:02 Message: 
+ line 75 cut list: 987.31
+
+Time:23.03.2017 15:13:04 Message: 	00 succsess building. Add to result list
+Time:23.03.2017 15:13:04 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 8
+ Thread sleep 4 sec.
+Time:23.03.2017 15:13:04 Message: Start build Dxf file
+Time:23.03.2017 15:13:04 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:13:04 Message: 	Opened document Washer 6402_gost.sldprt
+Time:23.03.2017 15:13:04 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 12
+ Thread sleep 4 sec.
+Time:23.03.2017 15:13:04 Message: Start build Dxf file
+Time:23.03.2017 15:13:05 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:13:05 Message: 	Opened document Rivet Bralo.sldprt
+Time:23.03.2017 15:13:05 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\02-03-500-980.SLDPRT input id: 321626  input ver: 1
+ Thread sleep 4 sec.
+Time:23.03.2017 15:13:05 Message: Start build Dxf file
+Time:23.03.2017 15:13:06 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:13:06 Message: 	Opened document 02-03-500-980.SLDPRT
+Time:23.03.2017 15:13:06 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\AV15\ВНС-902.49.100 Блок вентилятора\ВНС-902.49.193.SLDPRT input id: 321637  input ver: 2
+ Thread sleep 4 sec.
+Time:23.03.2017 15:13:06 Message: Start build Dxf file
+Time:23.03.2017 15:13:06 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:13:06 Message: 	Opened document ВНС-902.49.193.SLDPRT
+Time:23.03.2017 15:13:06 Message: Check is sheet metal part; returned True
+Time:23.03.2017 15:13:06 Message: 	 got configuration 1 for opened document. Statrt bust configurations
+Time:23.03.2017 15:13:06 Message: 	 Show configuration 00
+Time:23.03.2017 15:13:13 Message: end FixOneBand
+Time:23.03.2017 15:13:13 Message: 	 Fix bends 00
+Time:23.03.2017 15:13:15 Message: 	Completed building ВНС-902.49.193.SLDPRT with configuration "00"
+Time:23.03.2017 15:13:15 Message: GetTypeName2: CutListFolder; swSubFeat.Name Элемент списка вырезов1
+Time:23.03.2017 15:13:15 Message: 
+ line 75 cut list: 1073.36
+
+Time:23.03.2017 15:13:16 Message: 	00 succsess building. Add to result list
+Time:23.03.2017 15:13:16 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 11738_gost.sldprt input id: 48672  input ver: 12
+ Thread sleep 4 sec.
+Time:23.03.2017 15:13:16 Message: Start build Dxf file
+Time:23.03.2017 15:13:17 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:23.03.2017 15:13:17 Message: 	Opened document SC GOST 11738_gost.sldprt
+Time:24.03.2017 9:45:05 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 9:47:59 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 9:49:18 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 9:49:56 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 10:04:33 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 10:04:42 Message: Поиск успешно завершон, найдено объектов 6 по запросу %3434%
+Time:24.03.2017 10:05:15 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 10:06:02 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 10:06:10 Message: Поиск успешно завершон, найдено объектов 6 по запросу %3434%
+Time:24.03.2017 10:27:35 Message: Поиск успешно завершон, найдено объектов 41 по запросу %3535%
+Time:24.03.2017 10:27:38 Message: Failed get bom shell list
+System.FormatException: Входная строка имела неверный формат.
+   в System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   в System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   в System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   в System.Convert.ToInt32(Object value)
+   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.<>c.<BomTableToBomList>b__21_1(Object[] values) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 282
+   в System.Linq.Enumerable.<>c__DisplayClass7_0`3.<CombineSelectors>b__0(TSource x)
+   в System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   в System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   в System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
+   в ExportSLDPRTToDXF.SolidWorksPdmAdapter.BomTableToBomList(DataTable table) в C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\SolidWorksPdmAdapter.cs:строка 280
+Time:24.03.2017 10:27:57 Message: Create DxfBulder
+Time:24.03.2017 10:28:25 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26371.SLDPRT input id: 485449  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:25 Message: Start build Dxf file
+Time:24.03.2017 10:28:25 Message: Initialize SolidWorks exemplare
+Time:24.03.2017 10:28:25 Message: 		Failed take an existing exemplar SolidWorks Application System.Runtime.InteropServices.COMException (0x800401E3): Операция недоступна (Исключение из HRESULT: 0x800401E3 (MK_E_UNAVAILABLE))
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(Guid& rclsid, IntPtr reserved, Object& ppunk)
+   в System.Runtime.InteropServices.Marshal.GetActiveObject(String progID)
+   в SolidWorksLibrary.SolidWorksAdapter.InitSolidWorks() в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 39
+Time:24.03.2017 10:28:36 Message: 		Created exemplar SolidWorks Application
+Time:24.03.2017 10:28:46 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:46 Message: 	Opened document 02-26371.SLDPRT
+Time:24.03.2017 10:28:49 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Rivet Bralo.sldprt input id: 19  input ver: 15
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:49 Message: Start build Dxf file
+Time:24.03.2017 10:28:51 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:51 Message: 	Opened document Rivet Bralo.sldprt
+Time:24.03.2017 10:28:51 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26372.SLDPRT input id: 485448  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:51 Message: Start build Dxf file
+Time:24.03.2017 10:28:51 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:51 Message: 	Opened document 02-26372.SLDPRT
+Time:24.03.2017 10:28:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Замки и ручки\Ручка MLA 120.SLDPRT input id: 6458  input ver: 10
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:51 Message: Start build Dxf file
+Time:24.03.2017 10:28:52 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:52 Message: 	Opened document Ручка MLA 120.SLDPRT
+Time:24.03.2017 10:28:52 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17475_gost.sldprt input id: 30754  input ver: 29
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:52 Message: Start build Dxf file
+Time:24.03.2017 10:28:54 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:54 Message: 	Opened document SC GOST 17475_gost.sldprt
+Time:24.03.2017 10:28:54 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26370.SLDPRT input id: 485446  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:54 Message: Start build Dxf file
+Time:24.03.2017 10:28:54 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:54 Message: 	Opened document 02-26370.SLDPRT
+Time:24.03.2017 10:28:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets.sldprt input id: 16  input ver: 15
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:54 Message: Start build Dxf file
+Time:24.03.2017 10:28:55 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:55 Message: 	Opened document Threaded Rivets.sldprt
+Time:24.03.2017 10:28:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26364.SLDPRT input id: 485433  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:55 Message: Start build Dxf file
+Time:24.03.2017 10:28:55 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:55 Message: 	Opened document 02-26364.SLDPRT
+Time:24.03.2017 10:28:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26353.SLDPRT input id: 485363  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:55 Message: Start build Dxf file
+Time:24.03.2017 10:28:56 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:56 Message: 	Opened document 02-26353.SLDPRT
+Time:24.03.2017 10:28:56 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26354.SLDPRT input id: 485362  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:56 Message: Start build Dxf file
+Time:24.03.2017 10:28:56 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:56 Message: 	Opened document 02-26354.SLDPRT
+Time:24.03.2017 10:28:56 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 11371_gost.sldprt input id: 30752  input ver: 9
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:56 Message: Start build Dxf file
+Time:24.03.2017 10:28:57 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:57 Message: 	Opened document Washer 11371_gost.sldprt
+Time:24.03.2017 10:28:57 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Washer 6402_gost.sldprt input id: 30757  input ver: 6
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:57 Message: Start build Dxf file
+Time:24.03.2017 10:28:57 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:57 Message: 	Opened document Washer 6402_gost.sldprt
+Time:24.03.2017 10:28:57 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Impeller RH\taperlock Hub 63.SLDPRT input id: 72402  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:57 Message: Start build Dxf file
+Time:24.03.2017 10:28:58 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:58 Message: 	Opened document taperlock Hub 63.SLDPRT
+Time:24.03.2017 10:28:58 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Impeller RH\RH63_SM25pro.SLDPRT input id: 73170  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:58 Message: Start build Dxf file
+Time:24.03.2017 10:28:59 Message: Warning at open solid works document: code {2}, description warning {0}
+Time:24.03.2017 10:28:59 Message: 	Opened document RH63_SM25pro.SLDPRT
+Time:24.03.2017 10:28:59 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Вентагрегаты AR\ВНС-901.61.56.006-01.SLDPRT input id: 12926  input ver: 6
+ Thread sleep 4 sec.
+Time:24.03.2017 10:28:59 Message: Start build Dxf file
+Time:24.03.2017 10:29:01 Message: Error at open solid works document D:\Vents-PDM\Проекты\AirVents\Вентагрегаты AR\ВНС-901.61.56.006-01.SLDPRT; error code 2, description error swFileNotFoundError
+Time:24.03.2017 10:29:01 Message: 	Failed open SolidWorks document; message exception {System.Exception: Failed open document D:\Vents-PDM\Проекты\AirVents\Вентагрегаты AR\ВНС-901.61.56.006-01.SLDPRT;  error code 2, description error swFileNotFoundError
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 168
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:40 Message: 	Failed build dxf; message exception {System.Exception: Failed open document D:\Vents-PDM\Проекты\AirVents\Вентагрегаты AR\ВНС-901.61.56.006-01.SLDPRT;  error code 2, description error swFileNotFoundError
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:43 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 11738_gost.sldprt input id: 48672  input ver: 4
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:43 Message: Start build Dxf file
+Time:24.03.2017 10:36:43 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:46 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:48 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Bolt 7805_gost.sldprt input id: 30753  input ver: 22
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:48 Message: Start build Dxf file
+Time:24.03.2017 10:36:48 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:49 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:50 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Виброопоры\Амортизатор RM-1A.SLDPRT input id: 6638  input ver: 5
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:50 Message: Start build Dxf file
+Time:24.03.2017 10:36:50 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:50 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:50 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Hex Nut 5915_gost.sldprt input id: 30751  input ver: 8
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:50 Message: Start build Dxf file
+Time:24.03.2017 10:36:50 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:50 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:50 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Impeller RH\00401301 Диффузор до RH56F_RH63C.SLDPRT input id: 72379  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:50 Message: Start build Dxf file
+Time:24.03.2017 10:36:50 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:50 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:51 Message: 		 debug: input path D:\Vents-PDM\Проекты\AirVents\Вентагрегаты AR\ВНС-901.61.63.004-01.SLDPRT input id: 12814  input ver: 5
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:51 Message: Start build Dxf file
+Time:24.03.2017 10:36:51 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:51 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Weg motors\DM1 160 М IM B3.SLDPRT input id: 16047  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:51 Message: Start build Dxf file
+Time:24.03.2017 10:36:51 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:51 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\SC GOST 17473_gost.sldprt input id: 30755  input ver: 23
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:51 Message: Start build Dxf file
+Time:24.03.2017 10:36:51 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:51 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:51 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Cаморез с пресшайбой с буром.SLDPRT input id: 20  input ver: 10
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:51 Message: Start build Dxf file
+Time:24.03.2017 10:36:51 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:52 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26387.SLDPRT input id: 485474  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:52 Message: Start build Dxf file
+Time:24.03.2017 10:36:52 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:52 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26385.SLDPRT input id: 485472  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:52 Message: Start build Dxf file
+Time:24.03.2017 10:36:52 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:52 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:52 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26386.SLDPRT input id: 485475  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:52 Message: Start build Dxf file
+Time:24.03.2017 10:36:52 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:52 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:53 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-26352.SLDPRT input id: 485359  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:53 Message: Start build Dxf file
+Time:24.03.2017 10:36:53 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:53 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:53 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Прочие изделия\Крепежные изделия\Заглушка пластикова для т.о. 16х13.SLDPRT input id: 106816  input ver: 8
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:53 Message: Start build Dxf file
+Time:24.03.2017 10:36:53 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:53 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:53 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Threaded Rivets с насечкой.SLDPRT input id: 17  input ver: 12
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:53 Message: Start build Dxf file
+Time:24.03.2017 10:36:53 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:53 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:54 Message: 		 debug: input path D:\Vents-PDM\Библиотека проектирования\Стандартные изделия\Винт саморез DIN 7504 K.SLDPRT input id: 90339  input ver: 6
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:54 Message: Start build Dxf file
+Time:24.03.2017 10:36:54 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:54 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:54 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\12 - Вибровставка\12-02-640.SLDPRT input id: 68063  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:54 Message: Start build Dxf file
+Time:24.03.2017 10:36:54 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:54 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:54 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\12 - Вибровставка\12-01-640.SLDPRT input id: 67252  input ver: 4
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:54 Message: Start build Dxf file
+Time:24.03.2017 10:36:54 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:54 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:54 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\12 - Вибровставка\12-03-640-640.SLDPRT input id: 68064  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:54 Message: Start build Dxf file
+Time:24.03.2017 10:36:54 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:55 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-16668.SLDPRT input id: 447263  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:55 Message: Start build Dxf file
+Time:24.03.2017 10:36:55 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:55 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-16968.SLDPRT input id: 447262  input ver: 2
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:55 Message: Start build Dxf file
+Time:24.03.2017 10:36:55 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:55 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }
+Time:24.03.2017 10:36:55 Message: 		 debug: input path D:\Vents-PDM\Проекты\Blauberg\02-01-Panels\Materials\02-23743.SLDPRT input id: 455578  input ver: 1
+ Thread sleep 4 sec.
+Time:24.03.2017 10:36:55 Message: Start build Dxf file
+Time:24.03.2017 10:36:55 Message: 	Failed open SolidWorks document; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorks.Interop.sldworks.ISldWorks.OpenDoc6(String FileName, Int32 Type, Int32 Options, String Configuration, Int32& Errors, Int32& Warnings)
+   в SolidWorksLibrary.SolidWorksAdapter.OpenDocument(String path, swDocumentTypes_e documentType, String configuration) в D:\Vlad\PDM-WebService\SolidWorksLibrary\SolidWorksAdapter.cs:строка 163
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 77 }
+Time:24.03.2017 10:36:55 Message: 	Failed build dxf; message exception {System.Runtime.InteropServices.COMException (0x800706BA): Сервер RPC недоступен. (Исключение из HRESULT: 0x800706BA)
+   в SolidWorksLibrary.Builders.Dxf.DxfBulder.Build(String partPath, Int32 idPdm, Int32 version, Boolean includeNonSheetParts) в D:\Vlad\PDM-WebService\SolidWorksLibrary\Builders\Dxf\DxfBulder.cs:строка 90 }

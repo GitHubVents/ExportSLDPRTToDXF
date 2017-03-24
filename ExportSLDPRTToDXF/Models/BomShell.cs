@@ -43,6 +43,7 @@ namespace ExportSLDPRTToDXF.Models
         public string FolderPath { get; set; }
     
       public string ObjectType { get; set; }
+        public string Partition { get; set; }
 
     }
 }
