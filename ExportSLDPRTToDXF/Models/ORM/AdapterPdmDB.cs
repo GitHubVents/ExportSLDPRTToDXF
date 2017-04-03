@@ -1,5 +1,7 @@
 ﻿using ExportSLDPRTToDXF.Properties;
 using Patterns;
+using Patterns.Observer;
+using System;
 using System.Collections.Generic;
 using System.Data.Linq;
 
@@ -38,24 +40,32 @@ namespace ExportSLDPRTToDXF.Models.ORM
             int? materialID = null
             )
         {
+            try
+            {
+                DataContext.DXFUpDateCutList(
+                                        workpieceX,
+                                          workpieceY,
+                                          bend,
+                                           thickness,
+                                          configuration,
+                                          version,
+                                          paintX,
+                                          paintY,
+                                          paintZ,
+                                          IdPdm,
+                                          materialID,
+                                         surfaceArea,
+                                          new System.Data.Linq.Binary(DXFByte)
+                                          );
 
-            DataContext.DXFUpDateCutList(
-                                    workpieceX,
-                                      workpieceY,
-                                      bend,
-                                       thickness,
-                                      configuration,
-                                      version,
-                                      paintX,
-                                      paintY,
-                                      paintZ,
-                                      IdPdm,
-                                      materialID,
-                                     surfaceArea,
-                                      new System.Data.Linq.Binary(DXFByte)
-                                      );
+                MessageObserver.Instance.SetMessage("Successfully added the cut list to database.", MessageType.System);
+            }
+            catch(Exception exception)
+            {
+                MessageObserver.Instance.SetMessage("Failed added the cut list to database; Exception message: " + exception.ToString(), MessageType.Error);
+            }
         }
-
+        
        public bool IsDxf (int IdPDM, string configuration, int version)
         {
             return DataContext.DXFCheck(IdPDM, configuration, version) != 0 ? true:false;

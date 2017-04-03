@@ -38,10 +38,10 @@
             this.ConfigurationsComboBox = new System.Windows.Forms.ComboBox();
             this.SearchResultList = new System.Windows.Forms.ListBox();
             this.UpLoadDxfButton = new System.Windows.Forms.Button();
-            this.StatusLabel = new System.Windows.Forms.Label();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.VersionLabel = new System.Windows.Forms.Label();
+            this.StatusLabel = new System.Windows.Forms.Label();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecificationDataGrid)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -104,6 +104,7 @@
             this.Search_textBox.Name = "Search_textBox";
             this.Search_textBox.Size = new System.Drawing.Size(203, 20);
             this.Search_textBox.TabIndex = 6;
+            this.Search_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Search_textBox_KeyDown);
             this.Search_textBox.MouseEnter += new System.EventHandler(this.Search_textBox_MouseEnter);
             // 
             // tableLayoutPanel3
@@ -161,19 +162,6 @@
             this.UpLoadDxfButton.UseVisualStyleBackColor = true;
             this.UpLoadDxfButton.Click += new System.EventHandler(this.UpLoadDxfButton_Click);
             // 
-            // StatusLabel
-            // 
-            this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StatusLabel.Location = new System.Drawing.Point(0, 0);
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StatusLabel.Size = new System.Drawing.Size(59, 17);
-            this.StatusLabel.TabIndex = 12;
-            this.StatusLabel.Text = "Статус";
-            this.ToolTip.SetToolTip(this.StatusLabel, "Статус");
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.VersionLabel);
@@ -196,6 +184,19 @@
             this.VersionLabel.TabIndex = 13;
             this.VersionLabel.Text = "v.";
             this.ToolTip.SetToolTip(this.VersionLabel, "Версия");
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StatusLabel.Location = new System.Drawing.Point(0, 0);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StatusLabel.Size = new System.Drawing.Size(59, 17);
+            this.StatusLabel.TabIndex = 12;
+            this.StatusLabel.Text = "Статус";
+            this.ToolTip.SetToolTip(this.StatusLabel, "Статус");
             // 
             // DataForm
             // 

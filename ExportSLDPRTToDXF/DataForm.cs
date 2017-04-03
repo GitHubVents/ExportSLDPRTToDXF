@@ -40,8 +40,6 @@ namespace ExportSLDPRTToDXF
              
             }
 
-            
-          MessageObserver.Instance.ReceivedMessage += Instance_ReceivedMessage;
             try
             {
                 SolidWorksPdmAdapter.Instance.BoomId = settings.BoomId;
@@ -139,7 +137,7 @@ namespace ExportSLDPRTToDXF
         {
             SpecificationDataGridClear( );             
                 specifications = GetSpecification(FileModelPdm.Path, configuration);
-            SpecificationDataGrid.DataSource = Specification.ToView(specifications);   // convert specification list to view spec. list which containe view name
+            SpecificationDataGrid.DataSource = Specification.ConvertToViews(specifications);   // convert specification list to view spec. list which containe view name
                                                                                         // for each properties
         }
 
@@ -186,7 +184,7 @@ namespace ExportSLDPRTToDXF
                                          Thickness = (spec == null ? 0 : spec.Thickness)                                        
                                      };
 
-
+                 
                     var scpecArr =  specifications.Where(each=>each.FileName.ToLower().Contains(".sldprt") && ( each.Partition == string.Empty || each.Partition == "Детали") ).ToArray( );
 
 
@@ -240,7 +238,7 @@ namespace ExportSLDPRTToDXF
         /// <param name="e"></param>
         private void UpLoadDxfButton_Click(object sender, EventArgs e)
         {
-            StatusLabel.Text = "Статус: Выгрузка DXF файлов";
+           
 
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
             string tempDxfFolder = tempAppFolder;
@@ -255,7 +253,16 @@ namespace ExportSLDPRTToDXF
 
                 DxfBulder.DxfFolder = tempDxfFolder;
                 DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
-                SolidWorksPdmAdapter.Instance.GetEdmFile5(FileModelPdm.Path);
+
+                StatusLabel.Text = "Статус: Получение файлов";
+                SolidWorksPdmAdapter.Instance.DownLoadFile(FileModelPdm);
+                var fileModelsOfSpecification = Specification.ConvertToFileModels(specifications);
+                foreach (var eachFileModel in fileModelsOfSpecification)
+                {
+                    SolidWorksPdmAdapter.Instance.DownLoadFile(eachFileModel);
+                }
+
+                StatusLabel.Text = "Статус: Выгрузка DXF файлов";
 
                 if (specifications != null)
                 {
@@ -300,7 +307,7 @@ namespace ExportSLDPRTToDXF
                 }
                 
             }
-            SpecificationDataGrid.DataSource = Specification.ToView( specifications);
+            SpecificationDataGrid.DataSource = Specification.ConvertToViews( specifications);
             MessageObserver.Instance.SetMessage($"Created {countIterations} new dxf files to temp folder");
             countIterations = 0;
 
@@ -338,6 +345,8 @@ namespace ExportSLDPRTToDXF
                 File.Delete(file);
             }
             #endregion 
+
+            MessageObserver.Instance.SetMessage("End upload.\n");
         }
 
         private void BinaryToDxfFile(byte [] inputBinary, string fileName, string directory)
@@ -353,44 +362,30 @@ namespace ExportSLDPRTToDXF
         /// </summary>
         /// <param name="dataToExport"></param>
         private void DxfBulder_FinishedBuilding(SolidWorksLibrary.Builders.Dxf.DataToExport dataToExport)
-        { 
-
-            AdapterPdmDB.Instance.UpDateCutList(  dataToExport.Configuration, 
-                dataToExport.DXFByte,
-                dataToExport.WorkpieceX,
-                dataToExport.WorkpieceY,  
-                dataToExport.Bend, 
-                dataToExport.Thickness, 
-                dataToExport.Version, 
-                dataToExport.PaintX, 
-                dataToExport.PaintY,
-                dataToExport.PaintZ,
-                dataToExport.IdPdm, 
-                dataToExport.SurfaceArea,
-                dataToExport.MaterialID
-                );
-        }
-       
-        /// <summary>
-        /// Обработка системных сообщений
-        /// </summary>
-        /// <param name="massage"></param>
-        private void Instance_ReceivedMessage(Patterns.Observer.MessageEventArgs massage)
         {
             try
             {
-             
-                Logger.Instance.ToLog($"Time:{massage.time} Message: {massage.Message}");
-                if (massage.Type == MessageType.Error)
-                    MessageBox.Show(massage.Message);
-                
+                AdapterPdmDB.Instance.UpDateCutList(dataToExport.Configuration,
+                    dataToExport.DXFByte,
+                    dataToExport.WorkpieceX,
+                    dataToExport.WorkpieceY,
+                    dataToExport.Bend,
+                    dataToExport.Thickness,
+                    dataToExport.Version,
+                    dataToExport.PaintX,
+                    dataToExport.PaintY,
+                    dataToExport.PaintZ,
+                    dataToExport.IdPdm,
+                    dataToExport.SurfaceArea,
+                    dataToExport.MaterialID
+                    );
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                MessageBox.Show( ex.ToString());
+                MessageBox.Show(ex.ToString());
             }
-        }
-
+        }      
+    
         private void Search_textBox_MouseEnter(object sender, EventArgs e)
         {
             ToolTip.SetToolTip(Search_textBox, "Поле поиска");
@@ -399,6 +394,14 @@ namespace ExportSLDPRTToDXF
         private void ConfigurationsComboBox_MouseEnter(object sender, EventArgs e)
         {
             ToolTip.SetToolTip(ConfigurationsComboBox, "Список конфигураций");
-        } 
+        }
+
+        private void Search_textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && Search_textBox.Text != null)
+            {
+                Search_btn_Click(sender, null);
+            }
+        }
     }
 }

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ExportSLDPRTToDXF.exe" version="1.0.1.79" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="ExportSLDPRTToDXF.exe" version="1.0.1.93" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.23067" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.27877" language="neutral" processorArchitecture="msil" />
     <commandLine file="ExportSLDPRTToDXF.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExportSLDPRTToDXF.exe" size="78280">
-      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.23067" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExportSLDPRTToDXF.exe" size="79304">
+      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.27877" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rVxEJxV1sdCptE5+bDx55yND+cywI7mTaUak7VYO3o4=</dsig:DigestValue>
+        <dsig:DigestValue>0TbYbyHm7/VLXCHq00Rpa8QKj4A9e/CJB/2PhlF7EjQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rH+baz41scUgKFgj1Xhp6+Z8cQgNUHqzSFnV0KOOD6U=</dsig:DigestValue>
+        <dsig:DigestValue>myhOQ3p1xSPngv9To0MWdZud/Ymui7EjUh1ynV8TeIg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yUyxunErIJ+OolmHgj9lXy3F0zcGgHEwFjDl9mF1mJs=</dsig:DigestValue>
+        <dsig:DigestValue>ajG5+S2divVqJwq4weygTIOknmHtX4Xu3pCReodsv3k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SolidWorksLibrary.dll" size="176128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SolidWorksLibrary.dll" size="177152">
       <assemblyIdentity name="SolidWorksLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7CgPuVrLu1LqPMkGoZ4v7GFaBjzp9j+s3LNtiLD7jEU=</dsig:DigestValue>
+        <dsig:DigestValue>qNrLR/FEvG+VmyKTJhYRXMAyK+NaAeWkhMnzSpCZpkI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

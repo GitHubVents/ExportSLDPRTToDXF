@@ -75,6 +75,7 @@ namespace ExportSLDPRTToDXF
 
             }
         }
+       
         /// <summary>
         /// Search document by name and returns colection the FileModelPdm .
         /// </summary>
@@ -143,7 +144,18 @@ namespace ExportSLDPRTToDXF
 
             }
         }
+        public void DownLoadFile(IEnumerable< FileModelPdm> fileModels)
+        {
+            foreach (FileModelPdm eachModel in fileModels)
+            {
+                DownLoadFile(eachModel);
+            }
+        }
 
+        public int GetFolderId (string folderPath )
+        {
+          return  PdmExemplar.GetFolderFromPath(folderPath).ID;
+        }
         /// <summary>
         ///  Get configuration by data model
         /// </summary>
@@ -174,18 +186,7 @@ namespace ExportSLDPRTToDXF
 
             return configurationResaultArray.ToArray( );
         }
-        public void GetLastVersionAsmPdm(string path)
-        {
-            try
-            {
-                IEdmFolder5 oFolder;
-                //GetEdmFile5(path, out oFolder).GetFileCopy(0, 0, oFolder.ID, (int)EdmGetFlag.EdmGet_RefsVerLatest);
-            }
-            catch (Exception exception)
-            {
-                MessageObserver.Instance.SetMessage("Got last version for file by path" + path + "\n" + exception.ToString( ));
-            }
-        }
+   
 
         internal IEdmFile5 GetEdmFile5(string path)
         {
@@ -205,6 +206,7 @@ namespace ExportSLDPRTToDXF
                 throw ex;
             }
         }
+
         private void KillProcsses(string name)
         {
             var processes = System.Diagnostics.Process.GetProcessesByName(name);
@@ -544,6 +546,7 @@ m4:
             bomMgr.GetBomLayouts(out ppoRetLayouts);
             return ppoRetLayouts;
         }
+
         public EdmViewInfo[] GetVaultViews()
         {
             EdmViewInfo[] edmViewInfo;

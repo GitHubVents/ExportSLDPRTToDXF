@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace ExportSLDPRTToDXF.Models
@@ -27,15 +28,35 @@ namespace ExportSLDPRTToDXF.Models
         public string FilePath { get; set; }
 
         public string Partition { get; set; }
-        public static IEnumerable <ISpecificationView> ToView (IEnumerable<Specification> specification)
+
+        
+        public static IEnumerable <ISpecificationView> ConvertToViews (IEnumerable<Specification> specification)
         {
-            List<ISpecificationView> resultList = new List<ISpecificationView>( );
+            List<ISpecificationView> _resultList = new List<ISpecificationView>( );
             foreach (var item in specification)
             {
                 
-                resultList.Add(item);
+                _resultList.Add(item);
             }
-            return resultList;
+            return _resultList;
+        }
+
+        public static IEnumerable<FileModelPdm> ConvertToFileModels (IEnumerable<Specification> specification)
+        {
+            List<FileModelPdm> _fileModels = new List<FileModelPdm>();
+            foreach (Specification eachSpec in specification)
+            {
+                _fileModels.Add(new FileModelPdm
+                {
+                    IDPdm = eachSpec.IDPDM,
+                    CurrentVersion = eachSpec.Version,
+                    FileName = eachSpec.FileName,
+                    FolderPath = System.IO.Path.GetDirectoryName( eachSpec.FilePath),
+                    Path = eachSpec.FilePath,
+                    FolderId = SolidWorksPdmAdapter.Instance.GetFolderId(System.IO.Path.GetDirectoryName(eachSpec.FilePath))
+                });
+            }
+            return _fileModels;
         }
     }
 
@@ -45,7 +66,8 @@ namespace ExportSLDPRTToDXF.Models
     public interface ISpecificationView
     { 
         [DisplayName("Текущий DXF статус")]                
-        bool isDxf { get; set; }      
+        bool isDxf { get; set; }
+    
         [DisplayName("Обозначение")]          
         string PartNumber { get; set; }
         [DisplayName("Наименование")]
