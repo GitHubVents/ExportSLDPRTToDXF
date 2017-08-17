@@ -33,3 +33,7 @@ C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\o
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csprojResolveAssemblyReference.cache
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.config
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.ResolveComReference.cache
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb

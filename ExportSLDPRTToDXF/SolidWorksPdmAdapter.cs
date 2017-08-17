@@ -75,7 +75,7 @@ namespace ExportSLDPRTToDXF
 
             }
         }
-       
+
         /// <summary>
         /// Search document by name and returns colection the FileModelPdm .
         /// </summary>
@@ -83,7 +83,7 @@ namespace ExportSLDPRTToDXF
         /// <returns></returns>
         public IEnumerable<FileModelPdm> SearchDoc(string segmentName)
         {
-            List<FileModelPdm> searchResult = new List<FileModelPdm>( );
+            List<FileModelPdm> searchResult = new List<FileModelPdm>();
             try
             {
                 var Search = (PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_Search);
@@ -91,32 +91,41 @@ namespace ExportSLDPRTToDXF
                 Search.SetToken(EdmSearchToken.Edmstok_FindFolders, false);
                 int count = 0;
 
-                IEdmSearchResult5 Result = Search.GetFirstResult( );
+                IEdmSearchResult5 Result = Search.GetFirstResult();
+
+
                 while (Result != null)
                 {
-                    searchResult.Add(new FileModelPdm
+                L1:
+                    if (Result.Name.ToUpper().Contains(".SLDPRT") || Result.Name.ToUpper().Contains(".SLDASM"))
                     {
-                        FileName = Result.Name,
-                        IDPdm = Result.ID,
-                        FolderId = Result.ParentFolderID,
-                        Path = Result.Path,
-                        FolderPath = Path.GetDirectoryName(Result.Path),
-                        CurrentVersion = Result.Version
-                    });
-
-                    Result = Search.GetNextResult( );
-                    count++;
+                        searchResult.Add(new FileModelPdm
+                        {
+                            FileName = Result.Name,
+                            IDPdm = Result.ID,
+                            FolderId = Result.ParentFolderID,
+                            Path = Result.Path,
+                            FolderPath = Path.GetDirectoryName(Result.Path),
+                            CurrentVersion = Result.Version
+                        });
+                        count++;
+                    }
+                    Result = Search.GetNextResult();
+                    if (Result != null)
+                    {
+                        goto L1;
+                    }
                 }
-
                 MessageObserver.Instance.SetMessage("Поиск успешно завершон, найдено объектов " + searchResult.Count + " по запросу " + segmentName);
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString( ) + " в связи с чем возвращена пустая колекция FileModelPdm");
-                MessageObserver.Instance.SetMessage("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString( ) + " в связи с чем возвращена пустая колекция FileModelPdm");
+                MessageBox.Show("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString() + " в связи с чем возвращена пустая колекция FileModelPdm");
+                MessageObserver.Instance.SetMessage("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString() + " в связи с чем возвращена пустая колекция FileModelPdm");
                 //throw exception;
             }
-            return searchResult.Where(each => Path.GetExtension(each.FileName).ToUpper( ) == ".SLDPRT" || Path.GetExtension(each.FileName).ToUpper( ) == ".SLDASM");
+            //return searchResult.Where(each => Path.GetExtension(each.FileName).ToUpper( ) == ".SLDPRT" || Path.GetExtension(each.FileName).ToUpper( ) == ".SLDASM");
+            return searchResult;
         }
 
         /// <summary>
