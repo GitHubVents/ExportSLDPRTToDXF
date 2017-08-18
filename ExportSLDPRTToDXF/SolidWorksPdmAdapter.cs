@@ -174,7 +174,7 @@ namespace ExportSLDPRTToDXF
 
                 //var fileCount = batchGetter.FileCount;
                 //var fileList = (IEdmSelectionList6)batchGetter.GetFileList((int)EdmGetFileListFlag.Egflf_GetLocked + (int)EdmGetFileListFlag.Egflf_GetFailed + (int)EdmGetFileListFlag.Egflf_GetRetrieved + (int)EdmGetFileListFlag.Egflf_GetUnprocessed);
-                
+
                 batchGetter.GetFiles(0, null);
             }
             catch (Exception exception)
@@ -185,15 +185,6 @@ namespace ExportSLDPRTToDXF
                 MessageBox.Show(exception.ToString());
             }
         }
-
-        //public void DownLoadFile(IEnumerable< FileModelPdm> fileModels)
-        //{
-        //    foreach (FileModelPdm eachModel in fileModels)
-        //    {
-        //        DownLoadFile(eachModel);
-        //    }
-        //}
-
         public int GetFolderId (string folderPath )
         {
           return  PdmExemplar.GetFolderFromPath(folderPath).ID;
@@ -228,8 +219,7 @@ namespace ExportSLDPRTToDXF
 
             return configurationResaultArray.ToArray( );
         }
-   
-        
+  
         private void KillProcsses(string name)
         {
             var processes = System.Diagnostics.Process.GetProcessesByName(name);

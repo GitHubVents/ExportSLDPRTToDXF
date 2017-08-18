@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="ExportSLDPRTToDXF.exe" version="1.0.1.93" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16465" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16986" language="neutral" processorArchitecture="msil" />
     <commandLine file="ExportSLDPRTToDXF.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -67,13 +67,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExportSLDPRTToDXF.exe" size="70656">
-      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16465" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16986" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>z1iAvN+LZzUjBwWKYTL7raMd6p1IYKanbs7hx3RO2X4=</dsig:DigestValue>
+        <dsig:DigestValue>aUIjmM9y9undCp/lSw7ARvQkLhc6aqqIc3o4Q9i9u2c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
