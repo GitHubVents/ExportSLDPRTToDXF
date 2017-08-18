@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using EPDM.Interop.epdm;
+//using EdmLib;
 using ExportSLDPRTToDXF.Models;
 using EPDM.Interop.EPDMResultCode;
 using Patterns.Observer;
@@ -16,8 +17,6 @@ namespace ExportSLDPRTToDXF
 {
     public class SolidWorksPdmAdapter : Singeton<SolidWorksPdmAdapter>
     {
-
-
         public string VaultName { get; set; }
         public int BoomId { get; set; }
 
@@ -29,7 +28,8 @@ namespace ExportSLDPRTToDXF
         /// <summary>
         /// PDM exemplar.
         /// </summary>
-        private static IEdmVault5 edmVeult5 = null;
+        private static EdmVault5 edmVeult5 = null;
+        
         private static IEdmVault8 edmVeult8;
 
         public void AuthoLogin(string vaultName, bool isRelogin = false)
@@ -44,8 +44,8 @@ namespace ExportSLDPRTToDXF
             if (!PdmExemplar.IsLoggedIn)
             {
                 edmVeult5.LoginAuto(this.VaultName, 0);
-
             }
+
         }
 
         /// <summary>
@@ -72,7 +72,6 @@ namespace ExportSLDPRTToDXF
                     MessageObserver.Instance.SetMessage("Невозможно создать экземпляр Vents-PDM - " + VaultName + "\n" + exception);
                     return null;
                 }
-
             }
         }
 
@@ -86,14 +85,19 @@ namespace ExportSLDPRTToDXF
             List<FileModelPdm> searchResult = new List<FileModelPdm>();
             try
             {
-                var Search = (PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_Search);
+                IEdmSearch5 Search = default(IEdmSearch5);
+                Search = (IEdmSearch5)(PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_Search);
+
+
+                //var Search = (PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_Search);
                 Search.FileName = segmentName;
-                Search.SetToken(EdmSearchToken.Edmstok_FindFolders, false);
+                //Search.FindFiles = true;
+                //Search.FindFolders = false;
+                //Search.SetToken(EdmSearchToken.Edmstok_FindFolders, false);
                 int count = 0;
 
                 IEdmSearchResult5 Result = Search.GetFirstResult();
-
-
+                
                 while (Result != null)
                 {
                 L1:
@@ -122,9 +126,7 @@ namespace ExportSLDPRTToDXF
             {
                 MessageBox.Show("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString() + " в связи с чем возвращена пустая колекция FileModelPdm");
                 MessageObserver.Instance.SetMessage("Поиск по запросу " + segmentName + " завершон c ошибкой: " + exception.ToString() + " в связи с чем возвращена пустая колекция FileModelPdm");
-                //throw exception;
             }
-            //return searchResult.Where(each => Path.GetExtension(each.FileName).ToUpper( ) == ".SLDPRT" || Path.GetExtension(each.FileName).ToUpper( ) == ".SLDASM");
             return searchResult;
         }
 
@@ -132,34 +134,65 @@ namespace ExportSLDPRTToDXF
         /// Download file in to local directory witch has fixed path
         /// </summary>
         /// <param name="fileModel"></param>
-        public void DownLoadFile(FileModelPdm fileModel)
+        public void DownLoadFile(Specification[] sp)
         {
             try
             {
-                var batchGetter = (IEdmBatchGet)(PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_BatchGet);
-                batchGetter.AddSelectionEx((EdmVault5)PdmExemplar, fileModel.IDPdm, fileModel.FolderId, 0);
-                if ((batchGetter != null))
+                //var batchGetter = (IEdmBatchGet)(PdmExemplar as IEdmVault7).CreateUtility(EdmUtility.EdmUtil_BatchGet);
+                //batchGetter.AddSelectionEx((EdmVault5)PdmExemplar, fileModel.IDPdm, fileModel.FolderId, 0);
+                //if ((batchGetter != null))
+                //{
+                //    batchGetter.CreateTree(0, (int)EdmGetCmdFlags.Egcf_SkipUnlockedWritable);
+                //    batchGetter.GetFiles(0, null);
+                //}
+                //MessageObserver.Instance.SetMessage("Файл " + fileModel.FileName + " с id " + fileModel.IDPdm + " получен локально. путь:" + fileModel.Path);
+
+                //IEdmVault5 vault1 = new EdmVault5();
+                //IEdmVault7 vault2 = (IEdmVault7)PdmExemplar;
+
+                IEdmBatchGet batchGetter;
+                IEdmFolder5 aFolder;
+                IEdmFolder5 ppoRetParentFolder;
+                IEdmFile5 aFile;
+                IEdmPos5 aPos;
+                EdmSelItem[] ppoSelection = new EdmSelItem[sp.Count()];
+                int i = 0;
+                batchGetter = (IEdmBatchGet)edmVeult8.CreateUtility(EdmUtility.EdmUtil_BatchGet);
+                foreach (var item in sp)
                 {
-                    batchGetter.CreateTree(0, (int)EdmGetCmdFlags.Egcf_SkipUnlockedWritable);
-                    batchGetter.GetFiles(0, null);
+                    aFile = PdmExemplar.GetFileFromPath(item.FilePath, out ppoRetParentFolder);
+                    aPos = aFile.GetFirstFolderPosition();
+                    aFolder = aFile.GetNextFolder(aPos);
+                    ppoSelection[i] = new EdmSelItem();
+                    ppoSelection[i].mlDocID = aFile.ID;
+                    ppoSelection[i].mlProjID = aFolder.ID;
+                    i = i + 1;
                 }
-                MessageObserver.Instance.SetMessage("Файл " + fileModel.FileName + " с id " + fileModel.IDPdm + " получен локально. путь:" + fileModel.Path);
+                
+                batchGetter.AddSelection((EdmVault5)PdmExemplar, ref ppoSelection);
+                batchGetter.CreateTree(0, (int)EdmGetCmdFlags.Egcf_SkipUnlockedWritable);
+
+                //var fileCount = batchGetter.FileCount;
+                //var fileList = (IEdmSelectionList6)batchGetter.GetFileList((int)EdmGetFileListFlag.Egflf_GetLocked + (int)EdmGetFileListFlag.Egflf_GetFailed + (int)EdmGetFileListFlag.Egflf_GetRetrieved + (int)EdmGetFileListFlag.Egflf_GetUnprocessed);
+                
+                batchGetter.GetFiles(0, null);
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
-                MessageObserver.Instance.SetMessage("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
-                throw exception;
+                //MessageBox.Show("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
+                //MessageObserver.Instance.SetMessage("Неудалось получить файл " + fileModel.FileName + " с id " + fileModel.IDPdm + "; путь:" + fileModel.Path);
+                // throw exception;
+                MessageBox.Show(exception.ToString());
+            }
+        }
 
-            }
-        }
-        public void DownLoadFile(IEnumerable< FileModelPdm> fileModels)
-        {
-            foreach (FileModelPdm eachModel in fileModels)
-            {
-                DownLoadFile(eachModel);
-            }
-        }
+        //public void DownLoadFile(IEnumerable< FileModelPdm> fileModels)
+        //{
+        //    foreach (FileModelPdm eachModel in fileModels)
+        //    {
+        //        DownLoadFile(eachModel);
+        //    }
+        //}
 
         public int GetFolderId (string folderPath )
         {
@@ -196,26 +229,7 @@ namespace ExportSLDPRTToDXF
             return configurationResaultArray.ToArray( );
         }
    
-
-        internal IEdmFile5 GetEdmFile5(string path)
-        {
-            try
-            {
-                IEdmFolder5 oFolder;
-                var edmFile5 = PdmExemplar.GetFileFromPath(path, out oFolder);
-                edmFile5.GetFileCopy(1, 0, oFolder.ID, (int)EdmGetFlag.EdmGet_Refs +
-                                                       (int)EdmGetFlag.EdmGet_RefsOnlyMissing +
-                                                       (int)EdmGetFlag.EdmGet_MakeReadOnly +
-                                                       (int)EdmGetFlag.EdmGet_RefsVerLatest);
-                return edmFile5;
-            }
-            catch (COMException ex)
-            {
-                MessageBox.Show("Error: " + (EdmResultErrorCodes_e)ex.ErrorCode);
-                throw ex;
-            }
-        }
-
+        
         private void KillProcsses(string name)
         {
             var processes = System.Diagnostics.Process.GetProcessesByName(name);
@@ -307,19 +321,9 @@ namespace ExportSLDPRTToDXF
                 MessageBox.Show("Failed get bom shell list\n" + exception.ToString( ));
                 MessageObserver.Instance.SetMessage("Failed get bom shell list\n" + exception.ToString( ), MessageType.Error);
             }
-
-
             return BoomShellList;
         }
-
-        public void CheckInOutPdm(IEnumerable<string> pathToFiles, bool registration)
-        {
-            foreach (var eachFile in pathToFiles)
-            {
-                CheckInOutPdm(eachFile, registration);
-            }
-        }
-
+        
         /// <summary>
         /// Registration or unregistation files by their paths and registration status.
         /// </summary>
@@ -490,58 +494,7 @@ m4:
 
         }
          
-
-        /// <summary>
-        /// Adds file to pdm. File must the locate in local directory pdm.
-        /// </summary>
-        /// <param name="pathToFile"></param>
-        /// <param name="folder"></param>
-        public string AddToPdm(string pathToFile, string folder)
-        {
-            
-           
-            try
-            {
-                //if (File.Exists(pathToFile))
-                //{
-                //   File.SetAttributes(pathToFile, FileAttributes.Normal);
-                //    File.Delete(pathToFile);
-                //}
-                var edmFolder = PdmExemplar.GetFolderFromPath(folder);
-               
-                edmFolder.AddFile(0, pathToFile);
-
-             
-
-            //    Logger.ToLog("Файлы добавлены в PDM");
-
-             return   Path.Combine(folder, Path.GetFileName(pathToFile));
-
-            }
-            catch (COMException ex)
-            {
-                //  Logger.ToLog("ERROR BatchAddFiles " + msg + ", file: " + fileNameErr + " HRESULT = 0x" + ex.ErrorCode.ToString("X") + " " + ex.ToString());   
-                throw ex;           
-            }
-        }
-
-        public void SetVariable(FileModelPdm fileModel, string pathToTempPdf)
-        {
-            try
-            {
-                var filePath = fileModel.FolderPath + "\\" + pathToTempPdf;
-                IEdmFolder5 folder;
-                var aFile = PdmExemplar.GetFileFromPath(filePath, out folder);
-                var pEnumVar = (IEdmEnumeratorVariable8)aFile.GetEnumeratorVariable(); ;
-                pEnumVar.SetVar("Revision", "", fileModel.CurrentVersion); 
-                pEnumVar.CloseFile(true);
-            }
-            catch (Exception ex)
-            { 
-                throw ex;
-            }
-        }
-
+        
         public EdmBomLayout[] GetBoom(string vaultName)
         {
             IEdmVault7 vault2 = null;
@@ -561,6 +514,79 @@ m4:
             EdmViewInfo[] edmViewInfo;
             edmVeult8.GetVaultViews(out edmViewInfo, false);
             return edmViewInfo;
+        }
+
+        /// <summary>
+        /// Adds file to pdm. File must the locate in local directory pdm.
+        /// </summary>
+        /// <param name="pathToFile"></param>
+        /// <param name="folder"></param>
+        public string AddToPdm(string pathToFile, string folder)
+        {
+            try
+            {
+                //if (File.Exists(pathToFile))
+                //{
+                //   File.SetAttributes(pathToFile, FileAttributes.Normal);
+                //    File.Delete(pathToFile);
+                //}
+                var edmFolder = PdmExemplar.GetFolderFromPath(folder);
+
+                edmFolder.AddFile(0, pathToFile);
+
+
+
+                //    Logger.ToLog("Файлы добавлены в PDM");
+
+                return Path.Combine(folder, Path.GetFileName(pathToFile));
+
+            }
+            catch (COMException ex)
+            {
+                //  Logger.ToLog("ERROR BatchAddFiles " + msg + ", file: " + fileNameErr + " HRESULT = 0x" + ex.ErrorCode.ToString("X") + " " + ex.ToString());   
+                throw ex;
+            }
+        }
+        public void SetVariable(FileModelPdm fileModel, string pathToTempPdf)
+        {
+            try
+            {
+                var filePath = fileModel.FolderPath + "\\" + pathToTempPdf;
+                IEdmFolder5 folder;
+                var aFile = PdmExemplar.GetFileFromPath(filePath, out folder);
+                var pEnumVar = (IEdmEnumeratorVariable8)aFile.GetEnumeratorVariable(); ;
+                pEnumVar.SetVar("Revision", "", fileModel.CurrentVersion);
+                pEnumVar.CloseFile(true);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void CheckInOutPdm(IEnumerable<string> pathToFiles, bool registration)
+        {
+            foreach (var eachFile in pathToFiles)
+            {
+                CheckInOutPdm(eachFile, registration);
+            }
+        }
+        internal IEdmFile5 GetEdmFile5(string path)
+        {
+            try
+            {
+                IEdmFolder5 oFolder;
+                var edmFile5 = PdmExemplar.GetFileFromPath(path, out oFolder);
+                edmFile5.GetFileCopy(1, 0, oFolder.ID, (int)EdmGetFlag.EdmGet_Refs +
+                                                       (int)EdmGetFlag.EdmGet_RefsOnlyMissing +
+                                                       (int)EdmGetFlag.EdmGet_MakeReadOnly +
+                                                       (int)EdmGetFlag.EdmGet_RefsVerLatest);
+                return edmFile5;
+            }
+            catch (COMException ex)
+            {
+                MessageBox.Show("Error: " + (EdmResultErrorCodes_e)ex.ErrorCode);
+                throw ex;
+            }
         }
     }    
 }

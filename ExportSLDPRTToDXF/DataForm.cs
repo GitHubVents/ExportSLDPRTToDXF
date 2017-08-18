@@ -255,11 +255,11 @@ namespace ExportSLDPRTToDXF
                 DxfBulder.FinishedBuilding += DxfBulder_FinishedBuilding;
 
                 StatusLabel.Text = "Статус: Получение файлов";
-                SolidWorksPdmAdapter.Instance.DownLoadFile(FileModelPdm);
+                SolidWorksPdmAdapter.Instance.DownLoadFile(specifications);
                 var fileModelsOfSpecification = Specification.ConvertToFileModels(specifications);
                 foreach (var eachFileModel in fileModelsOfSpecification)
                 {
-                    SolidWorksPdmAdapter.Instance.DownLoadFile(eachFileModel);
+                    SolidWorksPdmAdapter.Instance.DownLoadFile(specifications);
                 }
 
                 StatusLabel.Text = "Статус: Выгрузка DXF файлов";

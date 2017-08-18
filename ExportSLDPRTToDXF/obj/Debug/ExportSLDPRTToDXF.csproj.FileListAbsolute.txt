@@ -37,3 +37,43 @@ C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportS
 C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.ResolveComReference.cache
 C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe
 C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csprojResolveAssemblyReference.cache
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.DataForm.resources
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.StatusForm.resources
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.SettingsForm.resources
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.Properties.Resources.resources
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.GenerateResource.Cache
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.manifest
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.application
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.pdb
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\Bullzip.PdfWriter.dll
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\MessageLibrary.pdb
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ServiceConstants.pdb
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.pdb
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.TrustInfo.xml
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe.manifest
+C:\Users\kb81\Source\Repos\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.application
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.config
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.ResolveComReference.cache
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.manifest
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.application
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.pdb
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\Bullzip.PdfWriter.dll
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\MessageLibrary.pdb
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ServiceConstants.pdb
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.pdb
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csprojResolveAssemblyReference.cache
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.DataForm.resources
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.StatusForm.resources
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.SettingsForm.resources
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.Properties.Resources.resources
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.GenerateResource.Cache
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.TrustInfo.xml
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.exe.manifest
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.application
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\Interop.EdmLib.dll
+C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\EPDM.Interop.epdm.dll

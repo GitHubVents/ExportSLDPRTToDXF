@@ -14,14 +14,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ExportSLDPRTToDXF.exe.manifest" size="7270">
+    <dependentAssembly dependencyType="install" codebase="ExportSLDPRTToDXF.exe.manifest" size="7958">
       <assemblyIdentity name="ExportSLDPRTToDXF.exe" version="1.0.1.93" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sCaj0zxPM8e8iBRXtHAkY7YYtVR7A+McWQnpvydX7Oo=</dsig:DigestValue>
+        <dsig:DigestValue>7LTyFxnY1MscCPbwN07ID3kASxlZfxABdKjVm1Qw1Gk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

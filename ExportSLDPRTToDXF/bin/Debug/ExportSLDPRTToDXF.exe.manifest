@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="ExportSLDPRTToDXF.exe" version="1.0.1.93" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.27881" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16465" language="neutral" processorArchitecture="msil" />
     <commandLine file="ExportSLDPRTToDXF.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -54,14 +54,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExportSLDPRTToDXF.exe" size="82376">
-      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.27881" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EPDM.Interop.epdm.dll" size="235928">
+      <assemblyIdentity name="EPDM.Interop.epdm" version="5.19.0.0" publicKeyToken="0625A0C4BB5DE148" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GQeVlRVlO6dcnApvHOwZK/Xm2f1SktnVtunNv8KOcZg=</dsig:DigestValue>
+        <dsig:DigestValue>TP911KkcIuCiKzaKYb5xIWZZbIZYl3eJa625PqKyZ04=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExportSLDPRTToDXF.exe" size="70656">
+      <assemblyIdentity name="ExportSLDPRTToDXF" version="1.0.0.16465" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z1iAvN+LZzUjBwWKYTL7raMd6p1IYKanbs7hx3RO2X4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -101,13 +113,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ExportSLDPRTToDXF.exe.config" size="3321">
+  <file name="ExportSLDPRTToDXF.exe.config" size="3265">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>l8Nc1yKg18VJX6l7EVW6QG4x7d1+2Ic7MA5Jyr8aX1k=</dsig:DigestValue>
+      <dsig:DigestValue>mYbwOSm/v9ONt5dw2JajYwlrM1Ngq5D367jHgIf0GPg=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

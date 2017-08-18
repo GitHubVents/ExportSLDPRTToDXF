@@ -63,7 +63,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
@@ -75,10 +75,10 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPDM.Interop.epdm, Version=5.19.0.0, Culture=neutral, PublicKeyToken=0625a0c4bb5de148, processorArchitecture=MSIL">
-      <HintPath>C:\Program Files\SOLIDWORKS PDM\EPDM.Interop.epdm.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+    <Reference Include="EPDM.Interop.epdm">
+      <HintPath>..\..\..\..\..\..\..\Program Files\SOLIDWORKS PDM\EPDM.Interop.epdm.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPDM.Interop.EPDMResultCode">
       <HintPath>C:\Program Files\SOLIDWORKS PDM\EPDM.Interop.EPDMResultCode.dll</HintPath>
@@ -188,6 +188,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="EdmLib">
+      <Guid>{5FA2C692-8393-4F31-9BDB-05E6F807D0D3}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>19</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>
