@@ -238,8 +238,6 @@ namespace ExportSLDPRTToDXF
         /// <param name="e"></param>
         private void UpLoadDxfButton_Click(object sender, EventArgs e)
         {
-           
-
             SolidWorksLibrary.Builders.Dxf.DxfBulder DxfBulder = SolidWorksLibrary.Builders.Dxf.DxfBulder.Instance;
             string tempDxfFolder = tempAppFolder;
             int countIterations = 0;
@@ -257,10 +255,6 @@ namespace ExportSLDPRTToDXF
                 StatusLabel.Text = "Статус: Получение файлов";
                 SolidWorksPdmAdapter.Instance.DownLoadFile(specifications);
                 var fileModelsOfSpecification = Specification.ConvertToFileModels(specifications);
-                foreach (var eachFileModel in fileModelsOfSpecification)
-                {
-                    SolidWorksPdmAdapter.Instance.DownLoadFile(specifications);
-                }
 
                 StatusLabel.Text = "Статус: Выгрузка DXF файлов";
 
@@ -292,15 +286,8 @@ namespace ExportSLDPRTToDXF
 
                         if (!eachSpec.isDxf && File.Exists(eachSpec.FilePath) && Path.GetExtension(eachSpec.FileName).ToUpper( ) == ".SLDPRT")
                         {
-                            try
-                            {
                                 DxfBulder.Build(eachSpec.FilePath, eachSpec.IDPDM, eachSpec.Version);
                                 countIterations++;
-                            }
-                            catch
-                            {
-
-                            }
                         }
 
                     }
@@ -331,7 +318,6 @@ namespace ExportSLDPRTToDXF
                     }
                     countIterations++;
                 }
-               
             }
             MessageObserver.Instance.SetMessage($"Save {countIterations} new dxf files to destination folder" );
                 StatusLabel.Text = "Статус: Выгрузка DXF файлов завершена. Количество выгруженых файлов "  + countIterations;

@@ -170,7 +170,7 @@ namespace ExportSLDPRTToDXF
                 }
                 
                 batchGetter.AddSelection((EdmVault5)PdmExemplar, ref ppoSelection);
-                batchGetter.CreateTree(0, (int)EdmGetCmdFlags.Egcf_SkipUnlockedWritable);
+                batchGetter.CreateTree(0, (int)EdmGetCmdFlags.Egcf_SkipUnlockedWritable + (int)EdmGetCmdFlags.Egcf_SkipExisting + (int)EdmGetCmdFlags.Egcf_SkipLockRefFiles);
 
                 //var fileCount = batchGetter.FileCount;
                 //var fileList = (IEdmSelectionList6)batchGetter.GetFileList((int)EdmGetFileListFlag.Egflf_GetLocked + (int)EdmGetFileListFlag.Egflf_GetFailed + (int)EdmGetFileListFlag.Egflf_GetRetrieved + (int)EdmGetFileListFlag.Egflf_GetUnprocessed);

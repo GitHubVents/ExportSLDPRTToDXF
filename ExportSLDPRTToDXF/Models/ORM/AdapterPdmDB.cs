@@ -43,20 +43,19 @@ namespace ExportSLDPRTToDXF.Models.ORM
             try
             {
                 DataContext.DXFUpDateCutList(
-                                        workpieceX,
-                                          workpieceY,
-                                          bend,
-                                           thickness,
-                                          configuration,
-                                          version,
-                                          paintX,
-                                          paintY,
-                                          paintZ,
-                                          IdPdm,
-                                          materialID,
-                                         surfaceArea,
-                                          new System.Data.Linq.Binary(DXFByte)
-                                          );
+                    workpieceX,
+                    workpieceY,
+                    bend,
+                    thickness,
+                    configuration,
+                    version,
+                    paintX,
+                    paintY,
+                    paintZ,
+                    IdPdm,
+                    materialID,
+                    surfaceArea,
+                    new Binary(DXFByte));
 
                 MessageObserver.Instance.SetMessage("Successfully added the cut list to database.", MessageType.System);
             }
@@ -74,7 +73,7 @@ namespace ExportSLDPRTToDXF.Models.ORM
         public byte[] GetDXF (int IdPDM, string configuration, int version)
         {
             Binary binaryDxf = null;
-             DataContext.DXF_GET(IdPDM, configuration, version, ref binaryDxf);
+            DataContext.DXF_GET(IdPDM, configuration, version, ref binaryDxf);
             return binaryDxf.ToArray( );
         }
     }

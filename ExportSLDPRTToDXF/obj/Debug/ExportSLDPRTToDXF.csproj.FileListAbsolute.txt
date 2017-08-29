@@ -8,7 +8,6 @@ D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDX
 D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.pdb
 D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.csproj.ResolveComReference.cache
 D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.DataForm.resources
-D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.Settings.resources
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.config
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.exe.manifest
 C:\Users\Antonyk\Desktop\ExportSLDPRTToDXF\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ExportSLDPRTToDXF.application
@@ -77,3 +76,10 @@ C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDP
 C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.application
 C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\Interop.EdmLib.dll
 C:\Users\kb81\Documents\Visual Studio 2015\Projects\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\EPDM.Interop.epdm.dll
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\MessageLibrary.pdb
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\ServiceConstants.pdb
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.pdb
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.StatusForm.resources
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\obj\Debug\ExportSLDPRTToDXF.SettingsForm.resources
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\SolidWorksLibrary.dll
+D:\Project\Source\ExportSLDPRTToDXF\ExportSLDPRTToDXF\bin\Debug\EPDM.Interop.epdm.dll
